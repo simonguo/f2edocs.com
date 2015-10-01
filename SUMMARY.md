@@ -1,7 +1,7 @@
 # Summary
 
 * [关于前端](README.md)
-* [基础]
+* 基础
     * [ECMAScript 6](ecmascript6/readme.md)
         * [前言](ecmascript6/readme.md)
         * [ECMAScript 6简介](ecmascript6/docs/intro.md)
@@ -25,11 +25,11 @@
         * [Module](ecmascript6/docs/module.md)
         * [编程风格](ecmascript6/docs/style.md)
         * [参考链接](ecmascript6/docs/reference.md)
-* [框架]
+* 框架
     [React]
     [angularjs]
-* [模板]
+* 模板
 
-* [插件]
+* 插件
 
-* [构建工具]
+* 构建工具
