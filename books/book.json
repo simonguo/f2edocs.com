@@ -2,7 +2,21 @@
     "variables": {
         "title": "前端工程师文档",
         "theme": "theme-gray",
-        "copyright": "Copyright 2015 f2edocs.com"
+        "copyright": "Copyright 2015 f2edocs.com",
+        "nav": [{
+            "title": "HTML",
+            "url": "/html/"
+        },{
+            "title": "JavaScript",
+            "url": "/javascript/"
+        }, {
+            "title": "CSS",
+            "url": "/css/"
+        }, {
+            "title": "前端书籍",
+            "url": "#",
+            "active": true
+        }]
     },
     "collapsible_menu":true,
     "level_number":false,
@@ -16,6 +30,5 @@
             "google": true,
             "weibo": true
         }
-
     }
 }
