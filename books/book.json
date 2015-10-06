@@ -1,6 +1,6 @@
 {
     "variables": {
-        "title": "前端工程师文档",
+        "title": "前端开发文档（中文）",
         "theme": "theme-gray",
         "copyright": "Copyright 2015 f2edocs.com",
         "nav": [{
@@ -14,9 +14,12 @@
             "url": "/css/"
         }, {
             "title": "前端书籍",
-            "url": "#",
+            "url": "/books/",
             "active": true
         }]
+    },
+    "cnzz_tracker": {
+        "siteid": "1256491313"
     },
     "collapsible_menu":true,
     "level_number":false,

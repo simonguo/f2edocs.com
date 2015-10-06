@@ -1,0 +1,37 @@
+{
+    "variables": {
+        "title": "前端开发文档（中文）",
+        "theme": "theme-gray",
+        "copyright": "Copyright 2015 f2edocs.com",
+        "nav": [{
+            "title": "HTML",
+            "url": "/html/"
+        }, {
+            "title": "JavaScript",
+            "url": "/javascript/"
+        }, {
+            "title": "CSS",
+            "url": "/css/",
+            "active": true
+        }, {
+            "title": "前端书籍",
+            "url": "/books/"
+        }]
+    },
+    "cnzz_tracker": {
+        "siteid": "1256491313"
+    },
+    "collapsible_menu": true,
+    "level_number": false,
+    "links": {
+        "gitbook": false,
+        "sharing": {
+            "all": false,
+            "vk": false,
+            "facebook": true,
+            "twitter": true,
+            "google": true,
+            "weibo": true
+        }
+    }
+}

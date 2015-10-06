@@ -1,5 +1,5 @@
 # Summary
-- [概要](README.md)
+- [前端书籍-概要](README.md)
 - ECMAScript 6入门
   - [前言](ecmascript6/readme.md)
   - [ECMAScript 6简介](ecmascript6/docs/intro.md)
