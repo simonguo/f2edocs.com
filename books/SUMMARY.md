@@ -62,3 +62,28 @@
         - [自动分号插入](javascript-garden/core/semicolon.md)
     - 其他
         - [setTimeout 和 setInterval](javascript-garden/other/timeouts.md)
+
+- JavaScript的12个怪癖
+    - [简介](12-javascript-quirks/README.md)
+    - [怪癖 1：隐式类型转换](12-javascript-quirks/cn/1-implicit-conversion-of-values.md)
+    - [怪癖 2：两个「空值」：undefined 和 null](12-javascript-quirks/cn/2-two-non-values-undefined-and-null.md)
+    - [怪癖 3：标准的等号 (==)](12-javascript-quirks/cn/3-normal-equality-vs-the-double-equals.md)
+    - [怪癖 4：未知变量名创建全局变量](12-javascript-quirks/cn/4-unknown-variable-names-create-global-variables.md)
+    - [怪癖 5：参数的处理](12-javascript-quirks/cn/5-parameter-handling.md)
+    - [怪癖 6：变量的作用范围](12-javascript-quirks/cn/6-the-scope-of-variables.md)
+    - [怪癖 7：变量闭包之后的无意识共享](12-javascript-quirks/cn/7-inadvertent-sharing-of-variables-via-closures.md)
+    - [怪癖 8：“类数组对象”](12-javascript-quirks/cn/8-array-like-objects.md)
+    - [怪癖 9：子类的构造函数]
+    - [怪癖 10：属性的读写]
+    - [怪癖 11：函数中的 this]
+    - [怪癖 12：for-in循环]
+- JavaScript 模式
+    - [目录](javascript-patterns/README.md)
+    - [概述](javascript-patterns/chapter1.md)
+    - [高质量JavaScript基本要点](javascript-patterns/chapter2.md)
+    - [直接量和构造函数](javascript-patterns/chapter3.md)
+    - [函数](javascript-patterns/chapter4.md)
+    - [对象创建模式](javascript-patterns/chapter5.md)
+    - [代码复用模式](javascript-patterns/chapter6.md)
+    - [设计模式](javascript-patterns/chapter7.md)
+    - [DOM和浏览器中的模式](javascript-patterns/chapter8.md)

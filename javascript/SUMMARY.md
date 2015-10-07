@@ -23,4 +23,5 @@
         - [DOM Attribute]
         - [DOM Event]
 
-- JavaScript编码规范
+- [ECMAScript6 编码规范](es6-coding-style.md)
+- [JavaScript 编码规范](javascript-style-guide.md)
