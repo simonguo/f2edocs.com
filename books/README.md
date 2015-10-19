@@ -37,3 +37,19 @@
 - 简介：偷懒是程序员的优良品质，模式则是先人们总结的偷懒招式。Stoyan Stefanov 的这本书，从 JavaScript 的实际使用场景出发，提炼了不少可以让前端们偷懒的实用招式。模式的探索、创新，将永远是程序员自我提升的一条修炼之道。值得一读。
 
 - [开始阅读](javascript-patterns/README.md)
+
+
+## 《AngularJS入门教程》
+- 作者：[AngularJS中文社区](http://angularjs.cn/)提供
+- 源码: [github](https://github.com/zensh/AngularjsTutorial_cn)
+- 简介：AngularJS中文社区制作的学习教程，致力于AngularJS的技术学习、交流和研究。
+
+- [开始阅读](AngularjsTutorial_cn/quick_start.md)
+
+
+## 《CSS3教程》
+- 作者：Way Lau
+- 源码: [github](https://github.com/waylau/css3-tutorial)
+- 简介：CSS3 Tutorial 是一本关于 CSS3 的开源书。利用业余时间写了本书，图文并茂，用大量实例带你一步一步走进 CSS3 的世界。
+
+- [开始阅读](css3-tutorial/docs/Introduction.md)
