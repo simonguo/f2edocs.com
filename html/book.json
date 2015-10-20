@@ -33,5 +33,11 @@
             "google": true,
             "weibo": true
         }
+    },
+    "plugins": ["disqus"],
+    "pluginsConfig": {
+        "disqus": {
+            "shortName": "f2edocs"
+        }
     }
 }

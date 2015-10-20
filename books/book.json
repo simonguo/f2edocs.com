@@ -6,7 +6,7 @@
         "nav": [{
             "title": "HTML",
             "url": "/html/"
-        },{
+        }, {
             "title": "JavaScript",
             "url": "/javascript/"
         }, {
@@ -21,17 +21,24 @@
     "cnzz_tracker": {
         "siteid": "1256491313"
     },
-    "collapsible_menu":true,
-    "level_number":false,
+    "collapsible_menu": true,
+    "level_number": false,
     "links": {
         "gitbook": false,
         "sharing": {
-            "all":false,
+            "all": false,
             "vk": false,
             "facebook": true,
             "twitter": true,
             "google": true,
             "weibo": true
         }
+    },
+    "plugins": ["disqus"],
+    "pluginsConfig": {
+        "disqus": {
+            "shortName": "f2edocs"
+        }
     }
+
 }
