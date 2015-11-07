@@ -50,7 +50,7 @@ selector {property: value;}
 
 	<!-- Use link elements -->
 	<link rel="stylesheet" href="core.css">
-	
+
 	<!-- Use @imports -->
 	<style>
 	  @import url("more.css");
@@ -71,6 +71,7 @@ selector {property: value;}
 
 例子如下
 
+```html
 	<!DOCTYPE html>
 	<html>
 	<head>
@@ -80,19 +81,19 @@ selector {property: value;}
 	    <meta name="author" content="Way Lau, www.waylau.com"/>
 	    <meta name="viewport" content="width=device-width">
 	    <link rel="shortcut icon" href="/favicon.ico">
-	
+
 	    <style type="text/css">
 	        #redP p {
 	            /* 权值 = 100+1=101 */
 	            color: #F00; /* 红色 */
 	        }
-	
+
 	        #redP .red em {
 	            /* 权值 = 100+10+1=111 */
 	            color: #00F; /* 蓝色 */
-	
+
 	        }
-	
+
 	        #redP p span em {
 	            /* 权值 = 100+1+1+1=103 */
 	            color: #FF0; /*黄色*/
@@ -104,11 +105,12 @@ selector {property: value;}
 	    <p class="red">red
 	        <span><em>em red</em></span>
 	    </p>
-	
+
 	    <p>red</p>
 	</div>
 	</body>
 	</html>
+```
 
 最终页面效果如下：
 
@@ -122,10 +124,11 @@ selector {property: value;}
 * 当权值相等时，后出现的样式表设置要优于先出现的样式表设置；
 * 创作者的规则高于浏览者：即网页编写者设置的 CSS 样式的优先权高于浏览器所设置的样式；
 * 继承的 CSS 样式不如后来指定的 CSS 样式；
-* 在同一组属性设置中标有`!important`规则的优先级最大 
+* 在同一组属性设置中标有`!important`规则的优先级最大
 
 例子如下：
 
+```html
 	<!DOCTYPE html>
 	<html>
 	<head>
@@ -135,25 +138,25 @@ selector {property: value;}
 	    <meta name="author" content="Way Lau, www.waylau.com"/>
 	    <meta name="viewport" content="width=device-width">
 	    <link rel="shortcut icon" href="/favicon.ico">
-	
+
 	    <style>
 	        .test {
 	            color: #f00 !important;
 	            color: #000;
 	        }
-	
+
 	        .test2 {
 	            color: #f00 !important;
 	        }
-	
+
 	        .test2 {
 	            color: #000;
 	        }
-	
+
 	        .test3 {
 	            color: #000;
 	        }
-	
+
 	        .test3 {
 	            color: #f00;
 	        }
@@ -165,7 +168,7 @@ selector {property: value;}
 	<div class="test3">没有被覆盖</div>
 	</body>
 	</html>
-
+```
 
 ![](../images/important.jpg)
 

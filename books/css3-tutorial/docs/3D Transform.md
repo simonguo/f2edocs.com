@@ -21,14 +21,15 @@ Opera 还不支持 3D 转换(支持 2D 转换 )
 
 rotateX()方法，围绕其在一个给定度数X轴旋转的元素。
 
+```css
 	.rotate-x {
 	    transform: rotateX(60deg);
 	    -webkit-transform: rotateX(120deg); /* Safari and Chrome */
 	}
-
+```
 
 ## rotateY()
- 
+
 rotateY()方法，围绕其在一个给定度数Y轴旋转的元素。
 
     .rotate-y {
@@ -37,7 +38,7 @@ rotateY()方法，围绕其在一个给定度数Y轴旋转的元素。
     }
 
 ## rotateZ()
- 
+
 rotateZ()方法，围绕其在一个给定度数Z轴旋转的元素。
 
     .rotate-z {

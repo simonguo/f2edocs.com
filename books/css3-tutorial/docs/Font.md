@@ -21,6 +21,7 @@ Internet Explorer 同样支持 EOT (Embedded OpenType) 字体。
 
 在 `@font-face` 规则中，您必须首先定义字体的名称（比如 FontAwesome ），然后指向该字体文件 fontawesome-webfont.woff 。
 
+```css
     @font-face {
         font-family: 'FontAwesome';
         src: url('fonts/fontawesome-webfont.woff');
@@ -32,6 +33,7 @@ Internet Explorer 同样支持 EOT (Embedded OpenType) 字体。
         color: pink;
         line-height: 1.3em;
     }
+```
 
 ## 源码
 
