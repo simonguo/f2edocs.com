@@ -32,19 +32,23 @@ rotateX()方法，围绕其在一个给定度数X轴旋转的元素。
 
 rotateY()方法，围绕其在一个给定度数Y轴旋转的元素。
 
+```css
     .rotate-y {
         transform: rotateY(60deg);
         -webkit-transform: rotateY(120deg); /* Safari and Chrome */
     }
+```
 
 ## rotateZ()
 
 rotateZ()方法，围绕其在一个给定度数Z轴旋转的元素。
 
+```css
     .rotate-z {
         transform: rotateZ(60deg);
         -webkit-transform: rotateY(120deg); /* Safari and Chrome */
     }
+```
 
 ## rotate3d()
 otate3d(x,y,z,a)中取值说明：
@@ -61,11 +65,12 @@ otate3d(x,y,z,a)中取值说明：
 
 例子
 
+```css
     .rotate-3d {
         transform: rotate3d(0,0.6,0.2,60deg);
         -webkit-transform: rotate3d(0.6,0.6,0.2,60deg); /* Safari and Chrome */
     }
-
+```
 ## 转换方法
 
 <table class="reference"> <tbody><tr> <th style="width:25%;">函数</th> <th>描述</th> </tr> <tr> <td>matrix3d(<i>n</i>,<i>n</i>,<i>n</i>,<i>n</i>,<i>n</i>,<i>n</i>,<br><i>n</i>,<i>n</i>,<i>n</i>,<i>n</i>,<i>n</i>,<i>n</i>,<i>n</i>,<i>n</i>,<i>n</i>,<i>n</i>)</td> <td>定义 3D 转换，使用 16 个值的 4x4 矩阵。</td> </tr> <tr> <td>translate3d(<i>x</i>,<i>y</i>,<i>z</i>)</td> <td>定义 3D 转化。</td> </tr> <tr> <td>translateX(<i>x</i>)</td> <td>定义 3D 转化，仅使用用于 X 轴的值。</td> </tr> <tr> <td>translateY(<i>y</i>)</td> <td>定义 3D 转化，仅使用用于 Y 轴的值。</td> </tr> <tr> <td>translateZ(<i>z</i>)</td> <td>定义 3D 转化，仅使用用于 Z 轴的值。</td> </tr> <tr> <td>scale3d(<i>x</i>,<i>y</i>,<i>z</i>)</td> <td>定义 3D 缩放转换。</td> </tr> <tr> <td>scaleX(<i>x</i>)</td> <td>定义 3D 缩放转换，通过给定一个 X 轴的值。</td> </tr> <tr> <td>scaleY(<i>y</i>)</td> <td>定义 3D 缩放转换，通过给定一个 Y 轴的值。</td> </tr> <tr> <td>scaleZ(<i>z</i>)</td> <td>定义 3D 缩放转换，通过给定一个 Z 轴的值。</td> </tr> <tr> <td>rotate3d(<i>x</i>,<i>y</i>,<i>z</i>,<i>angle</i>)</td> <td>定义 3D 旋转。</td> </tr> <tr> <td>rotateX(<i>angle</i>)</td> <td>定义沿 X 轴的 3D 旋转。</td> </tr> <tr> <td>rotateY(<i>angle</i>)</td> <td>定义沿 Y 轴的 3D 旋转。</td> </tr> <tr> <td>rotateZ(<i>angle</i>)</td> <td>定义沿 Z 轴的 3D 旋转。</td> </tr> <tr> <td>perspective(<i>n</i>)</td> <td>定义 3D 转换元素的透视视图。</td> </tr> </tbody></table>
