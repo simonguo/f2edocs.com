@@ -1,21 +1,24 @@
 {
     "variables": {
-        "title": "前端开发文档（中文）",
+        "title": "前端开发学习资料库",
         "theme": "theme-gray",
         "copyright": "Copyright 2015 f2edocs.com",
         "nav": [{
-            "title": "HTML",
-            "url": "/html/",
-            "active": true
-        },{
-            "title": "JavaScript",
-            "url": "/javascript/"
-        }, {
-            "title": "CSS",
-            "url": "/css/"
-        }, {
-            "title": "前端书籍",
+            "title": "书籍",
             "url": "/books/"
+        },{
+            "title": "面试",
+            "url": "/interview/",
+            "active": true
+        }, {
+            "title": "牛人与社区",
+            "url": "/collect/"
+        }, {
+            "title": "规范",
+            "url": "/style-guide/"
+        }, {
+            "title": "参考手册",
+            "url": "/reference/"
         }]
     },
     "cnzz_tracker": {

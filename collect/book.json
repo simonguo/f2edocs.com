@@ -5,14 +5,14 @@
         "copyright": "Copyright 2015 f2edocs.com",
         "nav": [{
             "title": "书籍",
-            "url": "/books/",
-            "active": true
+            "url": "/books/"
         },{
             "title": "面试",
             "url": "/interview/"
         }, {
             "title": "牛人与社区",
-            "url": "/collect/"
+            "url": "/collect/",
+            "active": true
         }, {
             "title": "规范",
             "url": "/style-guide/"
@@ -24,12 +24,12 @@
     "cnzz_tracker": {
         "siteid": "1256491313"
     },
-    "collapsible_menu": true,
-    "level_number": false,
+    "collapsible_menu":true,
+    "level_number":false,
     "links": {
         "gitbook": false,
         "sharing": {
-            "all": false,
+            "all":false,
             "vk": false,
             "facebook": true,
             "twitter": true,
@@ -43,5 +43,4 @@
             "shortName": "f2edocs"
         }
     }
-
 }
