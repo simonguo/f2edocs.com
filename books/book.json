@@ -2,7 +2,7 @@
     "variables": {
         "title": "前端开发学习资料库",
         "theme": "theme-gray",
-        "copyright": "Copyright 2015 f2edocs.com",
+        "copyright": "https://github.com/simonguo/f2edocs.com",
         "nav": [{
             "title": "书籍",
             "url": "/books/",
