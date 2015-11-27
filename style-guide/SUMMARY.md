@@ -1,5 +1,5 @@
 # Summary
-- [JavaScript-简介](README.md)
+- [概述](README.md)
 - [CSS编码规范](css-style-guide.md)
 - [ECMAScript6 编码规范](es6-coding-style.md)
 - [JavaScript 编码规范](javascript-style-guide.md)
