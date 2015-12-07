@@ -1,0 +1,46 @@
+{
+    "variables": {
+        "title": "前端开发学习资料库",
+        "theme": "theme-gray",
+        "copyright": "https://github.com/simonguo/f2edocs.com",
+        "nav": [{
+            "title": "书籍",
+            "url": "/books/"
+        },{
+            "title": "面试",
+            "url": "/interview/",
+            "active": true
+        }, {
+            "title": "牛人与社区",
+            "url": "/collect/"
+        }, {
+            "title": "规范",
+            "url": "/style-guide/"
+        }, {
+            "title": "参考手册",
+            "url": "/reference/"
+        }]
+    },
+    "cnzz_tracker": {
+        "siteid": "1256491313"
+    },
+    "collapsible_menu":true,
+    "level_number":false,
+    "links": {
+        "gitbook": false,
+        "sharing": {
+            "all":false,
+            "vk": false,
+            "facebook": true,
+            "twitter": true,
+            "google": true,
+            "weibo": true
+        }
+    },
+    "plugins": ["disqus"],
+    "pluginsConfig": {
+        "disqus": {
+            "shortName": "f2edocs"
+        }
+    }
+}

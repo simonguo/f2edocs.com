@@ -1,0 +1,7 @@
+syntax: glob
+.DS_Store
+_book
+_site
+_cache
+!_site/index.html
+node_modules
