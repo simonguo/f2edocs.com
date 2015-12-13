@@ -53,3 +53,38 @@
 - 简介：CSS3 Tutorial 是一本关于 CSS3 的开源书。利用业余时间写了本书，图文并茂，用大量实例带你一步一步走进 CSS3 的世界。
 
 - [开始阅读](css3-tutorial/docs/Introduction.md)
+
+
+## 前端书籍推荐
+★越少越简单,越适合入门,★多的要么是难度比较高,要么是比较适合在后面看,比如讲性能之类的书.
+
+### CSS
+- [Eric Meyer 谈 CSS（卷二）](http://www.amazon.cn/Eric-Meyer-谈-CSS-迈耶/dp/B00170M84I/)★★★
+- [CSS权威指南 （第3版）](http://book.douban.com/subject/2308234/)★★
+- [精通CSS](http://book.douban.com/subject/4736167/)★★★
+- [HTML & CSS设计与构建网站](http://book.douban.com/subject/21338365/)★
+
+### JavaScript
+- [JavaScript & jQuery交互式Web前端开发](http://book.douban.com/subject/26433805/)★
+- [JavaScript DOM编程艺术 （第2版）](http://book.douban.com/subject/6038371/)★
+- [JavaScript高级程序设计（第3版）](http://book.douban.com/subject/10546125/)★★
+- [锋利的jQuery](http://book.douban.com/subject/10792216/)★★
+- [高性能JavaScript](http://book.douban.com/subject/5362856/)★★★
+- [JavaScript语言精粹](http://book.douban.com/subject/3590768/)★★★
+- [JavaScript权威指南](http://book.douban.com/subject/10549733/)★★★
+- [编写可维护的JavaScript](http://book.douban.com/subject/21792530/)★★★
+- [JAVASCRIPT语言精髓与编程实践](http://book.douban.com/subject/3012828/)★★★
+- [Effective Javascript](http://www.amazon.com/Effective-JavaScript-Specific-Software-Development/dp/0321812182)★★★
+- [Secrets of the JavaScript Ninja](http://book.douban.com/subject/3176860/)★★★
+- [JavaScript模式](http://book.douban.com/subject/11506062/)★★★
+- [JavaScript设计模式](http://book.douban.com/subject/3329540/)★★★★
+- [基于MVC的JavaScript Web富应用开发](http://book.douban.com/subject/10733304/)★★★
+
+### 性能实践
+- [Web性能实践日志](http://book.douban.com/subject/25891125/)★★★
+- [Web性能权威指南](http://book.douban.com/subject/25856314/)★★★
+
+### 版本控制工具
+- [版本控制之道 (git)](http://book.douban.com/subject/4813786/)★★
+- [Pro Git](http://iissnan.com/progit/)★★★
+- [Git权威指南](http://book.douban.com/subject/6526452/)★★★★
