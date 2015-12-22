@@ -4,7 +4,7 @@
 
 [http://f2edocs.com](http://f2edocs.com)
 
-![Pagurian](demo.png)
+![Pagurian](demo-deepblue.png)
 
 持续更新中...
 
