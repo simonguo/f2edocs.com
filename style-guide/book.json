@@ -5,20 +5,20 @@
         "copyright": "https://github.com/simonguo/f2edocs.com",
         "nav": [{
             "title": "书籍",
-            "url": "/books/"
+            "url": "/dist/books/"
         },{
             "title": "面试",
-            "url": "/interview/"
+            "url": "/dist/interview/"
         }, {
             "title": "牛人与社区",
-            "url": "/collect/"
+            "url": "/dist/collect/"
         }, {
             "title": "规范",
-            "url": "/style-guide/",
+            "url": "/dist/style-guide/",
             "active": true
         }, {
             "title": "参考",
-            "url": "/reference/"
+            "url": "/dist/reference/"
         }]
     },
     "cnzz_tracker": {

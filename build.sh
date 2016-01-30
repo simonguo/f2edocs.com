@@ -1,7 +1,7 @@
 #!/bin/bash
 
-gitbook build ./books ./_site/books
-gitbook build ./interview ./_site/interview
-gitbook build ./collect ./_site/collect
-gitbook build ./style-guide ./_site/style-guide
-gitbook build ./reference ./_site/reference
+hbook build ./books ./dist/books
+hbook build ./interview ./dist/interview
+hbook build ./collect ./dist/collect
+hbook build ./style-guide ./dist/style-guide
+hbook build ./reference ./dist/reference
