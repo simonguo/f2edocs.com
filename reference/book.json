@@ -19,6 +19,9 @@
             "title": "参考",
             "url": "/dist/reference/",
             "active": true
+        }, {
+            "title": "github",
+            "url": "https://github.com/simonguo/f2edocs.com"
         }]
     },
     "cnzz_tracker": {
