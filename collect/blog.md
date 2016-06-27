@@ -36,7 +36,7 @@
 [NCZOnline](http://www.nczonline.net/)                | ★★★★★ | ★★★★★ | Nicholas C. Zakas | html5,ccs3,javascript
 [HTML5 Rocks](http://www.html5rocks.com/en/)          | ★★★★★ | ★★★★★ | #                 | html5权威网站
 [A List Apart](http://alistapart.com/)                | ★★★★★ | ★★★★★ | #                 | 可以改变世界的文章
-[hakim](http://hakim.se/)                             | ★★★★★ | ★★★★★ | HAKIM EL HATTAB   | ccs3,javascript
+[hakim](http://hakim.se/)                             | ★★★★★ | ★★★★★ | HAKIM EL HATTAB   | css3,javascript
 [DailyJS](http://dailyjs.com/)                        | ★★★★★ | ★★★★★ | #                 | javascript
 
 ### 活跃微博
