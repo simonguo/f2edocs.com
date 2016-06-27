@@ -1,6 +1,11 @@
 # 前端开源书籍
-## ECMAScript® 2015
+
+## 在线文档
 [ECMAScript® 2015](http://www.ecma-international.org/ecma-262/6.0/index.html)
+[Redux 中文文档](http://cn.redux.js.org/)
+[Redux 英文文档](http://redux.js.org/)
+[React 和 Webpack](https://fakefish.github.io/react-webpack-cookbook/index.html)
+[JavaScript Promise迷你书（中文版）](http://liubin.org/promises-book/)
 
 ## 《ECMAScript 6入门》
 - 作者: 阮一峰
