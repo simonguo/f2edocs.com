@@ -1,49 +1,49 @@
 {
-    "variables": {
-        "title": "F2E Docs",
-        "theme": "theme-deepblue",
-        "copyright": "https://github.com/simonguo/f2edocs.com",
-        "nav": [{
+    "title": "F2E Docs",
+    "navs": [
+        {
             "title": "书籍",
             "url": "/dist/books/"
-        },{
+        },
+        {
             "title": "面试",
             "url": "/dist/interview/",
             "active": true
-        }, {
+        },
+        {
             "title": "牛人与社区",
             "url": "/dist/collect/"
-        }, {
+        },
+        {
             "title": "规范",
             "url": "/dist/style-guide/"
-        }, {
+        },
+        {
             "title": "参考",
             "url": "/dist/reference/"
-        }, {
+        },
+        {
             "title": "Github",
             "url": "https://github.com/simonguo/f2edocs.com"
-        }]
+        }
+    ],
+    "variables": {
+        "copyright": "https://github.com/simonguo/f2edocs.com"
     },
     "cnzz_tracker": {
         "siteid": "1256491313"
     },
-    "collapsible_menu":true,
-    "level_number":false,
-    "links": {
-        "gitbook": false,
-        "sharing": {
-            "all":false,
-            "vk": false,
-            "facebook": true,
-            "twitter": true,
-            "google": true,
-            "weibo": true
-        }
-    },
-    "plugins": ["disqus"],
+    "collapsible_menu": false,
+    "level_number": false,
+    "plugins": [
+        "disqus"
+    ],
     "pluginsConfig": {
         "disqus": {
             "shortName": "f2edocs"
         }
+    },
+    "search": {
+        "maxIndexSize": 1000000000
     }
 }
