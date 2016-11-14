@@ -1,9 +1,5 @@
 var fs = require('fs');
 
-//fs.writeFileSync('./output.json',JSON.stringify({a:1,b:2}));
-
-
-var navs = ['books', 'collect', 'interview', 'reference', 'style-guide'];
 var bookConf = fs.readFileSync(`${__dirname}/../book.json`);
 var bookJson = JSON.parse(bookConf);
 var navs = bookJson.navs;
