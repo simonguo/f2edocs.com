@@ -45,8 +45,6 @@
             "shortName": "f2edocs"
         }
     },
-    "collapsible_menu": false,
-    "level_number": false,
     "search": {
         "maxIndexSize": 1000000000
     }
