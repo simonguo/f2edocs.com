@@ -37,8 +37,6 @@
     "cnzz_tracker": {
         "siteid": "1256491313"
     },
-    "collapsible_menu": false,
-    "level_number": false,
     "plugins": [
         "disqus"
     ],
@@ -47,6 +45,8 @@
             "shortName": "f2edocs"
         }
     },
+    "collapsible_menu": false,
+    "level_number": false,
     "search": {
         "maxIndexSize": 1000000000
     }
