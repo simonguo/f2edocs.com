@@ -1,6 +1,8 @@
 # 前端开源书籍
 
 ## 在线文档
+- [MDN](https://developer.mozilla.org/zh-CN/docs/Web)
+- [DevDocs API Documentation](http://devdocs.io/)
 - [ECMAScript® 2015](http://www.ecma-international.org/ecma-262/6.0/index.html)
 - [Redux 中文文档](http://cn.redux.js.org/)
 - [Redux 英文文档](http://redux.js.org/)
