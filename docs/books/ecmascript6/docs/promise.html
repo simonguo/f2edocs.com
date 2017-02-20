@@ -1,0 +1,2229 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+
+
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Promise对象 | F2E Docs</title>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <meta name="description" content="">
+    <meta name="generator" content="GitBook 1.2.27">  
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon"> 
+    <link rel="stylesheet" href="../../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-disqus/plugin.css">
+        
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+ 
+    
+    
+    <link rel="next" href="../../ecmascript6/docs/async.html" />
+    
+    
+    <link rel="prev" href="../../ecmascript6/docs/generator.html" />
+    
+ 
+    
+</head>
+
+<body class="theme-default">
+    <div class="header">
+        <a aria-label="Table of Contents" class="btn-toggle-summary" href="#">
+            <i class="fa fa-align-justify"></i>
+        </a>
+        <a class="logo">F2E Docs</a>
+        <ul class="nav">
+            
+            <li  class="active" ><a href="/docs/books/">书籍</a></li>
+            
+            <li ><a href="/docs/interview/">面试</a></li>
+            
+            <li ><a href="/docs/collect/">牛人与社区</a></li>
+            
+            <li ><a href="/docs/style-guide/">规范</a></li>
+            
+            <li ><a href="/docs/reference/">参考</a></li>
+            
+            <li ><a href="https://github.com/simonguo/f2edocs.com">Github</a></li>
+            
+        </ul>
+    </div>
+     
+    <div class="book"
+        data-level="1.16"
+        data-chapter-title="Promise对象"
+        data-filepath="ecmascript6/docs/promise.md"
+        data-basepath="../.."
+        data-revision="Mon Feb 20 2017 11:17:46 GMT+0800 (CST)"
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        前端书籍-概要
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" >
+            
+            <span><b>1.</b> ECMAScript 6入门</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="ecmascript6/readme.html">
+            
+                
+                    <a href="../../ecmascript6/readme.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        前言
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="ecmascript6/docs/intro.html">
+            
+                
+                    <a href="../../ecmascript6/docs/intro.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        ECMAScript 6简介
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="ecmascript6/docs/destructuring.html">
+            
+                
+                    <a href="../../ecmascript6/docs/destructuring.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                        变量的解构赋值
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="ecmascript6/docs/let.html">
+            
+                
+                    <a href="../../ecmascript6/docs/let.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.</b>
+                        
+                        let和const命令
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="ecmascript6/docs/string.html">
+            
+                
+                    <a href="../../ecmascript6/docs/string.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.</b>
+                        
+                        字符串的扩展
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="ecmascript6/docs/number.html">
+            
+                
+                    <a href="../../ecmascript6/docs/number.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.6.</b>
+                        
+                        数值的扩展
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="ecmascript6/docs/regex.html">
+            
+                
+                    <a href="../../ecmascript6/docs/regex.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.7.</b>
+                        
+                        正则的扩展
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="ecmascript6/docs/array.html">
+            
+                
+                    <a href="../../ecmascript6/docs/array.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.8.</b>
+                        
+                        数组的扩展
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="ecmascript6/docs/object.html">
+            
+                
+                    <a href="../../ecmascript6/docs/object.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.9.</b>
+                        
+                        对象的扩展
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="ecmascript6/docs/function.html">
+            
+                
+                    <a href="../../ecmascript6/docs/function.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.10.</b>
+                        
+                        函数的扩展
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="ecmascript6/docs/symbol.html">
+            
+                
+                    <a href="../../ecmascript6/docs/symbol.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.11.</b>
+                        
+                        Symbol
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="ecmascript6/docs/proxy.html">
+            
+                
+                    <a href="../../ecmascript6/docs/proxy.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.12.</b>
+                        
+                        Proxy和Reflect
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="ecmascript6/docs/set-map.html">
+            
+                
+                    <a href="../../ecmascript6/docs/set-map.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.13.</b>
+                        
+                        Set和Map数据结构
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="ecmascript6/docs/iterator.html">
+            
+                
+                    <a href="../../ecmascript6/docs/iterator.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.14.</b>
+                        
+                        Iterator和for...of循环
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="ecmascript6/docs/generator.html">
+            
+                
+                    <a href="../../ecmascript6/docs/generator.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.15.</b>
+                        
+                        Generator函数
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.16" data-path="ecmascript6/docs/promise.html">
+            
+                
+                    <a href="../../ecmascript6/docs/promise.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.16.</b>
+                        
+                        Promise对象
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="ecmascript6/docs/async.html">
+            
+                
+                    <a href="../../ecmascript6/docs/async.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.17.</b>
+                        
+                        异步操作和Async函数
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="ecmascript6/docs/class.html">
+            
+                
+                    <a href="../../ecmascript6/docs/class.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.18.</b>
+                        
+                        Class
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="ecmascript6/docs/decorator.html">
+            
+                
+                    <a href="../../ecmascript6/docs/decorator.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.19.</b>
+                        
+                        Decorator
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="ecmascript6/docs/module.html">
+            
+                
+                    <a href="../../ecmascript6/docs/module.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.20.</b>
+                        
+                        Module
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="ecmascript6/docs/style.html">
+            
+                
+                    <a href="../../ecmascript6/docs/style.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.21.</b>
+                        
+                        编程风格
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="ecmascript6/docs/reference.html">
+            
+                
+                    <a href="../../ecmascript6/docs/reference.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.22.</b>
+                        
+                        参考链接
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" >
+            
+            <span><b>2.</b> 七天学会NodeJS</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="7-days-nodejs/01_getting_started.html">
+            
+                
+                    <a href="../../7-days-nodejs/01_getting_started.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        NodeJS基础
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="7-days-nodejs/02_code_management_and_deployment.html">
+            
+                
+                    <a href="../../7-days-nodejs/02_code_management_and_deployment.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        代码的组织和部署
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="7-days-nodejs/03_file.html">
+            
+                
+                    <a href="../../7-days-nodejs/03_file.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        文件操作
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="7-days-nodejs/04_network.html">
+            
+                
+                    <a href="../../7-days-nodejs/04_network.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                        网络操作
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="7-days-nodejs/05_process.html">
+            
+                
+                    <a href="../../7-days-nodejs/05_process.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.</b>
+                        
+                        进程管理
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="7-days-nodejs/06_async_programming.html">
+            
+                
+                    <a href="../../7-days-nodejs/06_async_programming.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.6.</b>
+                        
+                        异步编程
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="7-days-nodejs/07_example.html">
+            
+                
+                    <a href="../../7-days-nodejs/07_example.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.7.</b>
+                        
+                        大示例
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" >
+            
+            <span><b>3.</b> JavaScript 密码花园</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="javascript-garden/intro/index.html">
+            
+                
+                    <a href="../../javascript-garden/intro/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        简介
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="javascript-garden/intro/authors.html">
+            
+                
+                    <a href="../../javascript-garden/intro/authors.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        作者
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="javascript-garden/intro/contributors.html">
+            
+                
+                    <a href="../../javascript-garden/intro/contributors.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.</b>
+                        
+                        贡献者
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="javascript-garden/intro/license.html">
+            
+                
+                    <a href="../../javascript-garden/intro/license.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.</b>
+                        
+                        许可
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" >
+            
+            <span><b>3.5.</b> 对象</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.5.1" data-path="javascript-garden/object/general.html">
+            
+                
+                    <a href="../../javascript-garden/object/general.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.5.1.</b>
+                        
+                        对象使用和属性
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5.2" data-path="javascript-garden/object/prototype.html">
+            
+                
+                    <a href="../../javascript-garden/object/prototype.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.5.2.</b>
+                        
+                        原型
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5.3" data-path="javascript-garden/object/hasownproperty.html">
+            
+                
+                    <a href="../../javascript-garden/object/hasownproperty.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.5.3.</b>
+                        
+                        hasOwnProperty 函数
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5.4" data-path="javascript-garden/object/forinloop.html">
+            
+                
+                    <a href="../../javascript-garden/object/forinloop.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.5.4.</b>
+                        
+                        for in 循环
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" >
+            
+            <span><b>3.6.</b> 函数</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.6.1" data-path="javascript-garden/function/general.html">
+            
+                
+                    <a href="../../javascript-garden/function/general.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.6.1.</b>
+                        
+                        函数声明与表达式
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6.2" data-path="javascript-garden/function/this.html">
+            
+                
+                    <a href="../../javascript-garden/function/this.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.6.2.</b>
+                        
+                        this 的工作原理
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6.3" data-path="javascript-garden/function/closures.html">
+            
+                
+                    <a href="../../javascript-garden/function/closures.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.6.3.</b>
+                        
+                        闭包和引用
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6.4" data-path="javascript-garden/function/arguments.html">
+            
+                
+                    <a href="../../javascript-garden/function/arguments.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.6.4.</b>
+                        
+                        arguments 对象
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6.5" data-path="javascript-garden/function/constructors.html">
+            
+                
+                    <a href="../../javascript-garden/function/constructors.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.6.5.</b>
+                        
+                        构造函数
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6.6" data-path="javascript-garden/function/scopes.html">
+            
+                
+                    <a href="../../javascript-garden/function/scopes.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.6.6.</b>
+                        
+                        作用域与命名空间
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7" >
+            
+            <span><b>3.7.</b> 数组</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.7.1" data-path="javascript-garden/array/general.html">
+            
+                
+                    <a href="../../javascript-garden/array/general.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.7.1.</b>
+                        
+                        数组遍历与属性
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7.2" data-path="javascript-garden/array/constructor.html">
+            
+                
+                    <a href="../../javascript-garden/array/constructor.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.7.2.</b>
+                        
+                        Array 构造函数
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.8" >
+            
+            <span><b>3.8.</b> 类型</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.8.1" data-path="javascript-garden/types/equality.html">
+            
+                
+                    <a href="../../javascript-garden/types/equality.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.8.1.</b>
+                        
+                        相等与比较
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.8.2" data-path="javascript-garden/types/typeof.html">
+            
+                
+                    <a href="../../javascript-garden/types/typeof.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.8.2.</b>
+                        
+                        typeof 操作符
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.8.3" data-path="javascript-garden/types/instanceof.html">
+            
+                
+                    <a href="../../javascript-garden/types/instanceof.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.8.3.</b>
+                        
+                        instanceof 操作符
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.8.4" data-path="javascript-garden/types/casting.html">
+            
+                
+                    <a href="../../javascript-garden/types/casting.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.8.4.</b>
+                        
+                        类型转换
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.9" >
+            
+            <span><b>3.9.</b> 核心</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.9.1" data-path="javascript-garden/core/eval.html">
+            
+                
+                    <a href="../../javascript-garden/core/eval.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.9.1.</b>
+                        
+                        为什么不要使用 eval
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.9.2" data-path="javascript-garden/core/undefined.html">
+            
+                
+                    <a href="../../javascript-garden/core/undefined.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.9.2.</b>
+                        
+                        undefined 和 null
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.9.3" data-path="javascript-garden/core/semicolon.html">
+            
+                
+                    <a href="../../javascript-garden/core/semicolon.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.9.3.</b>
+                        
+                        自动分号插入
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.10" >
+            
+            <span><b>3.10.</b> 其他</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.10.1" data-path="javascript-garden/other/timeouts.html">
+            
+                
+                    <a href="../../javascript-garden/other/timeouts.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.10.1.</b>
+                        
+                        setTimeout 和 setInterval
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" >
+            
+            <span><b>4.</b> JavaScript的12个怪癖</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="12-javascript-quirks/index.html">
+            
+                
+                    <a href="../../12-javascript-quirks/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        简介
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="12-javascript-quirks/cn/1-implicit-conversion-of-values.html">
+            
+                
+                    <a href="../../12-javascript-quirks/cn/1-implicit-conversion-of-values.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                        怪癖 1：隐式类型转换
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="12-javascript-quirks/cn/2-two-non-values-undefined-and-null.html">
+            
+                
+                    <a href="../../12-javascript-quirks/cn/2-two-non-values-undefined-and-null.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.</b>
+                        
+                        怪癖 2：两个「空值」：undefined 和 null
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="12-javascript-quirks/cn/3-normal-equality-vs-the-double-equals.html">
+            
+                
+                    <a href="../../12-javascript-quirks/cn/3-normal-equality-vs-the-double-equals.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.4.</b>
+                        
+                        怪癖 3：标准的等号 (==)
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="12-javascript-quirks/cn/4-unknown-variable-names-create-global-variables.html">
+            
+                
+                    <a href="../../12-javascript-quirks/cn/4-unknown-variable-names-create-global-variables.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.5.</b>
+                        
+                        怪癖 4：未知变量名创建全局变量
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="12-javascript-quirks/cn/5-parameter-handling.html">
+            
+                
+                    <a href="../../12-javascript-quirks/cn/5-parameter-handling.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.6.</b>
+                        
+                        怪癖 5：参数的处理
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7" data-path="12-javascript-quirks/cn/6-the-scope-of-variables.html">
+            
+                
+                    <a href="../../12-javascript-quirks/cn/6-the-scope-of-variables.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.7.</b>
+                        
+                        怪癖 6：变量的作用范围
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.8" data-path="12-javascript-quirks/cn/7-inadvertent-sharing-of-variables-via-closures.html">
+            
+                
+                    <a href="../../12-javascript-quirks/cn/7-inadvertent-sharing-of-variables-via-closures.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.8.</b>
+                        
+                        怪癖 7：变量闭包之后的无意识共享
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.9" data-path="12-javascript-quirks/cn/8-array-like-objects.html">
+            
+                
+                    <a href="../../12-javascript-quirks/cn/8-array-like-objects.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.9.</b>
+                        
+                        怪癖 8：“类数组对象”
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.10" >
+            
+            <span><b>4.10.</b> [怪癖 9：子类的构造函数]</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.11" >
+            
+            <span><b>4.11.</b> [怪癖 10：属性的读写]</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.12" >
+            
+            <span><b>4.12.</b> [怪癖 11：函数中的 this]</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.13" >
+            
+            <span><b>4.13.</b> [怪癖 12：for-in循环]</span>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5" >
+            
+            <span><b>5.</b> JavaScript 模式</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1" data-path="javascript-patterns/index.html">
+            
+                
+                    <a href="../../javascript-patterns/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.</b>
+                        
+                        目录
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="javascript-patterns/chapter1.html">
+            
+                
+                    <a href="../../javascript-patterns/chapter1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.</b>
+                        
+                        概述
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="javascript-patterns/chapter2.html">
+            
+                
+                    <a href="../../javascript-patterns/chapter2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.</b>
+                        
+                        高质量JavaScript基本要点
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="javascript-patterns/chapter3.html">
+            
+                
+                    <a href="../../javascript-patterns/chapter3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.4.</b>
+                        
+                        直接量和构造函数
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="javascript-patterns/chapter4.html">
+            
+                
+                    <a href="../../javascript-patterns/chapter4.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.5.</b>
+                        
+                        函数
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" data-path="javascript-patterns/chapter5.html">
+            
+                
+                    <a href="../../javascript-patterns/chapter5.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.6.</b>
+                        
+                        对象创建模式
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.7" data-path="javascript-patterns/chapter6.html">
+            
+                
+                    <a href="../../javascript-patterns/chapter6.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.7.</b>
+                        
+                        代码复用模式
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.8" data-path="javascript-patterns/chapter7.html">
+            
+                
+                    <a href="../../javascript-patterns/chapter7.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.8.</b>
+                        
+                        设计模式
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.9" data-path="javascript-patterns/chapter8.html">
+            
+                
+                    <a href="../../javascript-patterns/chapter8.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.9.</b>
+                        
+                        DOM和浏览器中的模式
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6" >
+            
+            <span><b>6.</b> AngularJS入门教程</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1" data-path="AngularjsTutorial_cn/quick_start.html">
+            
+                
+                    <a href="../../AngularjsTutorial_cn/quick_start.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.1.</b>
+                        
+                        快速开始
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="AngularjsTutorial_cn/ready.html">
+            
+                
+                    <a href="../../AngularjsTutorial_cn/ready.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.2.</b>
+                        
+                        导言和准备
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="AngularjsTutorial_cn/00.html">
+            
+                
+                    <a href="../../AngularjsTutorial_cn/00.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.3.</b>
+                        
+                        引导程序
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="AngularjsTutorial_cn/01.html">
+            
+                
+                    <a href="../../AngularjsTutorial_cn/01.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.4.</b>
+                        
+                        静态模板
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5" data-path="AngularjsTutorial_cn/02.html">
+            
+                
+                    <a href="../../AngularjsTutorial_cn/02.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.5.</b>
+                        
+                        AngularJS模板
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.6" data-path="AngularjsTutorial_cn/03.html">
+            
+                
+                    <a href="../../AngularjsTutorial_cn/03.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.6.</b>
+                        
+                        迭代器过滤
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.7" data-path="AngularjsTutorial_cn/04.html">
+            
+                
+                    <a href="../../AngularjsTutorial_cn/04.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.7.</b>
+                        
+                        双向绑定
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.8" data-path="AngularjsTutorial_cn/05.html">
+            
+                
+                    <a href="../../AngularjsTutorial_cn/05.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.8.</b>
+                        
+                        XHR和依赖注入
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.9" data-path="AngularjsTutorial_cn/06.html">
+            
+                
+                    <a href="../../AngularjsTutorial_cn/06.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.9.</b>
+                        
+                        链接与图片模板
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.10" data-path="AngularjsTutorial_cn/07.html">
+            
+                
+                    <a href="../../AngularjsTutorial_cn/07.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.10.</b>
+                        
+                        路由与多视图
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.11" data-path="AngularjsTutorial_cn/08.html">
+            
+                
+                    <a href="../../AngularjsTutorial_cn/08.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.11.</b>
+                        
+                        更多模板
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.12" data-path="AngularjsTutorial_cn/09.html">
+            
+                
+                    <a href="../../AngularjsTutorial_cn/09.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.12.</b>
+                        
+                        过滤器
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.13" data-path="AngularjsTutorial_cn/10.html">
+            
+                
+                    <a href="../../AngularjsTutorial_cn/10.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.13.</b>
+                        
+                        事件处理器
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.14" data-path="AngularjsTutorial_cn/11.html">
+            
+                
+                    <a href="../../AngularjsTutorial_cn/11.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.14.</b>
+                        
+                        REST和定制服务
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.15" data-path="AngularjsTutorial_cn/12.html">
+            
+                
+                    <a href="../../AngularjsTutorial_cn/12.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.15.</b>
+                        
+                        完结篇
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.16" data-path="AngularjsTutorial_cn/index.html">
+            
+                
+                    <a href="../../AngularjsTutorial_cn/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.16.</b>
+                        
+                        关于
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7" >
+            
+            <span><b>7.</b> CSS3 教程</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.1" data-path="css3-tutorial/docs/Introduction.html">
+            
+                
+                    <a href="../../css3-tutorial/docs/Introduction.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.1.</b>
+                        
+                        介绍
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" data-path="css3-tutorial/docs/Animation.html">
+            
+                
+                    <a href="../../css3-tutorial/docs/Animation.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.2.</b>
+                        
+                        动画
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.3" data-path="css3-tutorial/docs/Border.html">
+            
+                
+                    <a href="../../css3-tutorial/docs/Border.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.3.</b>
+                        
+                        边框
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.4" data-path="css3-tutorial/docs/Background.html">
+            
+                
+                    <a href="../../css3-tutorial/docs/Background.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.4.</b>
+                        
+                        背景
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.5" data-path="css3-tutorial/docs/Font.html">
+            
+                
+                    <a href="../../css3-tutorial/docs/Font.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.5.</b>
+                        
+                        字体
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.6" data-path="css3-tutorial/docs/Multiple Columns.html">
+            
+                
+                    <a href="../../css3-tutorial/docs/Multiple Columns.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.6.</b>
+                        
+                        多列
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.7" data-path="css3-tutorial/docs/User Interface.html">
+            
+                
+                    <a href="../../css3-tutorial/docs/User Interface.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.7.</b>
+                        
+                        UI
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.8" data-path="css3-tutorial/docs/Transitions Effect.html">
+            
+                
+                    <a href="../../css3-tutorial/docs/Transitions Effect.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.8.</b>
+                        
+                        过渡效果
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.9" data-path="css3-tutorial/docs/Text Effect.html">
+            
+                
+                    <a href="../../css3-tutorial/docs/Text Effect.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.9.</b>
+                        
+                        文本效果
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.10" data-path="css3-tutorial/docs/2D Transform.html">
+            
+                
+                    <a href="../../css3-tutorial/docs/2D Transform.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.10.</b>
+                        
+                        2D
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.11" data-path="css3-tutorial/docs/3D Transform.html">
+            
+                
+                    <a href="../../css3-tutorial/docs/3D Transform.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.11.</b>
+                        
+                        3D
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../" >F2E Docs</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="promise&#x5BF9;&#x8C61;">Promise&#x5BF9;&#x8C61;</h1>
+<h2 id="promise&#x7684;&#x542B;&#x4E49;">Promise&#x7684;&#x542B;&#x4E49;</h2>
+<p><code>Promise</code>&#x5728;JavaScript&#x8BED;&#x8A00;&#x65E9;&#x6709;&#x5B9E;&#x73B0;&#xFF0C;ES6&#x5C06;&#x5176;&#x5199;&#x8FDB;&#x4E86;&#x8BED;&#x8A00;&#x6807;&#x51C6;&#xFF0C;&#x7EDF;&#x4E00;&#x4E86;&#x7528;&#x6CD5;&#xFF0C;&#x539F;&#x751F;&#x63D0;&#x4F9B;&#x4E86;<code>Promise</code>&#x5BF9;&#x8C61;&#x3002;</p>
+<p>&#x6240;&#x8C13;<code>Promise</code>&#xFF0C;&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#xFF0C;&#x7528;&#x6765;&#x4F20;&#x9012;&#x5F02;&#x6B65;&#x64CD;&#x4F5C;&#x7684;&#x6D88;&#x606F;&#x3002;&#x5B83;&#x4EE3;&#x8868;&#x4E86;&#x67D0;&#x4E2A;&#x672A;&#x6765;&#x624D;&#x4F1A;&#x77E5;&#x9053;&#x7ED3;&#x679C;&#x7684;&#x4E8B;&#x4EF6;&#xFF08;&#x901A;&#x5E38;&#x662F;&#x4E00;&#x4E2A;&#x5F02;&#x6B65;&#x64CD;&#x4F5C;&#xFF09;&#xFF0C;&#x5E76;&#x4E14;&#x8FD9;&#x4E2A;&#x4E8B;&#x4EF6;&#x63D0;&#x4F9B;&#x7EDF;&#x4E00;&#x7684;API&#xFF0C;&#x53EF;&#x4F9B;&#x8FDB;&#x4E00;&#x6B65;&#x5904;&#x7406;&#x3002;</p>
+<p><code>Promise</code>&#x5BF9;&#x8C61;&#x6709;&#x4EE5;&#x4E0B;&#x4E24;&#x4E2A;&#x7279;&#x70B9;&#x3002;</p>
+<p>&#xFF08;1&#xFF09;&#x5BF9;&#x8C61;&#x7684;&#x72B6;&#x6001;&#x4E0D;&#x53D7;&#x5916;&#x754C;&#x5F71;&#x54CD;&#x3002;<code>Promise</code>&#x5BF9;&#x8C61;&#x4EE3;&#x8868;&#x4E00;&#x4E2A;&#x5F02;&#x6B65;&#x64CD;&#x4F5C;&#xFF0C;&#x6709;&#x4E09;&#x79CD;&#x72B6;&#x6001;&#xFF1A;<code>Pending</code>&#xFF08;&#x8FDB;&#x884C;&#x4E2D;&#xFF09;&#x3001;<code>Resolved</code>&#xFF08;&#x5DF2;&#x5B8C;&#x6210;&#xFF0C;&#x53C8;&#x79F0;Fulfilled&#xFF09;&#x548C;<code>Rejected</code>&#xFF08;&#x5DF2;&#x5931;&#x8D25;&#xFF09;&#x3002;&#x53EA;&#x6709;&#x5F02;&#x6B65;&#x64CD;&#x4F5C;&#x7684;&#x7ED3;&#x679C;&#xFF0C;&#x53EF;&#x4EE5;&#x51B3;&#x5B9A;&#x5F53;&#x524D;&#x662F;&#x54EA;&#x4E00;&#x79CD;&#x72B6;&#x6001;&#xFF0C;&#x4EFB;&#x4F55;&#x5176;&#x4ED6;&#x64CD;&#x4F5C;&#x90FD;&#x65E0;&#x6CD5;&#x6539;&#x53D8;&#x8FD9;&#x4E2A;&#x72B6;&#x6001;&#x3002;&#x8FD9;&#x4E5F;&#x662F;<code>Promise</code>&#x8FD9;&#x4E2A;&#x540D;&#x5B57;&#x7684;&#x7531;&#x6765;&#xFF0C;&#x5B83;&#x7684;&#x82F1;&#x8BED;&#x610F;&#x601D;&#x5C31;&#x662F;&#x201C;&#x627F;&#x8BFA;&#x201D;&#xFF0C;&#x8868;&#x793A;&#x5176;&#x4ED6;&#x624B;&#x6BB5;&#x65E0;&#x6CD5;&#x6539;&#x53D8;&#x3002;</p>
+<p>&#xFF08;2&#xFF09;&#x4E00;&#x65E6;&#x72B6;&#x6001;&#x6539;&#x53D8;&#xFF0C;&#x5C31;&#x4E0D;&#x4F1A;&#x518D;&#x53D8;&#xFF0C;&#x4EFB;&#x4F55;&#x65F6;&#x5019;&#x90FD;&#x53EF;&#x4EE5;&#x5F97;&#x5230;&#x8FD9;&#x4E2A;&#x7ED3;&#x679C;&#x3002;<code>Promise</code>&#x5BF9;&#x8C61;&#x7684;&#x72B6;&#x6001;&#x6539;&#x53D8;&#xFF0C;&#x53EA;&#x6709;&#x4E24;&#x79CD;&#x53EF;&#x80FD;&#xFF1A;&#x4ECE;<code>Pending</code>&#x53D8;&#x4E3A;<code>Resolved</code>&#x548C;&#x4ECE;<code>Pending</code>&#x53D8;&#x4E3A;<code>Rejected</code>&#x3002;&#x53EA;&#x8981;&#x8FD9;&#x4E24;&#x79CD;&#x60C5;&#x51B5;&#x53D1;&#x751F;&#xFF0C;&#x72B6;&#x6001;&#x5C31;&#x51DD;&#x56FA;&#x4E86;&#xFF0C;&#x4E0D;&#x4F1A;&#x518D;&#x53D8;&#x4E86;&#xFF0C;&#x4F1A;&#x4E00;&#x76F4;&#x4FDD;&#x6301;&#x8FD9;&#x4E2A;&#x7ED3;&#x679C;&#x3002;&#x5C31;&#x7B97;&#x6539;&#x53D8;&#x5DF2;&#x7ECF;&#x53D1;&#x751F;&#x4E86;&#xFF0C;&#x4F60;&#x518D;&#x5BF9;<code>Promise</code>&#x5BF9;&#x8C61;&#x6DFB;&#x52A0;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#xFF0C;&#x4E5F;&#x4F1A;&#x7ACB;&#x5373;&#x5F97;&#x5230;&#x8FD9;&#x4E2A;&#x7ED3;&#x679C;&#x3002;&#x8FD9;&#x4E0E;&#x4E8B;&#x4EF6;&#xFF08;Event&#xFF09;&#x5B8C;&#x5168;&#x4E0D;&#x540C;&#xFF0C;&#x4E8B;&#x4EF6;&#x7684;&#x7279;&#x70B9;&#x662F;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x9519;&#x8FC7;&#x4E86;&#x5B83;&#xFF0C;&#x518D;&#x53BB;&#x76D1;&#x542C;&#xFF0C;&#x662F;&#x5F97;&#x4E0D;&#x5230;&#x7ED3;&#x679C;&#x7684;&#x3002;</p>
+<p>&#x6709;&#x4E86;<code>Promise</code>&#x5BF9;&#x8C61;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x5C06;&#x5F02;&#x6B65;&#x64CD;&#x4F5C;&#x4EE5;&#x540C;&#x6B65;&#x64CD;&#x4F5C;&#x7684;&#x6D41;&#x7A0B;&#x8868;&#x8FBE;&#x51FA;&#x6765;&#xFF0C;&#x907F;&#x514D;&#x4E86;&#x5C42;&#x5C42;&#x5D4C;&#x5957;&#x7684;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x3002;&#x6B64;&#x5916;&#xFF0C;<code>Promise</code>&#x5BF9;&#x8C61;&#x63D0;&#x4F9B;&#x7EDF;&#x4E00;&#x7684;&#x63A5;&#x53E3;&#xFF0C;&#x4F7F;&#x5F97;&#x63A7;&#x5236;&#x5F02;&#x6B65;&#x64CD;&#x4F5C;&#x66F4;&#x52A0;&#x5BB9;&#x6613;&#x3002;</p>
+<p><code>Promise</code>&#x4E5F;&#x6709;&#x4E00;&#x4E9B;&#x7F3A;&#x70B9;&#x3002;&#x9996;&#x5148;&#xFF0C;&#x65E0;&#x6CD5;&#x53D6;&#x6D88;<code>Promise</code>&#xFF0C;&#x4E00;&#x65E6;&#x65B0;&#x5EFA;&#x5B83;&#x5C31;&#x4F1A;&#x7ACB;&#x5373;&#x6267;&#x884C;&#xFF0C;&#x65E0;&#x6CD5;&#x4E2D;&#x9014;&#x53D6;&#x6D88;&#x3002;&#x5176;&#x6B21;&#xFF0C;&#x5982;&#x679C;&#x4E0D;&#x8BBE;&#x7F6E;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#xFF0C;<code>Promise</code>&#x5185;&#x90E8;&#x629B;&#x51FA;&#x7684;&#x9519;&#x8BEF;&#xFF0C;&#x4E0D;&#x4F1A;&#x53CD;&#x5E94;&#x5230;&#x5916;&#x90E8;&#x3002;&#x7B2C;&#x4E09;&#xFF0C;&#x5F53;&#x5904;&#x4E8E;<code>Pending</code>&#x72B6;&#x6001;&#x65F6;&#xFF0C;&#x65E0;&#x6CD5;&#x5F97;&#x77E5;&#x76EE;&#x524D;&#x8FDB;&#x5C55;&#x5230;&#x54EA;&#x4E00;&#x4E2A;&#x9636;&#x6BB5;&#xFF08;&#x521A;&#x521A;&#x5F00;&#x59CB;&#x8FD8;&#x662F;&#x5373;&#x5C06;&#x5B8C;&#x6210;&#xFF09;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x67D0;&#x4E9B;&#x4E8B;&#x4EF6;&#x4E0D;&#x65AD;&#x5730;&#x53CD;&#x590D;&#x53D1;&#x751F;&#xFF0C;&#x4E00;&#x822C;&#x6765;&#x8BF4;&#xFF0C;&#x4F7F;&#x7528;stream&#x6A21;&#x5F0F;&#x662F;&#x6BD4;&#x90E8;&#x7F72;<code>Promise</code>&#x66F4;&#x597D;&#x7684;&#x9009;&#x62E9;&#x3002;</p>
+<h2 id="&#x57FA;&#x672C;&#x7528;&#x6CD5;">&#x57FA;&#x672C;&#x7528;&#x6CD5;</h2>
+<p>ES6&#x89C4;&#x5B9A;&#xFF0C;Promise&#x5BF9;&#x8C61;&#x662F;&#x4E00;&#x4E2A;&#x6784;&#x9020;&#x51FD;&#x6570;&#xFF0C;&#x7528;&#x6765;&#x751F;&#x6210;Promise&#x5B9E;&#x4F8B;&#x3002;</p>
+<p>&#x4E0B;&#x9762;&#x4EE3;&#x7801;&#x521B;&#x9020;&#x4E86;&#x4E00;&#x4E2A;Promise&#x5B9E;&#x4F8B;&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> promise = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Promise</span>(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">resolve, reject</span>) </span>{
+  <span class="hljs-comment">// ... some code</span>
+
+  <span class="hljs-keyword">if</span> (<span class="hljs-comment">/* &#x5F02;&#x6B65;&#x64CD;&#x4F5C;&#x6210;&#x529F; */</span>){
+    resolve(value);
+  } <span class="hljs-keyword">else</span> {
+    reject(error);
+  }
+});
+</code></pre>
+<p>Promise&#x6784;&#x9020;&#x51FD;&#x6570;&#x63A5;&#x53D7;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x4F5C;&#x4E3A;&#x53C2;&#x6570;&#xFF0C;&#x8BE5;&#x51FD;&#x6570;&#x7684;&#x4E24;&#x4E2A;&#x53C2;&#x6570;&#x5206;&#x522B;&#x662F;resolve&#x548C;reject&#x3002;&#x5B83;&#x4EEC;&#x662F;&#x4E24;&#x4E2A;&#x51FD;&#x6570;&#xFF0C;&#x7531;JavaScript&#x5F15;&#x64CE;&#x63D0;&#x4F9B;&#xFF0C;&#x4E0D;&#x7528;&#x81EA;&#x5DF1;&#x90E8;&#x7F72;&#x3002;</p>
+<p>resolve&#x51FD;&#x6570;&#x7684;&#x4F5C;&#x7528;&#x662F;&#xFF0C;&#x5C06;Promise&#x5BF9;&#x8C61;&#x7684;&#x72B6;&#x6001;&#x4ECE;&#x201C;&#x672A;&#x5B8C;&#x6210;&#x201D;&#x53D8;&#x4E3A;&#x201C;&#x6210;&#x529F;&#x201D;&#xFF08;&#x5373;&#x4ECE;Pending&#x53D8;&#x4E3A;Resolved&#xFF09;&#xFF0C;&#x5728;&#x5F02;&#x6B65;&#x64CD;&#x4F5C;&#x6210;&#x529F;&#x65F6;&#x8C03;&#x7528;&#xFF0C;&#x5E76;&#x5C06;&#x5F02;&#x6B65;&#x64CD;&#x4F5C;&#x7684;&#x7ED3;&#x679C;&#xFF0C;&#x4F5C;&#x4E3A;&#x53C2;&#x6570;&#x4F20;&#x9012;&#x51FA;&#x53BB;&#xFF1B;reject&#x51FD;&#x6570;&#x7684;&#x4F5C;&#x7528;&#x662F;&#xFF0C;&#x5C06;Promise&#x5BF9;&#x8C61;&#x7684;&#x72B6;&#x6001;&#x4ECE;&#x201C;&#x672A;&#x5B8C;&#x6210;&#x201D;&#x53D8;&#x4E3A;&#x201C;&#x5931;&#x8D25;&#x201D;&#xFF08;&#x5373;&#x4ECE;Pending&#x53D8;&#x4E3A;Rejected&#xFF09;&#xFF0C;&#x5728;&#x5F02;&#x6B65;&#x64CD;&#x4F5C;&#x5931;&#x8D25;&#x65F6;&#x8C03;&#x7528;&#xFF0C;&#x5E76;&#x5C06;&#x5F02;&#x6B65;&#x64CD;&#x4F5C;&#x62A5;&#x51FA;&#x7684;&#x9519;&#x8BEF;&#xFF0C;&#x4F5C;&#x4E3A;&#x53C2;&#x6570;&#x4F20;&#x9012;&#x51FA;&#x53BB;&#x3002;</p>
+<p>Promise&#x5B9E;&#x4F8B;&#x751F;&#x6210;&#x4EE5;&#x540E;&#xFF0C;&#x53EF;&#x4EE5;&#x7528;then&#x65B9;&#x6CD5;&#x5206;&#x522B;&#x6307;&#x5B9A;Resolved&#x72B6;&#x6001;&#x548C;Reject&#x72B6;&#x6001;&#x7684;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x3002;</p>
+<pre><code class="lang-javascript">promise.then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">value</span>) </span>{
+  <span class="hljs-comment">// success</span>
+}, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">value</span>) </span>{
+  <span class="hljs-comment">// failure</span>
+});
+</code></pre>
+<p>then&#x65B9;&#x6CD5;&#x53EF;&#x4EE5;&#x63A5;&#x53D7;&#x4E24;&#x4E2A;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x4F5C;&#x4E3A;&#x53C2;&#x6570;&#x3002;&#x7B2C;&#x4E00;&#x4E2A;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x662F;Promise&#x5BF9;&#x8C61;&#x7684;&#x72B6;&#x6001;&#x53D8;&#x4E3A;Resolved&#x65F6;&#x8C03;&#x7528;&#xFF0C;&#x7B2C;&#x4E8C;&#x4E2A;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x662F;Promise&#x5BF9;&#x8C61;&#x7684;&#x72B6;&#x6001;&#x53D8;&#x4E3A;Reject&#x65F6;&#x8C03;&#x7528;&#x3002;&#x5176;&#x4E2D;&#xFF0C;&#x7B2C;&#x4E8C;&#x4E2A;&#x51FD;&#x6570;&#x662F;&#x53EF;&#x9009;&#x7684;&#xFF0C;&#x4E0D;&#x4E00;&#x5B9A;&#x8981;&#x63D0;&#x4F9B;&#x3002;&#x8FD9;&#x4E24;&#x4E2A;&#x51FD;&#x6570;&#x90FD;&#x63A5;&#x53D7;Promise&#x5BF9;&#x8C61;&#x4F20;&#x51FA;&#x7684;&#x503C;&#x4F5C;&#x4E3A;&#x53C2;&#x6570;&#x3002;</p>
+<p>&#x4E0B;&#x9762;&#x662F;&#x4E00;&#x4E2A;Promise&#x5BF9;&#x8C61;&#x7684;&#x7B80;&#x5355;&#x4F8B;&#x5B50;&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">timeout</span>(<span class="hljs-params">ms</span>) </span>{
+  <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Promise</span>((resolve, reject) =&gt; {
+    setTimeout(resolve, ms, <span class="hljs-string">&apos;done&apos;</span>);
+  });
+}
+
+timeout(<span class="hljs-number">100</span>).then((value) =&gt; {
+  <span class="hljs-built_in">console</span>.log(value);
+});
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x4EE3;&#x7801;&#x4E2D;&#xFF0C;timeout&#x65B9;&#x6CD5;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;Promise&#x5B9E;&#x4F8B;&#xFF0C;&#x8868;&#x793A;&#x4E00;&#x6BB5;&#x65F6;&#x95F4;&#x4EE5;&#x540E;&#x624D;&#x4F1A;&#x53D1;&#x751F;&#x7684;&#x7ED3;&#x679C;&#x3002;&#x8FC7;&#x4E86;&#x6307;&#x5B9A;&#x7684;&#x65F6;&#x95F4;&#xFF08;ms&#x53C2;&#x6570;&#xFF09;&#x4EE5;&#x540E;&#xFF0C;Promise&#x5B9E;&#x4F8B;&#x7684;&#x72B6;&#x6001;&#x53D8;&#x4E3A;Resolved&#xFF0C;&#x5C31;&#x4F1A;&#x89E6;&#x53D1;then&#x65B9;&#x6CD5;&#x7ED1;&#x5B9A;&#x7684;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x3002;</p>
+<p>&#x4E0B;&#x9762;&#x662F;&#x5F02;&#x6B65;&#x52A0;&#x8F7D;&#x56FE;&#x7247;&#x7684;&#x4F8B;&#x5B50;&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">loadImageAsync</span>(<span class="hljs-params">url</span>) </span>{
+  <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Promise</span>(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">resolve, reject</span>) </span>{
+    <span class="hljs-keyword">var</span> image = <span class="hljs-keyword">new</span> Image();
+
+    image.onload = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+      resolve(image);
+    };
+
+    image.onerror = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+      reject(<span class="hljs-keyword">new</span> <span class="hljs-built_in">Error</span>(<span class="hljs-string">&apos;Could not load image at &apos;</span> + url));
+    };
+
+    image.src = url;
+  });
+}
+</code></pre>
+<p>&#x4E0B;&#x9762;&#x662F;&#x4E00;&#x4E2A;&#x7528;Promise&#x5BF9;&#x8C61;&#x5B9E;&#x73B0;&#x7684;Ajax&#x64CD;&#x4F5C;&#x7684;&#x4F8B;&#x5B50;&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> getJSON = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">url</span>) </span>{
+  <span class="hljs-keyword">var</span> promise = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Promise</span>(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">resolve, reject</span>)</span>{
+    <span class="hljs-keyword">var</span> client = <span class="hljs-keyword">new</span> XMLHttpRequest();
+    client.open(<span class="hljs-string">&quot;GET&quot;</span>, url);
+    client.onreadystatechange = handler;
+    client.responseType = <span class="hljs-string">&quot;json&quot;</span>;
+    client.setRequestHeader(<span class="hljs-string">&quot;Accept&quot;</span>, <span class="hljs-string">&quot;application/json&quot;</span>);
+    client.send();
+
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">handler</span>(<span class="hljs-params"></span>) </span>{
+      <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>.status === <span class="hljs-number">200</span>) {
+        resolve(<span class="hljs-keyword">this</span>.response);
+      } <span class="hljs-keyword">else</span> {
+        reject(<span class="hljs-keyword">new</span> <span class="hljs-built_in">Error</span>(<span class="hljs-keyword">this</span>.statusText));
+      }
+    };
+  });
+
+  <span class="hljs-keyword">return</span> promise;
+};
+
+getJSON(<span class="hljs-string">&quot;/posts.json&quot;</span>).then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">json</span>) </span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;Contents: &apos;</span> + json);
+}, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">error</span>) </span>{
+  <span class="hljs-built_in">console</span>.error(<span class="hljs-string">&apos;&#x51FA;&#x9519;&#x4E86;&apos;</span>, error);
+});
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x4EE3;&#x7801;&#x4E2D;&#xFF0C;getJSON&#x662F;&#x5BF9;XMLHttpRequest&#x5BF9;&#x8C61;&#x7684;&#x5C01;&#x88C5;&#xFF0C;&#x7528;&#x4E8E;&#x53D1;&#x51FA;&#x4E00;&#x4E2A;&#x9488;&#x5BF9;JSON&#x6570;&#x636E;&#x7684;HTTP&#x8BF7;&#x6C42;&#xFF0C;&#x5E76;&#x4E14;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;Promise&#x5BF9;&#x8C61;&#x3002;&#x9700;&#x8981;&#x6CE8;&#x610F;&#x7684;&#x662F;&#xFF0C;&#x5728;getJSON&#x5185;&#x90E8;&#xFF0C;resolve&#x51FD;&#x6570;&#x548C;reject&#x51FD;&#x6570;&#x8C03;&#x7528;&#x65F6;&#xFF0C;&#x90FD;&#x5E26;&#x6709;&#x53C2;&#x6570;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x8C03;&#x7528;resolve&#x51FD;&#x6570;&#x548C;reject&#x51FD;&#x6570;&#x65F6;&#x5E26;&#x6709;&#x53C2;&#x6570;&#xFF0C;&#x90A3;&#x4E48;&#x5B83;&#x4EEC;&#x7684;&#x53C2;&#x6570;&#x4F1A;&#x88AB;&#x4F20;&#x9012;&#x7ED9;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x3002;reject&#x51FD;&#x6570;&#x7684;&#x53C2;&#x6570;&#x901A;&#x5E38;&#x662F;Error&#x5BF9;&#x8C61;&#x7684;&#x5B9E;&#x4F8B;&#xFF0C;&#x8868;&#x793A;&#x629B;&#x51FA;&#x7684;&#x9519;&#x8BEF;&#xFF1B;resolve&#x51FD;&#x6570;&#x7684;&#x53C2;&#x6570;&#x9664;&#x4E86;&#x6B63;&#x5E38;&#x7684;&#x503C;&#x4EE5;&#x5916;&#xFF0C;&#x8FD8;&#x53EF;&#x80FD;&#x662F;&#x53E6;&#x4E00;&#x4E2A;Promise&#x5B9E;&#x4F8B;&#xFF0C;&#x8868;&#x793A;&#x5F02;&#x6B65;&#x64CD;&#x4F5C;&#x7684;&#x7ED3;&#x679C;&#x6709;&#x53EF;&#x80FD;&#x662F;&#x4E00;&#x4E2A;&#x503C;&#xFF0C;&#x4E5F;&#x6709;&#x53EF;&#x80FD;&#x662F;&#x53E6;&#x4E00;&#x4E2A;&#x5F02;&#x6B65;&#x64CD;&#x4F5C;&#xFF0C;&#x6BD4;&#x5982;&#x50CF;&#x4E0B;&#x9762;&#x8FD9;&#x6837;&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> p1 = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Promise</span>(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">resolve, reject</span>)</span>{
+  <span class="hljs-comment">// ...</span>
+});
+
+<span class="hljs-keyword">var</span> p2 = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Promise</span>(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">resolve, reject</span>)</span>{
+  <span class="hljs-comment">// ...</span>
+  resolve(p1);
+})
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x4EE3;&#x7801;&#x4E2D;&#xFF0C;p1&#x548C;p2&#x90FD;&#x662F;Promise&#x7684;&#x5B9E;&#x4F8B;&#xFF0C;&#x4F46;&#x662F;p2&#x7684;resolve&#x65B9;&#x6CD5;&#x5C06;p1&#x4F5C;&#x4E3A;&#x53C2;&#x6570;&#xFF0C;&#x5373;&#x4E00;&#x4E2A;&#x5F02;&#x6B65;&#x64CD;&#x4F5C;&#x7684;&#x7ED3;&#x679C;&#x662F;&#x8FD4;&#x56DE;&#x53E6;&#x4E00;&#x4E2A;&#x5F02;&#x6B65;&#x64CD;&#x4F5C;&#x3002;</p>
+<p>&#x6CE8;&#x610F;&#xFF0C;&#x8FD9;&#x65F6;p1&#x7684;&#x72B6;&#x6001;&#x5C31;&#x4F1A;&#x4F20;&#x9012;&#x7ED9;p2&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#xFF0C;p1&#x7684;&#x72B6;&#x6001;&#x51B3;&#x5B9A;&#x4E86;p2&#x7684;&#x72B6;&#x6001;&#x3002;&#x5982;&#x679C;p1&#x7684;&#x72B6;&#x6001;&#x662F;Pending&#xFF0C;&#x90A3;&#x4E48;p2&#x7684;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x5C31;&#x4F1A;&#x7B49;&#x5F85;p1&#x7684;&#x72B6;&#x6001;&#x6539;&#x53D8;&#xFF1B;&#x5982;&#x679C;p1&#x7684;&#x72B6;&#x6001;&#x5DF2;&#x7ECF;&#x662F;Resolved&#x6216;&#x8005;Rejected&#xFF0C;&#x90A3;&#x4E48;p2&#x7684;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x5C06;&#x4F1A;&#x7ACB;&#x523B;&#x6267;&#x884C;&#x3002;</p>
+<h2 id="promiseprototypethen">Promise.prototype.then()</h2>
+<p>Promise&#x5B9E;&#x4F8B;&#x5177;&#x6709;then&#x65B9;&#x6CD5;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#xFF0C;then&#x65B9;&#x6CD5;&#x662F;&#x5B9A;&#x4E49;&#x5728;&#x539F;&#x578B;&#x5BF9;&#x8C61;Promise.prototype&#x4E0A;&#x7684;&#x3002;&#x5B83;&#x7684;&#x4F5C;&#x7528;&#x662F;&#x4E3A;Promise&#x5B9E;&#x4F8B;&#x6DFB;&#x52A0;&#x72B6;&#x6001;&#x6539;&#x53D8;&#x65F6;&#x7684;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x3002;&#x524D;&#x9762;&#x8BF4;&#x8FC7;&#xFF0C;then&#x65B9;&#x6CD5;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x662F;Resolved&#x72B6;&#x6001;&#x7684;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#xFF0C;&#x7B2C;&#x4E8C;&#x4E2A;&#x53C2;&#x6570;&#xFF08;&#x53EF;&#x9009;&#xFF09;&#x662F;Rejected&#x72B6;&#x6001;&#x7684;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x3002;</p>
+<p>then&#x65B9;&#x6CD5;&#x8FD4;&#x56DE;&#x7684;&#x662F;&#x4E00;&#x4E2A;&#x65B0;&#x7684;Promise&#x5B9E;&#x4F8B;&#xFF08;&#x6CE8;&#x610F;&#xFF0C;&#x4E0D;&#x662F;&#x539F;&#x6765;&#x90A3;&#x4E2A;Promise&#x5B9E;&#x4F8B;&#xFF09;&#x3002;&#x56E0;&#x6B64;&#x53EF;&#x4EE5;&#x91C7;&#x7528;&#x94FE;&#x5F0F;&#x5199;&#x6CD5;&#xFF0C;&#x5373;then&#x65B9;&#x6CD5;&#x540E;&#x9762;&#x518D;&#x8C03;&#x7528;&#x53E6;&#x4E00;&#x4E2A;then&#x65B9;&#x6CD5;&#x3002;</p>
+<pre><code class="lang-javascript">getJSON(<span class="hljs-string">&quot;/posts.json&quot;</span>).then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">json</span>) </span>{
+  <span class="hljs-keyword">return</span> json.post;
+}).then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">post</span>) </span>{
+  <span class="hljs-comment">// ...</span>
+});
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x7684;&#x4EE3;&#x7801;&#x4F7F;&#x7528;then&#x65B9;&#x6CD5;&#xFF0C;&#x4F9D;&#x6B21;&#x6307;&#x5B9A;&#x4E86;&#x4E24;&#x4E2A;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x3002;&#x7B2C;&#x4E00;&#x4E2A;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x5B8C;&#x6210;&#x4EE5;&#x540E;&#xFF0C;&#x4F1A;&#x5C06;&#x8FD4;&#x56DE;&#x7ED3;&#x679C;&#x4F5C;&#x4E3A;&#x53C2;&#x6570;&#xFF0C;&#x4F20;&#x5165;&#x7B2C;&#x4E8C;&#x4E2A;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x3002;</p>
+<p>&#x91C7;&#x7528;&#x94FE;&#x5F0F;&#x7684;then&#xFF0C;&#x53EF;&#x4EE5;&#x6307;&#x5B9A;&#x4E00;&#x7EC4;&#x6309;&#x7167;&#x6B21;&#x5E8F;&#x8C03;&#x7528;&#x7684;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x3002;&#x8FD9;&#x65F6;&#xFF0C;&#x524D;&#x4E00;&#x4E2A;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#xFF0C;&#x6709;&#x53EF;&#x80FD;&#x8FD4;&#x56DE;&#x7684;&#x8FD8;&#x662F;&#x4E00;&#x4E2A;Promise&#x5BF9;&#x8C61;&#xFF08;&#x5373;&#x6709;&#x5F02;&#x6B65;&#x64CD;&#x4F5C;&#xFF09;&#xFF0C;&#x8FD9;&#x65F6;&#x540E;&#x4E00;&#x4E2A;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#xFF0C;&#x5C31;&#x4F1A;&#x7B49;&#x5F85;&#x8BE5;Promise&#x5BF9;&#x8C61;&#x7684;&#x72B6;&#x6001;&#x53D1;&#x751F;&#x53D8;&#x5316;&#xFF0C;&#x624D;&#x4F1A;&#x88AB;&#x8C03;&#x7528;&#x3002;</p>
+<pre><code class="lang-javascript">getJSON(<span class="hljs-string">&quot;/post/1.json&quot;</span>).then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">post</span>) </span>{
+  <span class="hljs-keyword">return</span> getJSON(post.commentURL);
+}).then(<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">funcA</span>(<span class="hljs-params">comments</span>) </span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;Resolved: &quot;</span>, comments);
+}, <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">funcB</span>(<span class="hljs-params">err</span>)</span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;Rejected: &quot;</span>, err);
+});
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x4EE3;&#x7801;&#x4E2D;&#xFF0C;&#x7B2C;&#x4E00;&#x4E2A;then&#x65B9;&#x6CD5;&#x6307;&#x5B9A;&#x7684;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#xFF0C;&#x8FD4;&#x56DE;&#x7684;&#x662F;&#x53E6;&#x4E00;&#x4E2A;Promise&#x5BF9;&#x8C61;&#x3002;&#x8FD9;&#x65F6;&#xFF0C;&#x7B2C;&#x4E8C;&#x4E2A;then&#x65B9;&#x6CD5;&#x6307;&#x5B9A;&#x7684;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#xFF0C;&#x5C31;&#x4F1A;&#x7B49;&#x5F85;&#x8FD9;&#x4E2A;&#x65B0;&#x7684;Promise&#x5BF9;&#x8C61;&#x72B6;&#x6001;&#x53D1;&#x751F;&#x53D8;&#x5316;&#x3002;&#x5982;&#x679C;&#x53D8;&#x4E3A;Resolved&#xFF0C;&#x5C31;&#x8C03;&#x7528;funcA&#xFF0C;&#x5982;&#x679C;&#x72B6;&#x6001;&#x53D8;&#x4E3A;Rejected&#xFF0C;&#x5C31;&#x8C03;&#x7528;funcB&#x3002;</p>
+<p>&#x5982;&#x679C;&#x91C7;&#x7528;&#x7BAD;&#x5934;&#x51FD;&#x6570;&#xFF0C;&#x4E0A;&#x9762;&#x7684;&#x4EE3;&#x7801;&#x53EF;&#x4EE5;&#x5199;&#x5F97;&#x66F4;&#x7B80;&#x6D01;&#x3002;</p>
+<pre><code class="lang-javascript">getJSON(<span class="hljs-string">&quot;/post/1.json&quot;</span>).then(
+  post =&gt; getJSON(post.commentURL)
+).then(
+  comments =&gt; <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;Resolved: &quot;</span>, comments),
+  err =&gt; <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;Rejected: &quot;</span>, err)
+);
+</code></pre>
+<h2 id="promiseprototypecatch">Promise.prototype.catch()</h2>
+<p>Promise.prototype.catch&#x65B9;&#x6CD5;&#x662F;<code>.then(null, rejection)</code>&#x7684;&#x522B;&#x540D;&#xFF0C;&#x7528;&#x4E8E;&#x6307;&#x5B9A;&#x53D1;&#x751F;&#x9519;&#x8BEF;&#x65F6;&#x7684;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x3002;</p>
+<pre><code class="lang-javascript">getJSON(<span class="hljs-string">&quot;/posts.json&quot;</span>).then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">posts</span>) </span>{
+  <span class="hljs-comment">// ...</span>
+}).catch(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">error</span>) </span>{
+  <span class="hljs-comment">// &#x5904;&#x7406;&#x524D;&#x4E00;&#x4E2A;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x8FD0;&#x884C;&#x65F6;&#x53D1;&#x751F;&#x7684;&#x9519;&#x8BEF;</span>
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;&#x53D1;&#x751F;&#x9519;&#x8BEF;&#xFF01;&apos;</span>, error);
+});
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x4EE3;&#x7801;&#x4E2D;&#xFF0C;getJSON&#x65B9;&#x6CD5;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;Promise&#x5BF9;&#x8C61;&#xFF0C;&#x5982;&#x679C;&#x8BE5;&#x5BF9;&#x8C61;&#x72B6;&#x6001;&#x53D8;&#x4E3A;Resolved&#xFF0C;&#x5219;&#x4F1A;&#x8C03;&#x7528;then&#x65B9;&#x6CD5;&#x6307;&#x5B9A;&#x7684;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#xFF1B;&#x5982;&#x679C;&#x5F02;&#x6B65;&#x64CD;&#x4F5C;&#x629B;&#x51FA;&#x9519;&#x8BEF;&#xFF0C;&#x72B6;&#x6001;&#x5C31;&#x4F1A;&#x53D8;&#x4E3A;Rejected&#xFF0C;&#x5C31;&#x4F1A;&#x8C03;&#x7528;catch&#x65B9;&#x6CD5;&#x6307;&#x5B9A;&#x7684;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#xFF0C;&#x5904;&#x7406;&#x8FD9;&#x4E2A;&#x9519;&#x8BEF;&#x3002;</p>
+<pre><code class="lang-javascript">p.then((val) =&gt; console.log(&quot;fulfilled:&quot;, val))
+  .catch((err) =&gt; console.log(&quot;rejected:&quot;, err));
+
+// &#x7B49;&#x540C;&#x4E8E;
+
+p.then((val) =&gt; console.log(fulfilled:&quot;, val))
+  .then(null, (err) =&gt; console.log(&quot;rejected:&quot;, err));
+</code></pre>
+<p>&#x4E0B;&#x9762;&#x662F;&#x4E00;&#x4E2A;&#x4F8B;&#x5B50;&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> promise = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Promise</span>(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">resolve, reject</span>) </span>{
+  <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Error</span>(<span class="hljs-string">&apos;test&apos;</span>)
+});
+promise.catch(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">error</span>) </span>{ <span class="hljs-built_in">console</span>.log(error) });
+<span class="hljs-comment">// Error: test</span>
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x4EE3;&#x7801;&#x4E2D;&#xFF0C;Promise&#x629B;&#x51FA;&#x4E00;&#x4E2A;&#x9519;&#x8BEF;&#xFF0C;&#x5C31;&#x88AB;catch&#x65B9;&#x6CD5;&#x6307;&#x5B9A;&#x7684;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x6355;&#x83B7;&#x3002;</p>
+<p>&#x5982;&#x679C;Promise&#x72B6;&#x6001;&#x5DF2;&#x7ECF;&#x53D8;&#x6210;resolved&#xFF0C;&#x518D;&#x629B;&#x51FA;&#x9519;&#x8BEF;&#x662F;&#x65E0;&#x6548;&#x7684;&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> promise = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Promise</span>(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">resolve, reject</span>) </span>{
+  resolve(<span class="hljs-string">&quot;ok&quot;</span>);
+  <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Error</span>(<span class="hljs-string">&apos;test&apos;</span>);
+});
+promise
+  .then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">value</span>) </span>{ <span class="hljs-built_in">console</span>.log(value) })
+  .catch(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">error</span>) </span>{ <span class="hljs-built_in">console</span>.log(error) });
+<span class="hljs-comment">// ok</span>
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x4EE3;&#x7801;&#x4E2D;&#xFF0C;Promise&#x5728;resolve&#x8BED;&#x53E5;&#x540E;&#x9762;&#xFF0C;&#x518D;&#x629B;&#x51FA;&#x9519;&#x8BEF;&#xFF0C;&#x4E0D;&#x4F1A;&#x88AB;&#x6355;&#x83B7;&#xFF0C;&#x7B49;&#x4E8E;&#x6CA1;&#x6709;&#x629B;&#x51FA;&#x3002;</p>
+<p>Promise&#x5BF9;&#x8C61;&#x7684;&#x9519;&#x8BEF;&#x5177;&#x6709;&#x201C;&#x5192;&#x6CE1;&#x201D;&#x6027;&#x8D28;&#xFF0C;&#x4F1A;&#x4E00;&#x76F4;&#x5411;&#x540E;&#x4F20;&#x9012;&#xFF0C;&#x76F4;&#x5230;&#x88AB;&#x6355;&#x83B7;&#x4E3A;&#x6B62;&#x3002;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#xFF0C;&#x9519;&#x8BEF;&#x603B;&#x662F;&#x4F1A;&#x88AB;&#x4E0B;&#x4E00;&#x4E2A;catch&#x8BED;&#x53E5;&#x6355;&#x83B7;&#x3002;</p>
+<pre><code class="lang-javascript">getJSON(<span class="hljs-string">&quot;/post/1.json&quot;</span>).then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">post</span>) </span>{
+  <span class="hljs-keyword">return</span> getJSON(post.commentURL);
+}).then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">comments</span>) </span>{
+  <span class="hljs-comment">// some code</span>
+}).catch(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">error</span>) </span>{
+  <span class="hljs-comment">// &#x5904;&#x7406;&#x524D;&#x9762;&#x4E09;&#x4E2A;Promise&#x4EA7;&#x751F;&#x7684;&#x9519;&#x8BEF;</span>
+});
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x4EE3;&#x7801;&#x4E2D;&#xFF0C;&#x4E00;&#x5171;&#x6709;&#x4E09;&#x4E2A;Promise&#x5BF9;&#x8C61;&#xFF1A;&#x4E00;&#x4E2A;&#x7531;getJSON&#x4EA7;&#x751F;&#xFF0C;&#x4E24;&#x4E2A;&#x7531;then&#x4EA7;&#x751F;&#x3002;&#x5B83;&#x4EEC;&#x4E4B;&#x4E2D;&#x4EFB;&#x4F55;&#x4E00;&#x4E2A;&#x629B;&#x51FA;&#x7684;&#x9519;&#x8BEF;&#xFF0C;&#x90FD;&#x4F1A;&#x88AB;&#x6700;&#x540E;&#x4E00;&#x4E2A;catch&#x6355;&#x83B7;&#x3002;</p>
+<p>&#x8DDF;&#x4F20;&#x7EDF;&#x7684;try/catch&#x4EE3;&#x7801;&#x5757;&#x4E0D;&#x540C;&#x7684;&#x662F;&#xFF0C;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x4F7F;&#x7528;catch&#x65B9;&#x6CD5;&#x6307;&#x5B9A;&#x9519;&#x8BEF;&#x5904;&#x7406;&#x7684;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#xFF0C;Promise&#x5BF9;&#x8C61;&#x629B;&#x51FA;&#x7684;&#x9519;&#x8BEF;&#x4E0D;&#x4F1A;&#x4F20;&#x9012;&#x5230;&#x5916;&#x5C42;&#x4EE3;&#x7801;&#xFF0C;&#x5373;&#x4E0D;&#x4F1A;&#x6709;&#x4EFB;&#x4F55;&#x53CD;&#x5E94;&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> someAsyncThing = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Promise</span>(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">resolve, reject</span>) </span>{
+    <span class="hljs-comment">// &#x4E0B;&#x9762;&#x4E00;&#x884C;&#x4F1A;&#x62A5;&#x9519;&#xFF0C;&#x56E0;&#x4E3A;x&#x6CA1;&#x6709;&#x58F0;&#x660E;</span>
+    resolve(x + <span class="hljs-number">2</span>);
+  });
+};
+
+someAsyncThing().then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;everything is great&apos;</span>);
+});
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x4EE3;&#x7801;&#x4E2D;&#xFF0C;someAsyncThing&#x51FD;&#x6570;&#x4EA7;&#x751F;&#x7684;Promise&#x5BF9;&#x8C61;&#x4F1A;&#x62A5;&#x9519;&#xFF0C;&#x4F46;&#x662F;&#x7531;&#x4E8E;&#x6CA1;&#x6709;&#x6307;&#x5B9A;catch&#x65B9;&#x6CD5;&#xFF0C;&#x8FD9;&#x4E2A;&#x9519;&#x8BEF;&#x4E0D;&#x4F1A;&#x88AB;&#x6355;&#x83B7;&#xFF0C;&#x4E5F;&#x4E0D;&#x4F1A;&#x4F20;&#x9012;&#x5230;&#x5916;&#x5C42;&#x4EE3;&#x7801;&#xFF0C;&#x5BFC;&#x81F4;&#x8FD0;&#x884C;&#x540E;&#x6CA1;&#x6709;&#x4EFB;&#x4F55;&#x8F93;&#x51FA;&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> promise = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Promise</span>(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">resolve, reject</span>) </span>{
+  resolve(<span class="hljs-string">&quot;ok&quot;</span>);
+  setTimeout(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{ <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Error</span>(<span class="hljs-string">&apos;test&apos;</span>) }, <span class="hljs-number">0</span>)
+});
+promise.then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">value</span>) </span>{ <span class="hljs-built_in">console</span>.log(value) });
+<span class="hljs-comment">// ok</span>
+<span class="hljs-comment">// Uncaught Error: test</span>
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x4EE3;&#x7801;&#x4E2D;&#xFF0C;Promise&#x6307;&#x5B9A;&#x5728;&#x4E0B;&#x4E00;&#x8F6E;&#x201C;&#x4E8B;&#x4EF6;&#x5FAA;&#x73AF;&#x201D;&#x518D;&#x629B;&#x51FA;&#x9519;&#x8BEF;&#xFF0C;&#x7ED3;&#x679C;&#x7531;&#x4E8E;&#x6CA1;&#x6709;&#x6307;&#x5B9A;&#x4F7F;&#x7528;try...catch&#x8BED;&#x53E5;&#xFF0C;&#x5C31;&#x5192;&#x6CE1;&#x5230;&#x6700;&#x5916;&#x5C42;&#xFF0C;&#x6210;&#x4E86;&#x672A;&#x6355;&#x83B7;&#x7684;&#x9519;&#x8BEF;&#x3002;&#x56E0;&#x4E3A;&#x6B64;&#x65F6;&#xFF0C;Promise&#x7684;&#x51FD;&#x6570;&#x4F53;&#x5DF2;&#x7ECF;&#x8FD0;&#x884C;&#x7ED3;&#x675F;&#x4E86;&#xFF0C;&#x6240;&#x4EE5;&#x8FD9;&#x4E2A;&#x9519;&#x8BEF;&#x662F;&#x5728;Promise&#x51FD;&#x6570;&#x4F53;&#x5916;&#x629B;&#x51FA;&#x7684;&#x3002;</p>
+<p>Node.js&#x6709;&#x4E00;&#x4E2A;unhandledRejection&#x4E8B;&#x4EF6;&#xFF0C;&#x4E13;&#x95E8;&#x76D1;&#x542C;&#x672A;&#x6355;&#x83B7;&#x7684;reject&#x9519;&#x8BEF;&#x3002;</p>
+<pre><code class="lang-javascript">process.on(<span class="hljs-string">&apos;unhandledRejection&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">err, p</span>) </span>{
+  <span class="hljs-built_in">console</span>.error(err.stack)
+});
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x4EE3;&#x7801;&#x4E2D;&#xFF0C;unhandledRejection&#x4E8B;&#x4EF6;&#x7684;&#x76D1;&#x542C;&#x51FD;&#x6570;&#x6709;&#x4E24;&#x4E2A;&#x53C2;&#x6570;&#xFF0C;&#x7B2C;&#x4E00;&#x4E2A;&#x662F;&#x9519;&#x8BEF;&#x5BF9;&#x8C61;&#xFF0C;&#x7B2C;&#x4E8C;&#x4E2A;&#x662F;&#x62A5;&#x9519;&#x7684;Promise&#x5B9E;&#x4F8B;&#xFF0C;&#x5B83;&#x53EF;&#x4EE5;&#x7528;&#x6765;&#x4E86;&#x89E3;&#x53D1;&#x751F;&#x9519;&#x8BEF;&#x7684;&#x73AF;&#x5883;&#x4FE1;&#x606F;&#x3002;&#x3002;</p>
+<p>&#x9700;&#x8981;&#x6CE8;&#x610F;&#x7684;&#x662F;&#xFF0C;catch&#x65B9;&#x6CD5;&#x8FD4;&#x56DE;&#x7684;&#x8FD8;&#x662F;&#x4E00;&#x4E2A;Promise&#x5BF9;&#x8C61;&#xFF0C;&#x56E0;&#x6B64;&#x540E;&#x9762;&#x8FD8;&#x53EF;&#x4EE5;&#x63A5;&#x7740;&#x8C03;&#x7528;then&#x65B9;&#x6CD5;&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> someAsyncThing = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Promise</span>(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">resolve, reject</span>) </span>{
+    <span class="hljs-comment">// &#x4E0B;&#x9762;&#x4E00;&#x884C;&#x4F1A;&#x62A5;&#x9519;&#xFF0C;&#x56E0;&#x4E3A;x&#x6CA1;&#x6709;&#x58F0;&#x660E;</span>
+    resolve(x + <span class="hljs-number">2</span>);
+  });
+};
+
+someAsyncThing().then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">return</span> someOtherAsyncThing();
+}).catch(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">error</span>) </span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;oh no&apos;</span>, error);
+}).then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;carry on&apos;</span>);
+});
+<span class="hljs-comment">// oh no [ReferenceError: x is not defined]</span>
+<span class="hljs-comment">// carry on</span>
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x4EE3;&#x7801;&#x8FD0;&#x884C;&#x5B8C;catch&#x65B9;&#x6CD5;&#x6307;&#x5B9A;&#x7684;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#xFF0C;&#x4F1A;&#x63A5;&#x7740;&#x8FD0;&#x884C;&#x540E;&#x9762;&#x90A3;&#x4E2A;then&#x65B9;&#x6CD5;&#x6307;&#x5B9A;&#x7684;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x3002;</p>
+<p>catch&#x65B9;&#x6CD5;&#x4E4B;&#x4E2D;&#xFF0C;&#x8FD8;&#x80FD;&#x518D;&#x629B;&#x51FA;&#x9519;&#x8BEF;&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> someAsyncThing = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Promise</span>(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">resolve, reject</span>) </span>{
+    <span class="hljs-comment">// &#x4E0B;&#x9762;&#x4E00;&#x884C;&#x4F1A;&#x62A5;&#x9519;&#xFF0C;&#x56E0;&#x4E3A;x&#x6CA1;&#x6709;&#x58F0;&#x660E;</span>
+    resolve(x + <span class="hljs-number">2</span>);
+  });
+};
+
+someAsyncThing().then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">return</span> someOtherAsyncThing();
+}).catch(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">error</span>) </span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;oh no&apos;</span>, error);
+  <span class="hljs-comment">// &#x4E0B;&#x9762;&#x4E00;&#x884C;&#x4F1A;&#x62A5;&#x9519;&#xFF0C;&#x56E0;&#x4E3A;y&#x6CA1;&#x6709;&#x58F0;&#x660E;</span>
+  y + <span class="hljs-number">2</span>;
+}).then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;carry on&apos;</span>);
+});
+<span class="hljs-comment">// oh no [ReferenceError: x is not defined]</span>
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x4EE3;&#x7801;&#x4E2D;&#xFF0C;catch&#x65B9;&#x6CD5;&#x629B;&#x51FA;&#x4E00;&#x4E2A;&#x9519;&#x8BEF;&#xFF0C;&#x56E0;&#x4E3A;&#x540E;&#x9762;&#x6CA1;&#x6709;&#x522B;&#x7684;catch&#x65B9;&#x6CD5;&#x4E86;&#xFF0C;&#x5BFC;&#x81F4;&#x8FD9;&#x4E2A;&#x9519;&#x8BEF;&#x4E0D;&#x4F1A;&#x88AB;&#x6355;&#x83B7;&#xFF0C;&#x4E5F;&#x4E0D;&#x4F1A;&#x4F20;&#x9012;&#x5230;&#x5916;&#x5C42;&#x3002;&#x5982;&#x679C;&#x6539;&#x5199;&#x4E00;&#x4E0B;&#xFF0C;&#x7ED3;&#x679C;&#x5C31;&#x4E0D;&#x4E00;&#x6837;&#x4E86;&#x3002;</p>
+<pre><code class="lang-javascript">someAsyncThing().then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">return</span> someOtherAsyncThing();
+}).catch(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">error</span>) </span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;oh no&apos;</span>, error);
+  <span class="hljs-comment">// &#x4E0B;&#x9762;&#x4E00;&#x884C;&#x4F1A;&#x62A5;&#x9519;&#xFF0C;&#x56E0;&#x4E3A;y&#x6CA1;&#x6709;&#x58F0;&#x660E;</span>
+  y + <span class="hljs-number">2</span>;
+}).catch(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">error</span>) </span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;carry on&apos;</span>, error);
+});
+<span class="hljs-comment">// oh no [ReferenceError: x is not defined]</span>
+<span class="hljs-comment">// carry on [ReferenceError: y is not defined]</span>
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x4EE3;&#x7801;&#x4E2D;&#xFF0C;&#x7B2C;&#x4E8C;&#x4E2A;catch&#x65B9;&#x6CD5;&#x7528;&#x6765;&#x6355;&#x83B7;&#xFF0C;&#x524D;&#x4E00;&#x4E2A;catch&#x65B9;&#x6CD5;&#x629B;&#x51FA;&#x7684;&#x9519;&#x8BEF;&#x3002;</p>
+<h2 id="promiseall">Promise.all()</h2>
+<p>Promise.all&#x65B9;&#x6CD5;&#x7528;&#x4E8E;&#x5C06;&#x591A;&#x4E2A;Promise&#x5B9E;&#x4F8B;&#xFF0C;&#x5305;&#x88C5;&#x6210;&#x4E00;&#x4E2A;&#x65B0;&#x7684;Promise&#x5B9E;&#x4F8B;&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> p = <span class="hljs-built_in">Promise</span>.all([p1,p2,p3]);
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x4EE3;&#x7801;&#x4E2D;&#xFF0C;Promise.all&#x65B9;&#x6CD5;&#x63A5;&#x53D7;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;&#x4F5C;&#x4E3A;&#x53C2;&#x6570;&#xFF0C;p1&#x3001;p2&#x3001;p3&#x90FD;&#x662F;Promise&#x5BF9;&#x8C61;&#x7684;&#x5B9E;&#x4F8B;&#x3002;&#xFF08;Promise.all&#x65B9;&#x6CD5;&#x7684;&#x53C2;&#x6570;&#x4E0D;&#x4E00;&#x5B9A;&#x662F;&#x6570;&#x7EC4;&#xFF0C;&#x4F46;&#x662F;&#x5FC5;&#x987B;&#x5177;&#x6709;iterator&#x63A5;&#x53E3;&#xFF0C;&#x4E14;&#x8FD4;&#x56DE;&#x7684;&#x6BCF;&#x4E2A;&#x6210;&#x5458;&#x90FD;&#x662F;Promise&#x5B9E;&#x4F8B;&#x3002;&#xFF09;</p>
+<p>p&#x7684;&#x72B6;&#x6001;&#x7531;p1&#x3001;p2&#x3001;p3&#x51B3;&#x5B9A;&#xFF0C;&#x5206;&#x6210;&#x4E24;&#x79CD;&#x60C5;&#x51B5;&#x3002;</p>
+<p>&#xFF08;1&#xFF09;&#x53EA;&#x6709;p1&#x3001;p2&#x3001;p3&#x7684;&#x72B6;&#x6001;&#x90FD;&#x53D8;&#x6210;fulfilled&#xFF0C;p&#x7684;&#x72B6;&#x6001;&#x624D;&#x4F1A;&#x53D8;&#x6210;fulfilled&#xFF0C;&#x6B64;&#x65F6;p1&#x3001;p2&#x3001;p3&#x7684;&#x8FD4;&#x56DE;&#x503C;&#x7EC4;&#x6210;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;&#xFF0C;&#x4F20;&#x9012;&#x7ED9;p&#x7684;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x3002;</p>
+<p>&#xFF08;2&#xFF09;&#x53EA;&#x8981;p1&#x3001;p2&#x3001;p3&#x4E4B;&#x4E2D;&#x6709;&#x4E00;&#x4E2A;&#x88AB;rejected&#xFF0C;p&#x7684;&#x72B6;&#x6001;&#x5C31;&#x53D8;&#x6210;rejected&#xFF0C;&#x6B64;&#x65F6;&#x7B2C;&#x4E00;&#x4E2A;&#x88AB;reject&#x7684;&#x5B9E;&#x4F8B;&#x7684;&#x8FD4;&#x56DE;&#x503C;&#xFF0C;&#x4F1A;&#x4F20;&#x9012;&#x7ED9;p&#x7684;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x3002;</p>
+<p>&#x4E0B;&#x9762;&#x662F;&#x4E00;&#x4E2A;&#x5177;&#x4F53;&#x7684;&#x4F8B;&#x5B50;&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// &#x751F;&#x6210;&#x4E00;&#x4E2A;Promise&#x5BF9;&#x8C61;&#x7684;&#x6570;&#x7EC4;</span>
+<span class="hljs-keyword">var</span> promises = [<span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">5</span>, <span class="hljs-number">7</span>, <span class="hljs-number">11</span>, <span class="hljs-number">13</span>].map(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">id</span>)</span>{
+  <span class="hljs-keyword">return</span> getJSON(<span class="hljs-string">&quot;/post/&quot;</span> + id + <span class="hljs-string">&quot;.json&quot;</span>);
+});
+
+<span class="hljs-built_in">Promise</span>.all(promises).then(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">posts</span>) </span>{
+  <span class="hljs-comment">// ...</span>
+}).catch(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">reason</span>)</span>{
+  <span class="hljs-comment">// ...</span>
+});
+</code></pre>
+<h2 id="promiserace">Promise.race()</h2>
+<p>Promise.race&#x65B9;&#x6CD5;&#x540C;&#x6837;&#x662F;&#x5C06;&#x591A;&#x4E2A;Promise&#x5B9E;&#x4F8B;&#xFF0C;&#x5305;&#x88C5;&#x6210;&#x4E00;&#x4E2A;&#x65B0;&#x7684;Promise&#x5B9E;&#x4F8B;&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> p = <span class="hljs-built_in">Promise</span>.race([p1,p2,p3]);
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x4EE3;&#x7801;&#x4E2D;&#xFF0C;&#x53EA;&#x8981;p1&#x3001;p2&#x3001;p3&#x4E4B;&#x4E2D;&#x6709;&#x4E00;&#x4E2A;&#x5B9E;&#x4F8B;&#x7387;&#x5148;&#x6539;&#x53D8;&#x72B6;&#x6001;&#xFF0C;p&#x7684;&#x72B6;&#x6001;&#x5C31;&#x8DDF;&#x7740;&#x6539;&#x53D8;&#x3002;&#x90A3;&#x4E2A;&#x7387;&#x5148;&#x6539;&#x53D8;&#x7684;Promise&#x5B9E;&#x4F8B;&#x7684;&#x8FD4;&#x56DE;&#x503C;&#xFF0C;&#x5C31;&#x4F20;&#x9012;&#x7ED9;p&#x7684;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x3002;</p>
+<p>&#x5982;&#x679C;Promise.all&#x65B9;&#x6CD5;&#x548C;Promise.race&#x65B9;&#x6CD5;&#x7684;&#x53C2;&#x6570;&#xFF0C;&#x4E0D;&#x662F;Promise&#x5B9E;&#x4F8B;&#xFF0C;&#x5C31;&#x4F1A;&#x5148;&#x8C03;&#x7528;&#x4E0B;&#x9762;&#x8BB2;&#x5230;&#x7684;Promise.resolve&#x65B9;&#x6CD5;&#xFF0C;&#x5C06;&#x53C2;&#x6570;&#x8F6C;&#x4E3A;Promise&#x5B9E;&#x4F8B;&#xFF0C;&#x518D;&#x8FDB;&#x4E00;&#x6B65;&#x5904;&#x7406;&#x3002;</p>
+<h2 id="promiseresolve">Promise.resolve()</h2>
+<p>&#x6709;&#x65F6;&#x9700;&#x8981;&#x5C06;&#x73B0;&#x6709;&#x5BF9;&#x8C61;&#x8F6C;&#x4E3A;Promise&#x5BF9;&#x8C61;&#xFF0C;Promise.resolve&#x65B9;&#x6CD5;&#x5C31;&#x8D77;&#x5230;&#x8FD9;&#x4E2A;&#x4F5C;&#x7528;&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> jsPromise = <span class="hljs-built_in">Promise</span>.resolve($.ajax(<span class="hljs-string">&apos;/whatever.json&apos;</span>));
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x4EE3;&#x7801;&#x5C06;jQuery&#x751F;&#x6210;deferred&#x5BF9;&#x8C61;&#xFF0C;&#x8F6C;&#x4E3A;&#x4E00;&#x4E2A;&#x65B0;&#x7684;Promise&#x5BF9;&#x8C61;&#x3002;</p>
+<p>&#x5982;&#x679C;Promise.resolve&#x65B9;&#x6CD5;&#x7684;&#x53C2;&#x6570;&#xFF0C;&#x4E0D;&#x662F;&#x5177;&#x6709;then&#x65B9;&#x6CD5;&#x7684;&#x5BF9;&#x8C61;&#xFF08;&#x53C8;&#x79F0;thenable&#x5BF9;&#x8C61;&#xFF09;&#xFF0C;&#x5219;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x65B0;&#x7684;Promise&#x5BF9;&#x8C61;&#xFF0C;&#x4E14;&#x5B83;&#x7684;&#x72B6;&#x6001;&#x4E3A;Resolved&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> p = <span class="hljs-built_in">Promise</span>.resolve(<span class="hljs-string">&apos;Hello&apos;</span>);
+
+p.then(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">s</span>)</span>{
+  <span class="hljs-built_in">console</span>.log(s)
+});
+<span class="hljs-comment">// Hello</span>
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x4EE3;&#x7801;&#x751F;&#x6210;&#x4E00;&#x4E2A;&#x65B0;&#x7684;Promise&#x5BF9;&#x8C61;&#x7684;&#x5B9E;&#x4F8B;p&#x3002;&#x7531;&#x4E8E;&#x5B57;&#x7B26;&#x4E32;Hello&#x4E0D;&#x5C5E;&#x4E8E;&#x5F02;&#x6B65;&#x64CD;&#x4F5C;&#xFF08;&#x5224;&#x65AD;&#x65B9;&#x6CD5;&#x662F;&#x5B83;&#x4E0D;&#x662F;&#x5177;&#x6709;then&#x65B9;&#x6CD5;&#x7684;&#x5BF9;&#x8C61;&#xFF09;&#xFF0C;&#x8FD4;&#x56DE;Promise&#x5B9E;&#x4F8B;&#x7684;&#x72B6;&#x6001;&#x4ECE;&#x4E00;&#x751F;&#x6210;&#x5C31;&#x662F;Resolved&#xFF0C;&#x6240;&#x4EE5;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x4F1A;&#x7ACB;&#x5373;&#x6267;&#x884C;&#x3002;Promise.resolve&#x65B9;&#x6CD5;&#x7684;&#x53C2;&#x6570;&#xFF0C;&#x4F1A;&#x540C;&#x65F6;&#x4F20;&#x7ED9;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x3002;</p>
+<p>Promise.resolve&#x65B9;&#x6CD5;&#x5141;&#x8BB8;&#x8C03;&#x7528;&#x65F6;&#x4E0D;&#x5E26;&#x53C2;&#x6570;&#x3002;&#x6240;&#x4EE5;&#xFF0C;&#x5982;&#x679C;&#x5E0C;&#x671B;&#x5F97;&#x5230;&#x4E00;&#x4E2A;Promise&#x5BF9;&#x8C61;&#xFF0C;&#x6BD4;&#x8F83;&#x65B9;&#x4FBF;&#x7684;&#x65B9;&#x6CD5;&#x5C31;&#x662F;&#x76F4;&#x63A5;&#x8C03;&#x7528;Promise.resolve&#x65B9;&#x6CD5;&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> p = <span class="hljs-built_in">Promise</span>.resolve();
+
+p.then(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+  <span class="hljs-comment">// ...</span>
+});
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x4EE3;&#x7801;&#x7684;&#x53D8;&#x91CF;p&#x5C31;&#x662F;&#x4E00;&#x4E2A;Promise&#x5BF9;&#x8C61;&#x3002;</p>
+<p>&#x5982;&#x679C;Promise.resolve&#x65B9;&#x6CD5;&#x7684;&#x53C2;&#x6570;&#x662F;&#x4E00;&#x4E2A;Promise&#x5B9E;&#x4F8B;&#xFF0C;&#x5219;&#x4F1A;&#x88AB;&#x539F;&#x5C01;&#x4E0D;&#x52A8;&#x5730;&#x8FD4;&#x56DE;&#x3002;</p>
+<h2 id="promisereject">Promise.reject()</h2>
+<p>Promise.reject(reason)&#x65B9;&#x6CD5;&#x4E5F;&#x4F1A;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x65B0;&#x7684;Promise&#x5B9E;&#x4F8B;&#xFF0C;&#x8BE5;&#x5B9E;&#x4F8B;&#x7684;&#x72B6;&#x6001;&#x4E3A;rejected&#x3002;Promise.reject&#x65B9;&#x6CD5;&#x7684;&#x53C2;&#x6570;reason&#xFF0C;&#x4F1A;&#x88AB;&#x4F20;&#x9012;&#x7ED9;&#x5B9E;&#x4F8B;&#x7684;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x3002;</p>
+<pre><code class="lang-javascript">
+<span class="hljs-keyword">var</span> p = <span class="hljs-built_in">Promise</span>.reject(<span class="hljs-string">&apos;&#x51FA;&#x9519;&#x4E86;&apos;</span>);
+
+p.then(<span class="hljs-literal">null</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">s</span>)</span>{
+  <span class="hljs-built_in">console</span>.log(s)
+});
+<span class="hljs-comment">// &#x51FA;&#x9519;&#x4E86;</span>
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x4EE3;&#x7801;&#x751F;&#x6210;&#x4E00;&#x4E2A;Promise&#x5BF9;&#x8C61;&#x7684;&#x5B9E;&#x4F8B;p&#xFF0C;&#x72B6;&#x6001;&#x4E3A;rejected&#xFF0C;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x4F1A;&#x7ACB;&#x5373;&#x6267;&#x884C;&#x3002;</p>
+<h2 id="&#x5E94;&#x7528;">&#x5E94;&#x7528;</h2>
+<h3 id="&#x52A0;&#x8F7D;&#x56FE;&#x7247;">&#x52A0;&#x8F7D;&#x56FE;&#x7247;</h3>
+<p>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5C06;&#x56FE;&#x7247;&#x7684;&#x52A0;&#x8F7D;&#x5199;&#x6210;&#x4E00;&#x4E2A;<code>Promise</code>&#xFF0C;&#x4E00;&#x65E6;&#x52A0;&#x8F7D;&#x5B8C;&#x6210;&#xFF0C;<code>Promise</code>&#x7684;&#x72B6;&#x6001;&#x5C31;&#x53D1;&#x751F;&#x53D8;&#x5316;&#x3002;</p>
+<pre><code class="lang-javascript">conset preloadImage = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">path</span>) </span>{
+  <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Promise</span>(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">resolve, reject</span>) </span>{
+    <span class="hljs-keyword">var</span> image = <span class="hljs-keyword">new</span> Image();
+    image.onload  = resolve;
+    image.onerror = reject;
+    image.src = path;
+  });
+};
+</code></pre>
+<h3 id="generator&#x51FD;&#x6570;&#x4E0E;promise&#x7684;&#x7ED3;&#x5408;">Generator&#x51FD;&#x6570;&#x4E0E;Promise&#x7684;&#x7ED3;&#x5408;</h3>
+<p>&#x4F7F;&#x7528;Generator&#x51FD;&#x6570;&#x7BA1;&#x7406;&#x6D41;&#x7A0B;&#xFF0C;&#x9047;&#x5230;&#x5F02;&#x6B65;&#x64CD;&#x4F5C;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x901A;&#x5E38;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;<code>Promise</code>&#x5BF9;&#x8C61;&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getFoo</span> (<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Promise</span>(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">resolve, reject</span>)</span>{
+    resolve(<span class="hljs-string">&apos;foo&apos;</span>);
+  });
+}
+
+<span class="hljs-keyword">var</span> g = <span class="hljs-function"><span class="hljs-keyword">function</span>* (<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">try</span> {
+    <span class="hljs-keyword">var</span> foo = <span class="hljs-keyword">yield</span> getFoo();
+    <span class="hljs-built_in">console</span>.log(foo);
+  } <span class="hljs-keyword">catch</span> (e) {
+    <span class="hljs-built_in">console</span>.log(e);
+  }
+};
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">run</span> (<span class="hljs-params">generator</span>) </span>{
+  <span class="hljs-keyword">var</span> it = generator();
+
+  <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">go</span>(<span class="hljs-params">result</span>) </span>{
+    <span class="hljs-keyword">if</span> (result.done) <span class="hljs-keyword">return</span> result.value;
+
+    <span class="hljs-keyword">return</span> result.value.then(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">value</span>) </span>{
+      <span class="hljs-keyword">return</span> go(it.next(value));
+    }, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">error</span>) </span>{
+      <span class="hljs-keyword">return</span> go(it.throw(value));
+    });
+  }
+
+  go(it.next());
+}
+
+run(g);
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x4EE3;&#x7801;&#x7684;Generator&#x51FD;&#x6570;<code>g</code>&#x4E4B;&#x4E2D;&#xFF0C;&#x6709;&#x4E00;&#x4E2A;&#x5F02;&#x6B65;&#x64CD;&#x4F5C;<code>getFoo</code>&#xFF0C;&#x5B83;&#x8FD4;&#x56DE;&#x7684;&#x5C31;&#x662F;&#x4E00;&#x4E2A;<code>Promise</code>&#x5BF9;&#x8C61;&#x3002;&#x51FD;&#x6570;<code>run</code>&#x7528;&#x6765;&#x5904;&#x7406;&#x8FD9;&#x4E2A;<code>Promise</code>&#x5BF9;&#x8C61;&#xFF0C;&#x5E76;&#x8C03;&#x7528;&#x4E0B;&#x4E00;&#x4E2A;<code>next</code>&#x65B9;&#x6CD5;&#x3002;</p>
+<h2 id="async&#x51FD;&#x6570;">async&#x51FD;&#x6570;</h2>
+<p>async&#x51FD;&#x6570;&#x4E0E;Promise&#x3001;Generator&#x51FD;&#x6570;&#x4E00;&#x6837;&#xFF0C;&#x662F;&#x7528;&#x6765;&#x53D6;&#x4EE3;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x3001;&#x89E3;&#x51B3;&#x5F02;&#x6B65;&#x64CD;&#x4F5C;&#x7684;&#x4E00;&#x79CD;&#x65B9;&#x6CD5;&#x3002;&#x5B83;&#x672C;&#x8D28;&#x4E0A;&#x662F;Generator&#x51FD;&#x6570;&#x7684;&#x8BED;&#x6CD5;&#x7CD6;&#x3002;async&#x51FD;&#x6570;&#x5E76;&#x4E0D;&#x5C5E;&#x4E8E;ES6&#xFF0C;&#x800C;&#x662F;&#x88AB;&#x5217;&#x5165;&#x4E86;ES7&#xFF0C;&#x4F46;&#x662F;traceur&#x3001;Babel.js&#x3001;regenerator&#x7B49;&#x8F6C;&#x7801;&#x5668;&#x5DF2;&#x7ECF;&#x652F;&#x6301;&#x8FD9;&#x4E2A;&#x529F;&#x80FD;&#xFF0C;&#x8F6C;&#x7801;&#x540E;&#x7ACB;&#x523B;&#x5C31;&#x80FD;&#x4F7F;&#x7528;&#x3002;</p>
+<p>async&#x51FD;&#x6570;&#x7684;&#x8BE6;&#x7EC6;&#x4ECB;&#x7ECD;&#xFF0C;&#x8BF7;&#x770B;&#x300A;&#x5F02;&#x6B65;&#x64CD;&#x4F5C;&#x300B;&#x4E00;&#x7AE0;&#x3002;</p>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../../ecmascript6/docs/generator.html" class="navigation navigation-prev " aria-label="Previous page: Generator函数"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../../ecmascript6/docs/async.html" class="navigation navigation-next " aria-label="Next page: 异步操作和Async函数"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+ 
+<script src="../../gitbook/app-min.js"></script>
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-disqus/plugin.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-fontsettings/fontsettings.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"disqus":{"shortName":"f2edocs","useIdentifier":false},"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+ 
+    <div class="footer">https://github.com/simonguo/f2edocs.com </div>
+    
+    <div style="display:none" id="cnzz_tracker">
+        <script src="http://s9.cnzz.com/stat.php?id=1256491313&web_id=1256491313" language="JavaScript"></script>
+    </div>
+    
+</body>
+
+
+
+</html>

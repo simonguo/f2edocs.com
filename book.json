@@ -4,27 +4,27 @@
         {
             "name": "books",
             "title": "书籍",
-            "url": "/dist/books/"
+            "url": "/docs/books/"
         },
         {
             "name": "interview",
             "title": "面试",
-            "url": "/dist/interview/"
+            "url": "/docs/interview/"
         },
         {
             "name": "collect",
             "title": "牛人与社区",
-            "url": "/dist/collect/"
+            "url": "/docs/collect/"
         },
         {
             "name": "style-guide",
             "title": "规范",
-            "url": "/dist/style-guide/"
+            "url": "/docs/style-guide/"
         },
         {
             "name": "reference",
             "title": "参考",
-            "url": "/dist/reference/"
+            "url": "/docs/reference/"
         },
         {
             "title": "Github",
