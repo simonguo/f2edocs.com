@@ -74,7 +74,7 @@
         data-chapter-title="过滤器"
         data-filepath="AngularjsTutorial_cn/09.md"
         data-basepath=".."
-        data-revision="Sun Feb 19 2017 15:38:14 GMT+0800 (CST)"
+        data-revision="Mon Feb 20 2017 10:49:42 GMT+0800 (CST)"
         data-innerlanguage="">
     
 
@@ -1827,46 +1827,50 @@ angular.module(&apos;phonecat&apos;, [&apos;phonecatFilters&apos;]).
 <pre><code>{{ expression | filter }}
 </code></pre><p>&#x6211;&#x4EEC;&#x628A;&#x8FC7;&#x6EE4;&#x5668;&#x5E94;&#x7528;&#x5230;&#x624B;&#x673A;&#x8BE6;&#x7EC6;&#x4FE1;&#x606F;&#x6A21;&#x677F;&#x4E2D;&#xFF1A;</p>
 <p><strong>app/partials/phone-detail.html</strong></p>
-<pre><code>...
-    &lt;dl&gt;
-      &lt;dt&gt;Infrared&lt;/dt&gt;
-      &lt;dd&gt;{{phone.connectivity.infrared | checkmark}}&lt;/dd&gt;
-      &lt;dt&gt;GPS&lt;/dt&gt;
-      &lt;dd&gt;{{phone.connectivity.gps | checkmark}}&lt;/dd&gt;
-    &lt;/dl&gt;
+<pre><code class="lang-html">...
+    <span class="hljs-tag">&lt;<span class="hljs-name">dl</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">dt</span>&gt;</span>Infrared<span class="hljs-tag">&lt;/<span class="hljs-name">dt</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">dd</span>&gt;</span>{{phone.connectivity.infrared | checkmark}}<span class="hljs-tag">&lt;/<span class="hljs-name">dd</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">dt</span>&gt;</span>GPS<span class="hljs-tag">&lt;/<span class="hljs-name">dt</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">dd</span>&gt;</span>{{phone.connectivity.gps | checkmark}}<span class="hljs-tag">&lt;/<span class="hljs-name">dd</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">dl</span>&gt;</span>
 ...
-</code></pre><h2 id="&#x6D4B;&#x8BD5;">&#x6D4B;&#x8BD5;</h2>
+</code></pre>
+<h2 id="&#x6D4B;&#x8BD5;">&#x6D4B;&#x8BD5;</h2>
 <p>&#x8FC7;&#x6EE4;&#x5668;&#x548C;&#x5176;&#x4ED6;&#x7EC4;&#x4EF6;&#x4E00;&#x6837;&#xFF0C;&#x5E94;&#x8BE5;&#x88AB;&#x6D4B;&#x8BD5;&#xFF0C;&#x5E76;&#x4E14;&#x8FD9;&#x4E9B;&#x6D4B;&#x8BD5;&#x5B9E;&#x9645;&#x4E0A;&#x5F88;&#x5BB9;&#x6613;&#x5B8C;&#x6210;&#x3002;</p>
 <p><strong>test/unit/filtersSpec.js</strong></p>
-<pre><code>describe(&apos;filter&apos;, function() {
+<pre><code class="lang-js">describe(<span class="hljs-string">&apos;filter&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
 
-  beforeEach(module(&apos;phonecatFilters&apos;));
+  beforeEach(<span class="hljs-built_in">module</span>(<span class="hljs-string">&apos;phonecatFilters&apos;</span>));
 
 
-  describe(&apos;checkmark&apos;, function() {
+  describe(<span class="hljs-string">&apos;checkmark&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
 
-    it(&apos;should convert boolean values to unicode checkmark or cross&apos;,
-        inject(function(checkmarkFilter) {
-      expect(checkmarkFilter(true)).toBe(&apos;\u2713&apos;);
-      expect(checkmarkFilter(false)).toBe(&apos;\u2718&apos;);
+    it(<span class="hljs-string">&apos;should convert boolean values to unicode checkmark or cross&apos;</span>,
+        inject(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">checkmarkFilter</span>) </span>{
+      expect(checkmarkFilter(<span class="hljs-literal">true</span>)).toBe(<span class="hljs-string">&apos;\u2713&apos;</span>);
+      expect(checkmarkFilter(<span class="hljs-literal">false</span>)).toBe(<span class="hljs-string">&apos;\u2718&apos;</span>);
     }));
   });
 });
-</code></pre><p>&#x6CE8;&#x610F;&#x5728;&#x6267;&#x884C;&#x4EFB;&#x4F55;&#x8FC7;&#x6EE4;&#x5668;&#x6D4B;&#x8BD5;&#x4E4B;&#x524D;&#xFF0C;&#x4F60;&#x9700;&#x8981;&#x4E3A;<code>phonecatFilters</code>&#x6A21;&#x5757;&#x914D;&#x7F6E;&#x6211;&#x4EEC;&#x7684;&#x6D4B;&#x8BD5;&#x6CE8;&#x5165;&#x5668;&#x3002;</p>
+</code></pre>
+<p>&#x6CE8;&#x610F;&#x5728;&#x6267;&#x884C;&#x4EFB;&#x4F55;&#x8FC7;&#x6EE4;&#x5668;&#x6D4B;&#x8BD5;&#x4E4B;&#x524D;&#xFF0C;&#x4F60;&#x9700;&#x8981;&#x4E3A;<code>phonecatFilters</code>&#x6A21;&#x5757;&#x914D;&#x7F6E;&#x6211;&#x4EEC;&#x7684;&#x6D4B;&#x8BD5;&#x6CE8;&#x5165;&#x5668;&#x3002;</p>
 <p>&#x6267;&#x884C;<code>./scripts/test/sh</code>&#x8FD0;&#x884C;&#x6D4B;&#x8BD5;&#xFF0C;&#x4F60;&#x5E94;&#x8BE5;&#x4F1A;&#x770B;&#x5230;&#x5982;&#x4E0B;&#x7684;&#x8F93;&#x51FA;&#xFF1A;</p>
 <pre><code>Chrome: Runner reset.
 ....
 Total 4 tests (Passed: 4; Fails: 0; Errors: 0) (3.00 ms)
   Chrome 19.0.1084.36 Mac OS: Run 4 tests (Passed: 4; Fails: 0; Errors 0) (3.00 ms)
 </code></pre><h2 id="&#x7EC3;&#x4E60;">&#x7EC3;&#x4E60;</h2>
-<pre><code>&#x73B0;&#x5728;&#x8BA9;&#x6211;&#x4EEC;&#x6765;&#x7EC3;&#x4E60;&#x4E00;&#x4E0B;[AngularJS&#x5185;&#x7F6E;&#x8FC7;&#x6EE4;&#x5668;][ng.$filter]&#xFF0C;&#x5728;**index.html**&#x4E2D;&#x52A0;&#x5165;&#x5982;&#x4E0B;&#x7ED1;&#x5B9A;&#xFF1A;
-</code></pre><pre><code>    `{{ &quot;lower cap string&quot; | uppercase }}`
-    `{{ {foo: &quot;bar&quot;, baz: 23} | json }}`
-    `{{ 1304375948024 | date }}`
-    `{{ 1304375948024 | date:&quot;MM/dd/yyyy @ h:mma&quot; }}`
-</code></pre><p>&#x6211;&#x4EEC;&#x4E5F;&#x53EF;&#x4EE5;&#x7528;&#x4E00;&#x4E2A;&#x8F93;&#x5165;&#x6846;&#x6765;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x6A21;&#x578B;&#xFF0C;&#x5E76;&#x4E14;&#x5C06;&#x4E4B;&#x4E0E;&#x4E00;&#x4E2A;&#x8FC7;&#x6EE4;&#x540E;&#x7684;&#x7ED1;&#x5B9A;&#x7ED3;&#x5408;&#x5728;&#x4E00;&#x8D77;&#x3002;&#x5728;<strong>index.html</strong>&#x4E2D;&#x52A0;&#x5165;&#x5982;&#x4E0B;&#x4EE3;&#x7801;&#xFF1A;</p>
-<pre><code>    &lt;input ng-model=&quot;userInput&quot;&gt; Uppercased: {{ userInput | uppercase }}
-</code></pre><h2 id="&#x603B;&#x7ED3;">&#x603B;&#x7ED3;</h2>
+<p>&#x73B0;&#x5728;&#x8BA9;&#x6211;&#x4EEC;&#x6765;&#x7EC3;&#x4E60;&#x4E00;&#x4E0B;<a href="http://code.angularjs.org/1.1.0/docs/api/ng.$filter" target="_blank">AngularJS&#x5185;&#x7F6E;&#x8FC7;&#x6EE4;&#x5668;</a>&#xFF0C;&#x5728;<strong>index.html</strong>&#x4E2D;&#x52A0;&#x5165;&#x5982;&#x4E0B;&#x7ED1;&#x5B9A;&#xFF1A;</p>
+<pre><code class="lang-js">    <span class="hljs-string">`{{ &quot;lower cap string&quot; | uppercase }}`</span>
+    <span class="hljs-string">`{{ {foo: &quot;bar&quot;, baz: 23} | json }}`</span>
+    <span class="hljs-string">`{{ 1304375948024 | date }}`</span>
+    <span class="hljs-string">`{{ 1304375948024 | date:&quot;MM/dd/yyyy @ h:mma&quot; }}`</span>
+</code></pre>
+<p>&#x6211;&#x4EEC;&#x4E5F;&#x53EF;&#x4EE5;&#x7528;&#x4E00;&#x4E2A;&#x8F93;&#x5165;&#x6846;&#x6765;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x6A21;&#x578B;&#xFF0C;&#x5E76;&#x4E14;&#x5C06;&#x4E4B;&#x4E0E;&#x4E00;&#x4E2A;&#x8FC7;&#x6EE4;&#x540E;&#x7684;&#x7ED1;&#x5B9A;&#x7ED3;&#x5408;&#x5728;&#x4E00;&#x8D77;&#x3002;&#x5728;<strong>index.html</strong>&#x4E2D;&#x52A0;&#x5165;&#x5982;&#x4E0B;&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre><code class="lang-html">    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">ng-model</span>=<span class="hljs-string">&quot;userInput&quot;</span>&gt;</span> Uppercased: {{ userInput | uppercase }}
+</code></pre>
+<h2 id="&#x603B;&#x7ED3;">&#x603B;&#x7ED3;</h2>
 <p>&#x73B0;&#x5728;&#x4F60;&#x5DF2;&#x7ECF;&#x77E5;&#x9053;&#x4E86;&#x5982;&#x4F55;&#x7F16;&#x5199;&#x548C;&#x6D4B;&#x8BD5;&#x4E00;&#x4E2A;&#x5B9A;&#x5236;&#x5316;&#x63D2;&#x4EF6;&#xFF0C;&#x5728;<a href="http://angularjs.cn/A00d" target="_blank">&#x6B65;&#x9AA4;10</a>&#x4E2D;&#x6211;&#x4EEC;&#x4F1A;&#x5B66;&#x4E60;&#x5982;&#x4F55;&#x7528;AngularJS&#x7EE7;&#x7EED;&#x4E30;&#x5BCC;&#x6211;&#x4EEC;&#x7684;&#x624B;&#x673A;&#x8BE6;&#x7EC6;&#x4FE1;&#x606F;&#x9875;&#x9762;&#x3002;</p>
 
                     
