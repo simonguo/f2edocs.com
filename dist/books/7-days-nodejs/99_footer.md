@@ -1,1 +1,0 @@
-© 2013-2014 Alibaba.com, Inc.
