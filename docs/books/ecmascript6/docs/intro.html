@@ -1,0 +1,2165 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+
+
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>ECMAScript 6简介 | F2E Docs</title>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <meta name="description" content="">
+    <meta name="generator" content="GitBook 1.2.27">  
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon"> 
+    <link rel="stylesheet" href="../../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-disqus/plugin.css">
+        
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+ 
+    
+    
+    <link rel="next" href="../../ecmascript6/docs/destructuring.html" />
+    
+    
+    <link rel="prev" href="../../ecmascript6/readme.html" />
+    
+ 
+    
+</head>
+
+<body class="theme-default">
+    <div class="header">
+        <a aria-label="Table of Contents" class="btn-toggle-summary" href="#">
+            <i class="fa fa-align-justify"></i>
+        </a>
+        <a class="logo">F2E Docs</a>
+        <ul class="nav">
+            
+            <li  class="active" ><a href="/docs/books/">书籍</a></li>
+            
+            <li ><a href="/docs/interview/">面试</a></li>
+            
+            <li ><a href="/docs/collect/">牛人与社区</a></li>
+            
+            <li ><a href="/docs/style-guide/">规范</a></li>
+            
+            <li ><a href="/docs/reference/">参考</a></li>
+            
+            <li ><a href="https://github.com/simonguo/f2edocs.com">Github</a></li>
+            
+        </ul>
+    </div>
+     
+    <div class="book"
+        data-level="1.2"
+        data-chapter-title="ECMAScript 6简介"
+        data-filepath="ecmascript6/docs/intro.md"
+        data-basepath="../.."
+        data-revision="Mon Feb 20 2017 11:45:17 GMT+0800 (CST)"
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        前端书籍-概要
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" >
+            
+            <span><b>1.</b> ECMAScript 6入门</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="ecmascript6/readme.html">
+            
+                
+                    <a href="../../ecmascript6/readme.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        前言
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2" data-path="ecmascript6/docs/intro.html">
+            
+                
+                    <a href="../../ecmascript6/docs/intro.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        ECMAScript 6简介
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="ecmascript6/docs/destructuring.html">
+            
+                
+                    <a href="../../ecmascript6/docs/destructuring.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                        变量的解构赋值
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="ecmascript6/docs/let.html">
+            
+                
+                    <a href="../../ecmascript6/docs/let.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.</b>
+                        
+                        let和const命令
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="ecmascript6/docs/string.html">
+            
+                
+                    <a href="../../ecmascript6/docs/string.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.</b>
+                        
+                        字符串的扩展
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="ecmascript6/docs/number.html">
+            
+                
+                    <a href="../../ecmascript6/docs/number.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.6.</b>
+                        
+                        数值的扩展
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="ecmascript6/docs/regex.html">
+            
+                
+                    <a href="../../ecmascript6/docs/regex.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.7.</b>
+                        
+                        正则的扩展
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="ecmascript6/docs/array.html">
+            
+                
+                    <a href="../../ecmascript6/docs/array.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.8.</b>
+                        
+                        数组的扩展
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="ecmascript6/docs/object.html">
+            
+                
+                    <a href="../../ecmascript6/docs/object.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.9.</b>
+                        
+                        对象的扩展
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="ecmascript6/docs/function.html">
+            
+                
+                    <a href="../../ecmascript6/docs/function.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.10.</b>
+                        
+                        函数的扩展
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="ecmascript6/docs/symbol.html">
+            
+                
+                    <a href="../../ecmascript6/docs/symbol.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.11.</b>
+                        
+                        Symbol
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="ecmascript6/docs/proxy.html">
+            
+                
+                    <a href="../../ecmascript6/docs/proxy.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.12.</b>
+                        
+                        Proxy和Reflect
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="ecmascript6/docs/set-map.html">
+            
+                
+                    <a href="../../ecmascript6/docs/set-map.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.13.</b>
+                        
+                        Set和Map数据结构
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="ecmascript6/docs/iterator.html">
+            
+                
+                    <a href="../../ecmascript6/docs/iterator.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.14.</b>
+                        
+                        Iterator和for...of循环
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="ecmascript6/docs/generator.html">
+            
+                
+                    <a href="../../ecmascript6/docs/generator.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.15.</b>
+                        
+                        Generator函数
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="ecmascript6/docs/promise.html">
+            
+                
+                    <a href="../../ecmascript6/docs/promise.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.16.</b>
+                        
+                        Promise对象
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="ecmascript6/docs/async.html">
+            
+                
+                    <a href="../../ecmascript6/docs/async.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.17.</b>
+                        
+                        异步操作和Async函数
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="ecmascript6/docs/class.html">
+            
+                
+                    <a href="../../ecmascript6/docs/class.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.18.</b>
+                        
+                        Class
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="ecmascript6/docs/decorator.html">
+            
+                
+                    <a href="../../ecmascript6/docs/decorator.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.19.</b>
+                        
+                        Decorator
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="ecmascript6/docs/module.html">
+            
+                
+                    <a href="../../ecmascript6/docs/module.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.20.</b>
+                        
+                        Module
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="ecmascript6/docs/style.html">
+            
+                
+                    <a href="../../ecmascript6/docs/style.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.21.</b>
+                        
+                        编程风格
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="ecmascript6/docs/reference.html">
+            
+                
+                    <a href="../../ecmascript6/docs/reference.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.22.</b>
+                        
+                        参考链接
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" >
+            
+            <span><b>2.</b> 七天学会NodeJS</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="7-days-nodejs/01_getting_started.html">
+            
+                
+                    <a href="../../7-days-nodejs/01_getting_started.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        NodeJS基础
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="7-days-nodejs/02_code_management_and_deployment.html">
+            
+                
+                    <a href="../../7-days-nodejs/02_code_management_and_deployment.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        代码的组织和部署
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="7-days-nodejs/03_file.html">
+            
+                
+                    <a href="../../7-days-nodejs/03_file.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        文件操作
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="7-days-nodejs/04_network.html">
+            
+                
+                    <a href="../../7-days-nodejs/04_network.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                        网络操作
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="7-days-nodejs/05_process.html">
+            
+                
+                    <a href="../../7-days-nodejs/05_process.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.</b>
+                        
+                        进程管理
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="7-days-nodejs/06_async_programming.html">
+            
+                
+                    <a href="../../7-days-nodejs/06_async_programming.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.6.</b>
+                        
+                        异步编程
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="7-days-nodejs/07_example.html">
+            
+                
+                    <a href="../../7-days-nodejs/07_example.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.7.</b>
+                        
+                        大示例
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" >
+            
+            <span><b>3.</b> JavaScript 密码花园</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="javascript-garden/intro/index.html">
+            
+                
+                    <a href="../../javascript-garden/intro/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        简介
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="javascript-garden/intro/authors.html">
+            
+                
+                    <a href="../../javascript-garden/intro/authors.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        作者
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="javascript-garden/intro/contributors.html">
+            
+                
+                    <a href="../../javascript-garden/intro/contributors.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.</b>
+                        
+                        贡献者
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="javascript-garden/intro/license.html">
+            
+                
+                    <a href="../../javascript-garden/intro/license.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.</b>
+                        
+                        许可
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" >
+            
+            <span><b>3.5.</b> 对象</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.5.1" data-path="javascript-garden/object/general.html">
+            
+                
+                    <a href="../../javascript-garden/object/general.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.5.1.</b>
+                        
+                        对象使用和属性
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5.2" data-path="javascript-garden/object/prototype.html">
+            
+                
+                    <a href="../../javascript-garden/object/prototype.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.5.2.</b>
+                        
+                        原型
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5.3" data-path="javascript-garden/object/hasownproperty.html">
+            
+                
+                    <a href="../../javascript-garden/object/hasownproperty.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.5.3.</b>
+                        
+                        hasOwnProperty 函数
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5.4" data-path="javascript-garden/object/forinloop.html">
+            
+                
+                    <a href="../../javascript-garden/object/forinloop.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.5.4.</b>
+                        
+                        for in 循环
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" >
+            
+            <span><b>3.6.</b> 函数</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.6.1" data-path="javascript-garden/function/general.html">
+            
+                
+                    <a href="../../javascript-garden/function/general.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.6.1.</b>
+                        
+                        函数声明与表达式
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6.2" data-path="javascript-garden/function/this.html">
+            
+                
+                    <a href="../../javascript-garden/function/this.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.6.2.</b>
+                        
+                        this 的工作原理
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6.3" data-path="javascript-garden/function/closures.html">
+            
+                
+                    <a href="../../javascript-garden/function/closures.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.6.3.</b>
+                        
+                        闭包和引用
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6.4" data-path="javascript-garden/function/arguments.html">
+            
+                
+                    <a href="../../javascript-garden/function/arguments.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.6.4.</b>
+                        
+                        arguments 对象
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6.5" data-path="javascript-garden/function/constructors.html">
+            
+                
+                    <a href="../../javascript-garden/function/constructors.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.6.5.</b>
+                        
+                        构造函数
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6.6" data-path="javascript-garden/function/scopes.html">
+            
+                
+                    <a href="../../javascript-garden/function/scopes.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.6.6.</b>
+                        
+                        作用域与命名空间
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7" >
+            
+            <span><b>3.7.</b> 数组</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.7.1" data-path="javascript-garden/array/general.html">
+            
+                
+                    <a href="../../javascript-garden/array/general.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.7.1.</b>
+                        
+                        数组遍历与属性
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7.2" data-path="javascript-garden/array/constructor.html">
+            
+                
+                    <a href="../../javascript-garden/array/constructor.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.7.2.</b>
+                        
+                        Array 构造函数
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.8" >
+            
+            <span><b>3.8.</b> 类型</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.8.1" data-path="javascript-garden/types/equality.html">
+            
+                
+                    <a href="../../javascript-garden/types/equality.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.8.1.</b>
+                        
+                        相等与比较
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.8.2" data-path="javascript-garden/types/typeof.html">
+            
+                
+                    <a href="../../javascript-garden/types/typeof.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.8.2.</b>
+                        
+                        typeof 操作符
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.8.3" data-path="javascript-garden/types/instanceof.html">
+            
+                
+                    <a href="../../javascript-garden/types/instanceof.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.8.3.</b>
+                        
+                        instanceof 操作符
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.8.4" data-path="javascript-garden/types/casting.html">
+            
+                
+                    <a href="../../javascript-garden/types/casting.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.8.4.</b>
+                        
+                        类型转换
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.9" >
+            
+            <span><b>3.9.</b> 核心</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.9.1" data-path="javascript-garden/core/eval.html">
+            
+                
+                    <a href="../../javascript-garden/core/eval.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.9.1.</b>
+                        
+                        为什么不要使用 eval
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.9.2" data-path="javascript-garden/core/undefined.html">
+            
+                
+                    <a href="../../javascript-garden/core/undefined.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.9.2.</b>
+                        
+                        undefined 和 null
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.9.3" data-path="javascript-garden/core/semicolon.html">
+            
+                
+                    <a href="../../javascript-garden/core/semicolon.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.9.3.</b>
+                        
+                        自动分号插入
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.10" >
+            
+            <span><b>3.10.</b> 其他</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.10.1" data-path="javascript-garden/other/timeouts.html">
+            
+                
+                    <a href="../../javascript-garden/other/timeouts.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.10.1.</b>
+                        
+                        setTimeout 和 setInterval
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" >
+            
+            <span><b>4.</b> JavaScript的12个怪癖</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="12-javascript-quirks/index.html">
+            
+                
+                    <a href="../../12-javascript-quirks/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        简介
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="12-javascript-quirks/cn/1-implicit-conversion-of-values.html">
+            
+                
+                    <a href="../../12-javascript-quirks/cn/1-implicit-conversion-of-values.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                        怪癖 1：隐式类型转换
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="12-javascript-quirks/cn/2-two-non-values-undefined-and-null.html">
+            
+                
+                    <a href="../../12-javascript-quirks/cn/2-two-non-values-undefined-and-null.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.</b>
+                        
+                        怪癖 2：两个「空值」：undefined 和 null
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="12-javascript-quirks/cn/3-normal-equality-vs-the-double-equals.html">
+            
+                
+                    <a href="../../12-javascript-quirks/cn/3-normal-equality-vs-the-double-equals.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.4.</b>
+                        
+                        怪癖 3：标准的等号 (==)
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="12-javascript-quirks/cn/4-unknown-variable-names-create-global-variables.html">
+            
+                
+                    <a href="../../12-javascript-quirks/cn/4-unknown-variable-names-create-global-variables.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.5.</b>
+                        
+                        怪癖 4：未知变量名创建全局变量
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="12-javascript-quirks/cn/5-parameter-handling.html">
+            
+                
+                    <a href="../../12-javascript-quirks/cn/5-parameter-handling.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.6.</b>
+                        
+                        怪癖 5：参数的处理
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7" data-path="12-javascript-quirks/cn/6-the-scope-of-variables.html">
+            
+                
+                    <a href="../../12-javascript-quirks/cn/6-the-scope-of-variables.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.7.</b>
+                        
+                        怪癖 6：变量的作用范围
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.8" data-path="12-javascript-quirks/cn/7-inadvertent-sharing-of-variables-via-closures.html">
+            
+                
+                    <a href="../../12-javascript-quirks/cn/7-inadvertent-sharing-of-variables-via-closures.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.8.</b>
+                        
+                        怪癖 7：变量闭包之后的无意识共享
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.9" data-path="12-javascript-quirks/cn/8-array-like-objects.html">
+            
+                
+                    <a href="../../12-javascript-quirks/cn/8-array-like-objects.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.9.</b>
+                        
+                        怪癖 8：“类数组对象”
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.10" >
+            
+            <span><b>4.10.</b> [怪癖 9：子类的构造函数]</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.11" >
+            
+            <span><b>4.11.</b> [怪癖 10：属性的读写]</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.12" >
+            
+            <span><b>4.12.</b> [怪癖 11：函数中的 this]</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.13" >
+            
+            <span><b>4.13.</b> [怪癖 12：for-in循环]</span>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5" >
+            
+            <span><b>5.</b> JavaScript 模式</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1" data-path="javascript-patterns/index.html">
+            
+                
+                    <a href="../../javascript-patterns/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.</b>
+                        
+                        目录
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="javascript-patterns/chapter1.html">
+            
+                
+                    <a href="../../javascript-patterns/chapter1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.</b>
+                        
+                        概述
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="javascript-patterns/chapter2.html">
+            
+                
+                    <a href="../../javascript-patterns/chapter2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.</b>
+                        
+                        高质量JavaScript基本要点
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="javascript-patterns/chapter3.html">
+            
+                
+                    <a href="../../javascript-patterns/chapter3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.4.</b>
+                        
+                        直接量和构造函数
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="javascript-patterns/chapter4.html">
+            
+                
+                    <a href="../../javascript-patterns/chapter4.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.5.</b>
+                        
+                        函数
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" data-path="javascript-patterns/chapter5.html">
+            
+                
+                    <a href="../../javascript-patterns/chapter5.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.6.</b>
+                        
+                        对象创建模式
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.7" data-path="javascript-patterns/chapter6.html">
+            
+                
+                    <a href="../../javascript-patterns/chapter6.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.7.</b>
+                        
+                        代码复用模式
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.8" data-path="javascript-patterns/chapter7.html">
+            
+                
+                    <a href="../../javascript-patterns/chapter7.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.8.</b>
+                        
+                        设计模式
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.9" data-path="javascript-patterns/chapter8.html">
+            
+                
+                    <a href="../../javascript-patterns/chapter8.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.9.</b>
+                        
+                        DOM和浏览器中的模式
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6" >
+            
+            <span><b>6.</b> AngularJS入门教程</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1" data-path="AngularjsTutorial_cn/quick_start.html">
+            
+                
+                    <a href="../../AngularjsTutorial_cn/quick_start.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.1.</b>
+                        
+                        快速开始
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="AngularjsTutorial_cn/ready.html">
+            
+                
+                    <a href="../../AngularjsTutorial_cn/ready.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.2.</b>
+                        
+                        导言和准备
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="AngularjsTutorial_cn/00.html">
+            
+                
+                    <a href="../../AngularjsTutorial_cn/00.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.3.</b>
+                        
+                        引导程序
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="AngularjsTutorial_cn/01.html">
+            
+                
+                    <a href="../../AngularjsTutorial_cn/01.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.4.</b>
+                        
+                        静态模板
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5" data-path="AngularjsTutorial_cn/02.html">
+            
+                
+                    <a href="../../AngularjsTutorial_cn/02.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.5.</b>
+                        
+                        AngularJS模板
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.6" data-path="AngularjsTutorial_cn/03.html">
+            
+                
+                    <a href="../../AngularjsTutorial_cn/03.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.6.</b>
+                        
+                        迭代器过滤
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.7" data-path="AngularjsTutorial_cn/04.html">
+            
+                
+                    <a href="../../AngularjsTutorial_cn/04.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.7.</b>
+                        
+                        双向绑定
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.8" data-path="AngularjsTutorial_cn/05.html">
+            
+                
+                    <a href="../../AngularjsTutorial_cn/05.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.8.</b>
+                        
+                        XHR和依赖注入
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.9" data-path="AngularjsTutorial_cn/06.html">
+            
+                
+                    <a href="../../AngularjsTutorial_cn/06.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.9.</b>
+                        
+                        链接与图片模板
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.10" data-path="AngularjsTutorial_cn/07.html">
+            
+                
+                    <a href="../../AngularjsTutorial_cn/07.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.10.</b>
+                        
+                        路由与多视图
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.11" data-path="AngularjsTutorial_cn/08.html">
+            
+                
+                    <a href="../../AngularjsTutorial_cn/08.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.11.</b>
+                        
+                        更多模板
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.12" data-path="AngularjsTutorial_cn/09.html">
+            
+                
+                    <a href="../../AngularjsTutorial_cn/09.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.12.</b>
+                        
+                        过滤器
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.13" data-path="AngularjsTutorial_cn/10.html">
+            
+                
+                    <a href="../../AngularjsTutorial_cn/10.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.13.</b>
+                        
+                        事件处理器
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.14" data-path="AngularjsTutorial_cn/11.html">
+            
+                
+                    <a href="../../AngularjsTutorial_cn/11.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.14.</b>
+                        
+                        REST和定制服务
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.15" data-path="AngularjsTutorial_cn/12.html">
+            
+                
+                    <a href="../../AngularjsTutorial_cn/12.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.15.</b>
+                        
+                        完结篇
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.16" data-path="AngularjsTutorial_cn/index.html">
+            
+                
+                    <a href="../../AngularjsTutorial_cn/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.16.</b>
+                        
+                        关于
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7" >
+            
+            <span><b>7.</b> CSS3 教程</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.1" data-path="css3-tutorial/docs/Introduction.html">
+            
+                
+                    <a href="../../css3-tutorial/docs/Introduction.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.1.</b>
+                        
+                        介绍
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" data-path="css3-tutorial/docs/Animation.html">
+            
+                
+                    <a href="../../css3-tutorial/docs/Animation.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.2.</b>
+                        
+                        动画
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.3" data-path="css3-tutorial/docs/Border.html">
+            
+                
+                    <a href="../../css3-tutorial/docs/Border.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.3.</b>
+                        
+                        边框
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.4" data-path="css3-tutorial/docs/Background.html">
+            
+                
+                    <a href="../../css3-tutorial/docs/Background.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.4.</b>
+                        
+                        背景
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.5" data-path="css3-tutorial/docs/Font.html">
+            
+                
+                    <a href="../../css3-tutorial/docs/Font.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.5.</b>
+                        
+                        字体
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.6" data-path="css3-tutorial/docs/Multiple Columns.html">
+            
+                
+                    <a href="../../css3-tutorial/docs/Multiple Columns.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.6.</b>
+                        
+                        多列
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.7" data-path="css3-tutorial/docs/User Interface.html">
+            
+                
+                    <a href="../../css3-tutorial/docs/User Interface.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.7.</b>
+                        
+                        UI
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.8" data-path="css3-tutorial/docs/Transitions Effect.html">
+            
+                
+                    <a href="../../css3-tutorial/docs/Transitions Effect.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.8.</b>
+                        
+                        过渡效果
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.9" data-path="css3-tutorial/docs/Text Effect.html">
+            
+                
+                    <a href="../../css3-tutorial/docs/Text Effect.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.9.</b>
+                        
+                        文本效果
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.10" data-path="css3-tutorial/docs/2D Transform.html">
+            
+                
+                    <a href="../../css3-tutorial/docs/2D Transform.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.10.</b>
+                        
+                        2D
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.11" data-path="css3-tutorial/docs/3D Transform.html">
+            
+                
+                    <a href="../../css3-tutorial/docs/3D Transform.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.11.</b>
+                        
+                        3D
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../" >F2E Docs</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="ecmascript-6&#x7B80;&#x4ECB;">ECMAScript 6&#x7B80;&#x4ECB;</h1>
+<p>ECMAScript 6&#xFF08;&#x4EE5;&#x4E0B;&#x7B80;&#x79F0;ES6&#xFF09;&#x662F;JavaScript&#x8BED;&#x8A00;&#x7684;&#x4E0B;&#x4E00;&#x4EE3;&#x6807;&#x51C6;&#xFF0C;&#x5DF2;&#x7ECF;&#x5728;2015&#x5E74;6&#x6708;&#x6B63;&#x5F0F;&#x53D1;&#x5E03;&#x4E86;&#x3002;Mozilla&#x516C;&#x53F8;&#x5C06;&#x5728;&#x8FD9;&#x4E2A;&#x6807;&#x51C6;&#x7684;&#x57FA;&#x7840;&#x4E0A;&#xFF0C;&#x63A8;&#x51FA;JavaScript 2.0&#x3002;</p>
+<p>ES6&#x7684;&#x76EE;&#x6807;&#xFF0C;&#x662F;&#x4F7F;&#x5F97;JavaScript&#x8BED;&#x8A00;&#x53EF;&#x4EE5;&#x7528;&#x6765;&#x7F16;&#x5199;&#x5927;&#x578B;&#x7684;&#x590D;&#x6742;&#x7684;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#xFF0C;&#x6210;&#x4E3A;&#x4F01;&#x4E1A;&#x7EA7;&#x5F00;&#x53D1;&#x8BED;&#x8A00;&#x3002;</p>
+<p>&#x6807;&#x51C6;&#x7684;&#x5236;&#x5B9A;&#x8005;&#x6709;&#x8BA1;&#x5212;&#xFF0C;&#x4EE5;&#x540E;&#x6BCF;&#x5E74;&#x53D1;&#x5E03;&#x4E00;&#x6B21;&#x6807;&#x51C6;&#xFF0C;&#x4F7F;&#x7528;&#x5E74;&#x4EFD;&#x4F5C;&#x4E3A;&#x6807;&#x51C6;&#x7684;&#x7248;&#x672C;&#x3002;&#x56E0;&#x4E3A;&#x5F53;&#x524D;&#x7248;&#x672C;&#x7684;ES6&#x662F;&#x5728;2015&#x5E74;&#x53D1;&#x5E03;&#x7684;&#xFF0C;&#x6240;&#x4EE5;&#x53C8;&#x79F0;ECMAScript 2015&#x3002;</p>
+<h2 id="ecmascript&#x548C;javascript&#x7684;&#x5173;&#x7CFB;">ECMAScript&#x548C;JavaScript&#x7684;&#x5173;&#x7CFB;</h2>
+<p>&#x5F88;&#x591A;&#x521D;&#x5B66;&#x8005;&#x611F;&#x5230;&#x56F0;&#x60D1;&#xFF1A;ECMAScript&#x548C;JavaScript&#x5230;&#x5E95;&#x662F;&#x4EC0;&#x4E48;&#x5173;&#x7CFB;&#xFF1F;</p>
+<p>&#x7B80;&#x5355;&#x8BF4;&#xFF0C;ECMAScript&#x662F;JavaScript&#x8BED;&#x8A00;&#x7684;&#x56FD;&#x9645;&#x6807;&#x51C6;&#xFF0C;JavaScript&#x662F;ECMAScript&#x7684;&#x5B9E;&#x73B0;&#x3002;</p>
+<p>&#x8981;&#x8BB2;&#x6E05;&#x695A;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#xFF0C;&#x9700;&#x8981;&#x56DE;&#x987E;&#x5386;&#x53F2;&#x3002;1996&#x5E74;11&#x6708;&#xFF0C;JavaScript&#x7684;&#x521B;&#x9020;&#x8005;Netscape&#x516C;&#x53F8;&#xFF0C;&#x51B3;&#x5B9A;&#x5C06;JavaScript&#x63D0;&#x4EA4;&#x7ED9;&#x56FD;&#x9645;&#x6807;&#x51C6;&#x5316;&#x7EC4;&#x7EC7;ECMA&#xFF0C;&#x5E0C;&#x671B;&#x8FD9;&#x79CD;&#x8BED;&#x8A00;&#x80FD;&#x591F;&#x6210;&#x4E3A;&#x56FD;&#x9645;&#x6807;&#x51C6;&#x3002;&#x6B21;&#x5E74;&#xFF0C;ECMA&#x53D1;&#x5E03;262&#x53F7;&#x6807;&#x51C6;&#x6587;&#x4EF6;&#xFF08;ECMA-262&#xFF09;&#x7684;&#x7B2C;&#x4E00;&#x7248;&#xFF0C;&#x89C4;&#x5B9A;&#x4E86;&#x6D4F;&#x89C8;&#x5668;&#x811A;&#x672C;&#x8BED;&#x8A00;&#x7684;&#x6807;&#x51C6;&#xFF0C;&#x5E76;&#x5C06;&#x8FD9;&#x79CD;&#x8BED;&#x8A00;&#x79F0;&#x4E3A;ECMAScript&#x3002;&#x8FD9;&#x4E2A;&#x7248;&#x672C;&#x5C31;&#x662F;ECMAScript 1.0&#x7248;&#x3002;</p>
+<p>&#x4E4B;&#x6240;&#x4EE5;&#x4E0D;&#x53EB;JavaScript&#xFF0C;&#x6709;&#x4E24;&#x4E2A;&#x539F;&#x56E0;&#x3002;&#x4E00;&#x662F;&#x5546;&#x6807;&#xFF0C;Java&#x662F;Sun&#x516C;&#x53F8;&#x7684;&#x5546;&#x6807;&#xFF0C;&#x6839;&#x636E;&#x6388;&#x6743;&#x534F;&#x8BAE;&#xFF0C;&#x53EA;&#x6709;Netscape&#x516C;&#x53F8;&#x53EF;&#x4EE5;&#x5408;&#x6CD5;&#x5730;&#x4F7F;&#x7528;JavaScript&#x8FD9;&#x4E2A;&#x540D;&#x5B57;&#xFF0C;&#x4E14;JavaScript&#x672C;&#x8EAB;&#x4E5F;&#x5DF2;&#x7ECF;&#x88AB;Netscape&#x516C;&#x53F8;&#x6CE8;&#x518C;&#x4E3A;&#x5546;&#x6807;&#x3002;&#x4E8C;&#x662F;&#x60F3;&#x4F53;&#x73B0;&#x8FD9;&#x95E8;&#x8BED;&#x8A00;&#x7684;&#x5236;&#x5B9A;&#x8005;&#x662F;ECMA&#xFF0C;&#x4E0D;&#x662F;Netscape&#xFF0C;&#x8FD9;&#x6837;&#x6709;&#x5229;&#x4E8E;&#x4FDD;&#x8BC1;&#x8FD9;&#x95E8;&#x8BED;&#x8A00;&#x7684;&#x5F00;&#x653E;&#x6027;&#x548C;&#x4E2D;&#x7ACB;&#x6027;&#x3002;&#x56E0;&#x6B64;&#xFF0C;ECMAScript&#x548C;JavaScript&#x7684;&#x5173;&#x7CFB;&#x662F;&#xFF0C;&#x524D;&#x8005;&#x662F;&#x540E;&#x8005;&#x7684;&#x89C4;&#x683C;&#xFF0C;&#x540E;&#x8005;&#x662F;&#x524D;&#x8005;&#x7684;&#x4E00;&#x79CD;&#x5B9E;&#x73B0;&#x3002;&#x5728;&#x65E5;&#x5E38;&#x573A;&#x5408;&#xFF0C;&#x8FD9;&#x4E24;&#x4E2A;&#x8BCD;&#x662F;&#x53EF;&#x4EE5;&#x4E92;&#x6362;&#x7684;&#x3002;</p>
+<h2 id="ecmascript&#x7684;&#x5386;&#x53F2;">ECMAScript&#x7684;&#x5386;&#x53F2;</h2>
+<p>1998&#x5E74;6&#x6708;&#xFF0C;ECMAScript 2.0&#x7248;&#x53D1;&#x5E03;&#x3002;</p>
+<p>1999&#x5E74;12&#x6708;&#xFF0C;ECMAScript 3.0&#x7248;&#x53D1;&#x5E03;&#xFF0C;&#x6210;&#x4E3A;JavaScript&#x7684;&#x901A;&#x884C;&#x6807;&#x51C6;&#xFF0C;&#x5F97;&#x5230;&#x4E86;&#x5E7F;&#x6CDB;&#x652F;&#x6301;&#x3002;</p>
+<p>2007&#x5E74;10&#x6708;&#xFF0C;ECMAScript 4.0&#x7248;&#x8349;&#x6848;&#x53D1;&#x5E03;&#xFF0C;&#x5BF9;3.0&#x7248;&#x505A;&#x4E86;&#x5927;&#x5E45;&#x5347;&#x7EA7;&#xFF0C;&#x9884;&#x8BA1;&#x6B21;&#x5E74;8&#x6708;&#x53D1;&#x5E03;&#x6B63;&#x5F0F;&#x7248;&#x672C;&#x3002;&#x8349;&#x6848;&#x53D1;&#x5E03;&#x540E;&#xFF0C;&#x7531;&#x4E8E;4.0&#x7248;&#x7684;&#x76EE;&#x6807;&#x8FC7;&#x4E8E;&#x6FC0;&#x8FDB;&#xFF0C;&#x5404;&#x65B9;&#x5BF9;&#x4E8E;&#x662F;&#x5426;&#x901A;&#x8FC7;&#x8FD9;&#x4E2A;&#x6807;&#x51C6;&#xFF0C;&#x53D1;&#x751F;&#x4E86;&#x4E25;&#x91CD;&#x5206;&#x6B67;&#x3002;&#x4EE5;Yahoo&#x3001;Microsoft&#x3001;Google&#x4E3A;&#x9996;&#x7684;&#x5927;&#x516C;&#x53F8;&#xFF0C;&#x53CD;&#x5BF9;JavaScript&#x7684;&#x5927;&#x5E45;&#x5347;&#x7EA7;&#xFF0C;&#x4E3B;&#x5F20;&#x5C0F;&#x5E45;&#x6539;&#x52A8;&#xFF1B;&#x4EE5;JavaScript&#x521B;&#x9020;&#x8005;Brendan Eich&#x4E3A;&#x9996;&#x7684;Mozilla&#x516C;&#x53F8;&#xFF0C;&#x5219;&#x575A;&#x6301;&#x5F53;&#x524D;&#x7684;&#x8349;&#x6848;&#x3002;</p>
+<p>2008&#x5E74;7&#x6708;&#xFF0C;&#x7531;&#x4E8E;&#x5BF9;&#x4E8E;&#x4E0B;&#x4E00;&#x4E2A;&#x7248;&#x672C;&#x5E94;&#x8BE5;&#x5305;&#x62EC;&#x54EA;&#x4E9B;&#x529F;&#x80FD;&#xFF0C;&#x5404;&#x65B9;&#x5206;&#x6B67;&#x592A;&#x5927;&#xFF0C;&#x4E89;&#x8BBA;&#x8FC7;&#x4E8E;&#x6FC0;&#x8FDB;&#xFF0C;ECMA&#x5F00;&#x4F1A;&#x51B3;&#x5B9A;&#xFF0C;&#x4E2D;&#x6B62;ECMAScript 4.0&#x7684;&#x5F00;&#x53D1;&#xFF0C;&#x5C06;&#x5176;&#x4E2D;&#x6D89;&#x53CA;&#x73B0;&#x6709;&#x529F;&#x80FD;&#x6539;&#x5584;&#x7684;&#x4E00;&#x5C0F;&#x90E8;&#x5206;&#xFF0C;&#x53D1;&#x5E03;&#x4E3A;ECMAScript 3.1&#xFF0C;&#x800C;&#x5C06;&#x5176;&#x4ED6;&#x6FC0;&#x8FDB;&#x7684;&#x8BBE;&#x60F3;&#x6269;&#x5927;&#x8303;&#x56F4;&#xFF0C;&#x653E;&#x5165;&#x4EE5;&#x540E;&#x7684;&#x7248;&#x672C;&#xFF0C;&#x7531;&#x4E8E;&#x4F1A;&#x8BAE;&#x7684;&#x6C14;&#x6C1B;&#xFF0C;&#x8BE5;&#x7248;&#x672C;&#x7684;&#x9879;&#x76EE;&#x4EE3;&#x53F7;&#x8D77;&#x540D;&#x4E3A;Harmony&#xFF08;&#x548C;&#x8C10;&#xFF09;&#x3002;&#x4F1A;&#x540E;&#x4E0D;&#x4E45;&#xFF0C;ECMAScript 3.1&#x5C31;&#x6539;&#x540D;&#x4E3A;ECMAScript 5&#x3002;</p>
+<p>2009&#x5E74;12&#x6708;&#xFF0C;ECMAScript 5.0&#x7248;&#x6B63;&#x5F0F;&#x53D1;&#x5E03;&#x3002;Harmony&#x9879;&#x76EE;&#x5219;&#x4E00;&#x5206;&#x4E3A;&#x4E8C;&#xFF0C;&#x4E00;&#x4E9B;&#x8F83;&#x4E3A;&#x53EF;&#x884C;&#x7684;&#x8BBE;&#x60F3;&#x5B9A;&#x540D;&#x4E3A;JavaScript.next&#x7EE7;&#x7EED;&#x5F00;&#x53D1;&#xFF0C;&#x540E;&#x6765;&#x6F14;&#x53D8;&#x6210;ECMAScript 6&#xFF1B;&#x4E00;&#x4E9B;&#x4E0D;&#x662F;&#x5F88;&#x6210;&#x719F;&#x7684;&#x8BBE;&#x60F3;&#xFF0C;&#x5219;&#x88AB;&#x89C6;&#x4E3A;JavaScript.next.next&#xFF0C;&#x5728;&#x66F4;&#x8FDC;&#x7684;&#x5C06;&#x6765;&#x518D;&#x8003;&#x8651;&#x63A8;&#x51FA;&#x3002;</p>
+<p>2011&#x5E74;6&#x6708;&#xFF0C;ECMAscript 5.1&#x7248;&#x53D1;&#x5E03;&#xFF0C;&#x5E76;&#x4E14;&#x6210;&#x4E3A;ISO&#x56FD;&#x9645;&#x6807;&#x51C6;&#xFF08;ISO/IEC 16262:2011&#xFF09;&#x3002;</p>
+<p>2013&#x5E74;3&#x6708;&#xFF0C;ECMAScript 6&#x8349;&#x6848;&#x51BB;&#x7ED3;&#xFF0C;&#x4E0D;&#x518D;&#x6DFB;&#x52A0;&#x65B0;&#x529F;&#x80FD;&#x3002;&#x65B0;&#x7684;&#x529F;&#x80FD;&#x8BBE;&#x60F3;&#x5C06;&#x88AB;&#x653E;&#x5230;ECMAScript 7&#x3002;</p>
+<p>2013&#x5E74;12&#x6708;&#xFF0C;ECMAScript 6&#x8349;&#x6848;&#x53D1;&#x5E03;&#x3002;&#x7136;&#x540E;&#x662F;12&#x4E2A;&#x6708;&#x7684;&#x8BA8;&#x8BBA;&#x671F;&#xFF0C;&#x542C;&#x53D6;&#x5404;&#x65B9;&#x53CD;&#x9988;&#x3002;</p>
+<p>2015&#x5E74;6&#x6708;&#xFF0C;ECMAScript 6&#x6B63;&#x5F0F;&#x901A;&#x8FC7;&#xFF0C;&#x6210;&#x4E3A;&#x56FD;&#x9645;&#x6807;&#x51C6;&#x3002;</p>
+<p>ECMA&#x7684;&#x7B2C;39&#x53F7;&#x6280;&#x672F;&#x4E13;&#x5BB6;&#x59D4;&#x5458;&#x4F1A;&#xFF08;Technical Committee 39&#xFF0C;&#x7B80;&#x79F0;TC39&#xFF09;&#x8D1F;&#x8D23;&#x5236;&#x8BA2;ECMAScript&#x6807;&#x51C6;&#xFF0C;&#x6210;&#x5458;&#x5305;&#x62EC;Microsoft&#x3001;Mozilla&#x3001;Google&#x7B49;&#x5927;&#x516C;&#x53F8;&#x3002;TC39&#x7684;&#x603B;&#x4F53;&#x8003;&#x8651;&#x662F;&#xFF0C;ES5&#x4E0E;ES3&#x57FA;&#x672C;&#x4FDD;&#x6301;&#x517C;&#x5BB9;&#xFF0C;&#x8F83;&#x5927;&#x7684;&#x8BED;&#x6CD5;&#x4FEE;&#x6B63;&#x548C;&#x65B0;&#x529F;&#x80FD;&#x52A0;&#x5165;&#xFF0C;&#x5C06;&#x7531;JavaScript.next&#x5B8C;&#x6210;&#x3002;&#x5F53;&#x65F6;&#xFF0C;JavaScript.next&#x6307;&#x7684;&#x662F;ES6&#xFF0C;&#x7B2C;&#x516D;&#x7248;&#x53D1;&#x5E03;&#x4EE5;&#x540E;&#xFF0C;&#x5C31;&#x6307;ES7&#x3002;TC39&#x7684;&#x5224;&#x65AD;&#x662F;&#xFF0C;ES5&#x4F1A;&#x5728;2013&#x5E74;&#x7684;&#x5E74;&#x4E2D;&#x6210;&#x4E3A;JavaScript&#x5F00;&#x53D1;&#x7684;&#x4E3B;&#x6D41;&#x6807;&#x51C6;&#xFF0C;&#x5E76;&#x5728;&#x6B64;&#x540E;&#x4E94;&#x5E74;&#x4E2D;&#x4E00;&#x76F4;&#x4FDD;&#x6301;&#x8FD9;&#x4E2A;&#x4F4D;&#x7F6E;&#x3002;</p>
+<h2 id="&#x90E8;&#x7F72;&#x8FDB;&#x5EA6;">&#x90E8;&#x7F72;&#x8FDB;&#x5EA6;</h2>
+<p>&#x5404;&#x5927;&#x6D4F;&#x89C8;&#x5668;&#x7684;&#x6700;&#x65B0;&#x7248;&#x672C;&#xFF0C;&#x5BF9;ES6&#x7684;&#x652F;&#x6301;&#x53EF;&#x4EE5;&#x67E5;&#x770B;<a href="http://kangax.github.io/es5-compat-table/es6/" target="_blank">kangax.github.io/es5-compat-table/es6/</a>&#x3002;&#x968F;&#x7740;&#x65F6;&#x95F4;&#x7684;&#x63A8;&#x79FB;&#xFF0C;&#x652F;&#x6301;&#x5EA6;&#x5DF2;&#x7ECF;&#x8D8A;&#x6765;&#x8D8A;&#x9AD8;&#x4E86;&#xFF0C;ES6&#x7684;&#x5927;&#x90E8;&#x5206;&#x7279;&#x6027;&#x90FD;&#x5B9E;&#x73B0;&#x4E86;&#x3002;</p>
+<p>Node.js&#x548C;io.js&#xFF08;&#x4E00;&#x4E2A;&#x90E8;&#x7F72;&#x65B0;&#x529F;&#x80FD;&#x66F4;&#x5FEB;&#x7684;Node&#x5206;&#x652F;&#xFF09;&#x662F;JavaScript&#x8BED;&#x8A00;&#x7684;&#x670D;&#x52A1;&#x5668;&#x8FD0;&#x884C;&#x73AF;&#x5883;&#x3002;&#x5B83;&#x4EEC;&#x5BF9;ES6&#x7684;&#x652F;&#x6301;&#x5EA6;&#xFF0C;&#x6BD4;&#x6D4F;&#x89C8;&#x5668;&#x66F4;&#x9AD8;&#x3002;&#x901A;&#x8FC7;&#x5B83;&#x4EEC;&#xFF0C;&#x53EF;&#x4EE5;&#x4F53;&#x9A8C;&#x66F4;&#x591A;ES6&#x7684;&#x7279;&#x6027;&#x3002;</p>
+<p>&#x5EFA;&#x8BAE;&#x4F7F;&#x7528;&#x7248;&#x672C;&#x7BA1;&#x7406;&#x5DE5;&#x5177;<a href="https://github.com/creationix/nvm" target="_blank">nvm</a>&#xFF0C;&#x6765;&#x5B89;&#x88C5;Node.js&#x548C;io.js&#x3002;&#x4E0D;&#x8FC7;&#xFF0C;nvm&#x4E0D;&#x652F;&#x6301;Windows&#x7CFB;&#x7EDF;&#xFF0C;&#x4E0B;&#x9762;&#x7684;&#x64CD;&#x4F5C;&#x53EF;&#x4EE5;&#x6539;&#x7528;<a href="https://github.com/hakobera/nvmw" target="_blank">nvmw</a>&#x6216;<a href="https://github.com/coreybutler/nvm-windows" target="_blank">nvm-windows</a>&#x4EE3;&#x66FF;&#x3002;</p>
+<p>&#x5B89;&#x88C5;nvm&#x9700;&#x8981;&#x6253;&#x5F00;&#x547D;&#x4EE4;&#x884C;&#x7A97;&#x53E3;&#xFF0C;&#x8FD0;&#x884C;&#x4E0B;&#x9762;&#x7684;&#x547D;&#x4EE4;&#x3002;</p>
+<pre><code class="lang-bash">$ curl -o- https://raw.githubusercontent.com/creationix/nvm/&lt;version number&gt;/install.sh | bash
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x547D;&#x4EE4;&#x7684;<code>version number</code>&#x5904;&#xFF0C;&#x9700;&#x8981;&#x7528;&#x7248;&#x672C;&#x53F7;&#x66FF;&#x6362;&#x3002;&#x672C;&#x8282;&#x5199;&#x4F5C;&#x65F6;&#x7684;&#x7248;&#x672C;&#x53F7;&#x662F;<code>v0.25.4</code>&#x3002;</p>
+<p>&#x8BE5;&#x547D;&#x4EE4;&#x8FD0;&#x884C;&#x540E;&#xFF0C;<code>nvm</code>&#x4F1A;&#x9ED8;&#x8BA4;&#x5B89;&#x88C5;&#x5728;&#x7528;&#x6237;&#x4E3B;&#x76EE;&#x5F55;&#x7684;<code>.nvm</code>&#x5B50;&#x76EE;&#x5F55;&#x3002;&#x7136;&#x540E;&#xFF0C;&#x6FC0;&#x6D3B;<code>nvm</code>&#x3002;</p>
+<pre><code class="lang-bash">$ <span class="hljs-built_in">source</span> ~/.nvm/nvm.sh
+</code></pre>
+<p>&#x6FC0;&#x6D3B;&#x4EE5;&#x540E;&#xFF0C;&#x5B89;&#x88C5;Node&#x6216;io.js&#x7684;&#x6700;&#x65B0;&#x7248;&#x3002;</p>
+<pre><code class="lang-bash">$ nvm install node
+<span class="hljs-comment"># &#x6216;</span>
+$ nvm install iojs
+</code></pre>
+<p>&#x5B89;&#x88C5;&#x5B8C;&#x6210;&#x540E;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x5728;&#x5404;&#x79CD;&#x7248;&#x672C;&#x7684;node&#x4E4B;&#x95F4;&#x81EA;&#x7531;&#x5207;&#x6362;&#x3002;</p>
+<pre><code class="lang-bash"><span class="hljs-comment"># &#x5207;&#x6362;&#x5230;node</span>
+$ nvm use node
+
+<span class="hljs-comment"># &#x5207;&#x6362;&#x5230;iojs</span>
+$ nvm use iojs
+</code></pre>
+<p>&#x9700;&#x8981;&#x6CE8;&#x610F;&#x7684;&#x662F;&#xFF0C;Node.js&#x5BF9;ES6&#x7684;&#x652F;&#x6301;&#xFF0C;&#x9700;&#x8981;&#x6253;&#x5F00;<code>harmony</code>&#x53C2;&#x6570;&#xFF0C;iojs&#x4E0D;&#x9700;&#x8981;&#x3002;</p>
+<pre><code>$ node --harmony
+# iojs&#x4E0D;&#x9700;&#x8981;&#x6253;&#x5F00;harmony&#x53C2;&#x6570;
+$ node
+</code></pre><p>&#x4E0A;&#x9762;&#x547D;&#x4EE4;&#x6267;&#x884C;&#x540E;&#xFF0C;&#x5C31;&#x4F1A;&#x8FDB;&#x5165;REPL&#x73AF;&#x5883;&#xFF0C;&#x8BE5;&#x73AF;&#x5883;&#x652F;&#x6301;&#x6240;&#x6709;&#x5DF2;&#x7ECF;&#x5B9E;&#x73B0;&#x7684;ES6&#x7279;&#x6027;&#x3002;</p>
+<p>&#x4F7F;&#x7528;&#x4E0B;&#x9762;&#x7684;&#x547D;&#x4EE4;&#xFF0C;&#x53EF;&#x4EE5;&#x67E5;&#x770B;Node.js&#x6240;&#x6709;&#x5DF2;&#x7ECF;&#x5B9E;&#x73B0;&#x7684;ES6&#x7279;&#x6027;&#x3002;</p>
+<pre><code class="lang-bash">$ node --v8-options | grep harmony
+
+  --harmony_typeof
+  --harmony_scoping
+  --harmony_modules
+  --harmony_symbols
+  --harmony_proxies
+  --harmony_collections
+  --harmony_observation
+  --harmony_generators
+  --harmony_iteration
+  --harmony_numeric_literals
+  --harmony_strings
+  --harmony_arrays
+  --harmony_maths
+  --harmony
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x547D;&#x4EE4;&#x7684;&#x8F93;&#x51FA;&#x7ED3;&#x679C;&#xFF0C;&#x4F1A;&#x56E0;&#x4E3A;&#x7248;&#x672C;&#x7684;&#x4E0D;&#x540C;&#x800C;&#x6709;&#x6240;&#x4E0D;&#x540C;&#x3002;</p>
+<p>&#x6211;&#x5199;&#x4E86;&#x4E00;&#x4E2A;<a href="https://github.com/ruanyf/es-checker" target="_blank">ES-Checker</a>&#x6A21;&#x5757;&#xFF0C;&#x7528;&#x6765;&#x68C0;&#x67E5;&#x5404;&#x79CD;&#x8FD0;&#x884C;&#x73AF;&#x5883;&#x5BF9;ES6&#x7684;&#x652F;&#x6301;&#x60C5;&#x51B5;&#x3002;&#x8BBF;&#x95EE;<a href="http://ruanyf.github.io/es-checker" target="_blank">ruanyf.github.io/es-checker</a>&#xFF0C;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x60A8;&#x7684;&#x6D4F;&#x89C8;&#x5668;&#x652F;&#x6301;ES6&#x7684;&#x7A0B;&#x5EA6;&#x3002;&#x8FD0;&#x884C;&#x4E0B;&#x9762;&#x7684;&#x547D;&#x4EE4;&#xFF0C;&#x53EF;&#x4EE5;&#x67E5;&#x770B;&#x672C;&#x673A;&#x652F;&#x6301;ES6&#x7684;&#x7A0B;&#x5EA6;&#x3002;</p>
+<pre><code class="lang-bash">$ npm install -g es-checker
+$ es-checker
+
+=========================================
+Passes 24 feature Dectations
+Your runtime supports 57% of ECMAScript 6
+=========================================
+</code></pre>
+<h2 id="babel&#x8F6C;&#x7801;&#x5668;">Babel&#x8F6C;&#x7801;&#x5668;</h2>
+<p><a href="https://babeljs.io/" target="_blank">Babel</a>&#x662F;&#x4E00;&#x4E2A;&#x5E7F;&#x6CDB;&#x4F7F;&#x7528;&#x7684;ES6&#x8F6C;&#x7801;&#x5668;&#xFF0C;&#x53EF;&#x4EE5;&#x5C06;ES6&#x4EE3;&#x7801;&#x8F6C;&#x4E3A;ES5&#x4EE3;&#x7801;&#xFF0C;&#x4ECE;&#x800C;&#x5728;&#x6D4F;&#x89C8;&#x5668;&#x6216;&#x5176;&#x4ED6;&#x73AF;&#x5883;&#x6267;&#x884C;&#x3002;&#x8FD9;&#x610F;&#x5473;&#x7740;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x7528;ES6&#x7684;&#x65B9;&#x5F0F;&#x7F16;&#x5199;&#x7A0B;&#x5E8F;&#xFF0C;&#x53C8;&#x4E0D;&#x7528;&#x62C5;&#x5FC3;&#x73B0;&#x6709;&#x73AF;&#x5883;&#x662F;&#x5426;&#x652F;&#x6301;&#x3002;&#x4E0B;&#x9762;&#x662F;&#x4E00;&#x4E2A;&#x4F8B;&#x5B50;&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// &#x8F6C;&#x7801;&#x524D;</span>
+input.map(item =&gt; item + <span class="hljs-number">1</span>);
+
+<span class="hljs-comment">// &#x8F6C;&#x7801;&#x540E;</span>
+input.map(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">item</span>) </span>{
+  <span class="hljs-keyword">return</span> item + <span class="hljs-number">1</span>;
+});
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x7684;&#x539F;&#x59CB;&#x4EE3;&#x7801;&#x7528;&#x4E86;&#x7BAD;&#x5934;&#x51FD;&#x6570;&#xFF0C;&#x8FD9;&#x4E2A;&#x7279;&#x6027;&#x8FD8;&#x6CA1;&#x6709;&#x5F97;&#x5230;&#x5E7F;&#x6CDB;&#x652F;&#x6301;&#xFF0C;Babel&#x5C06;&#x5176;&#x8F6C;&#x4E3A;&#x666E;&#x901A;&#x51FD;&#x6570;&#xFF0C;&#x5C31;&#x80FD;&#x5728;&#x73B0;&#x6709;&#x7684;JavaScript&#x73AF;&#x5883;&#x6267;&#x884C;&#x4E86;&#x3002;</p>
+<h3 id="&#x547D;&#x4EE4;&#x884C;&#x73AF;&#x5883;">&#x547D;&#x4EE4;&#x884C;&#x73AF;&#x5883;</h3>
+<p>&#x547D;&#x4EE4;&#x884C;&#x4E0B;&#xFF0C;Babel&#x7684;&#x5B89;&#x88C5;&#x547D;&#x4EE4;&#x5982;&#x4E0B;&#x3002;</p>
+<pre><code class="lang-bash">$ npm install --global babel
+</code></pre>
+<p>Babel&#x81EA;&#x5E26;&#x4E00;&#x4E2A;<code>babel-node</code>&#x547D;&#x4EE4;&#xFF0C;&#x63D0;&#x4F9B;&#x652F;&#x6301;ES6&#x7684;REPL&#x73AF;&#x5883;&#x3002;&#x5B83;&#x652F;&#x6301;Node&#x7684;REPL&#x73AF;&#x5883;&#x7684;&#x6240;&#x6709;&#x529F;&#x80FD;&#xFF0C;&#x800C;&#x4E14;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x8FD0;&#x884C;ES6&#x4EE3;&#x7801;&#x3002;</p>
+<pre><code class="lang-bash">$ babel-node
+&gt;
+&gt; console.log([1,2,3].map(x =&gt; x * x))
+    [ 1, 4, 9 ]
+&gt;
+</code></pre>
+<p><code>babel-node</code>&#x547D;&#x4EE4;&#x4E5F;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x8FD0;&#x884C;ES6&#x811A;&#x672C;&#x3002;&#x5047;&#x5B9A;&#x5C06;&#x4E0A;&#x9762;&#x7684;&#x4EE3;&#x7801;&#x653E;&#x5165;&#x811A;&#x672C;&#x6587;&#x4EF6;<code>es6.js</code>&#x3002;</p>
+<pre><code class="lang-bash">$ babel-node es6.js
+[1, 4, 9]
+</code></pre>
+<p>babel&#x547D;&#x4EE4;&#x53EF;&#x4EE5;&#x5C06;ES6&#x4EE3;&#x7801;&#x8F6C;&#x4E3A;ES5&#x4EE3;&#x7801;&#x3002;</p>
+<pre><code class="lang-bash">$ babel es6.js
+<span class="hljs-string">&quot;use strict&quot;</span>;
+
+console.log([1, 2, 3].map(<span class="hljs-keyword">function</span> (x) {
+  <span class="hljs-built_in">return</span> x * x;
+}));
+</code></pre>
+<p><code>-o</code>&#x53C2;&#x6570;&#x5C06;&#x8F6C;&#x6362;&#x540E;&#x7684;&#x4EE3;&#x7801;&#xFF0C;&#x4ECE;&#x6807;&#x51C6;&#x8F93;&#x51FA;&#x5BFC;&#x5165;&#x6587;&#x4EF6;&#x3002;</p>
+<pre><code class="lang-bash">$ babel es6.js -o es5.js
+<span class="hljs-comment"># &#x6216;&#x8005;</span>
+$ babel es6.js --out-file es5.js
+</code></pre>
+<p><code>-d</code>&#x53C2;&#x6570;&#x7528;&#x4E8E;&#x8F6C;&#x6362;&#x6574;&#x4E2A;&#x76EE;&#x5F55;&#x3002;</p>
+<pre><code class="lang-bash">$ babel <span class="hljs-_">-d</span> build-dir <span class="hljs-built_in">source</span>-dir
+</code></pre>
+<p>&#x6CE8;&#x610F;&#xFF0C;<code>-d</code>&#x53C2;&#x6570;&#x540E;&#x9762;&#x8DDF;&#x7684;&#x662F;&#x8F93;&#x51FA;&#x76EE;&#x5F55;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x5E0C;&#x671B;&#x751F;&#x6210;source map&#x6587;&#x4EF6;&#xFF0C;&#x5219;&#x8981;&#x52A0;&#x4E0A;<code>-s</code>&#x53C2;&#x6570;&#x3002;</p>
+<pre><code class="lang-bash">$ babel <span class="hljs-_">-d</span> build-dir <span class="hljs-built_in">source</span>-dir <span class="hljs-_">-s</span>
+</code></pre>
+<h3 id="&#x6D4F;&#x89C8;&#x5668;&#x73AF;&#x5883;">&#x6D4F;&#x89C8;&#x5668;&#x73AF;&#x5883;</h3>
+<p>Babel&#x4E5F;&#x53EF;&#x4EE5;&#x7528;&#x4E8E;&#x6D4F;&#x89C8;&#x5668;&#x3002;&#x5B83;&#x7684;&#x6D4F;&#x89C8;&#x5668;&#x7248;&#x672C;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5B89;&#x88C5;<code>babel-core</code>&#x6A21;&#x5757;&#x83B7;&#x53D6;&#x3002;</p>
+<pre><code class="lang-bash">$ npm install babel-core
+</code></pre>
+<p>&#x8FD0;&#x884C;&#x4E0A;&#x9762;&#x7684;&#x547D;&#x4EE4;&#x4EE5;&#x540E;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x5728;&#x5F53;&#x524D;&#x76EE;&#x5F55;&#x7684;<code>node_modules/babel-core/</code>&#x5B50;&#x76EE;&#x5F55;&#x91CC;&#x9762;&#xFF0C;&#x627E;&#x5230;<code>babel</code>&#x7684;&#x6D4F;&#x89C8;&#x5668;&#x7248;&#x672C;<code>browser.js</code>&#xFF08;&#x672A;&#x7CBE;&#x7B80;&#xFF09;&#x548C;<code>browser.min.js</code>&#xFF08;&#x5DF2;&#x7CBE;&#x7B80;&#xFF09;&#x3002;</p>
+<p>&#x7136;&#x540E;&#xFF0C;&#x5C06;&#x4E0B;&#x9762;&#x7684;&#x4EE3;&#x7801;&#x63D2;&#x5165;&#x7F51;&#x9875;&#x3002;</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;node_modules/babel-core/browser.js&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text/babel&quot;</span>&gt;</span><span class="actionscript">
+<span class="hljs-comment">// Your ES6 code</span>
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x4EE3;&#x7801;&#x4E2D;&#xFF0C;<code>browser.js</code>&#x662F;Babel&#x63D0;&#x4F9B;&#x7684;&#x8F6C;&#x6362;&#x5668;&#x811A;&#x672C;&#xFF0C;&#x53EF;&#x4EE5;&#x5728;&#x6D4F;&#x89C8;&#x5668;&#x8FD0;&#x884C;&#x3002;&#x7528;&#x6237;&#x7684;ES6&#x811A;&#x672C;&#x653E;&#x5728;<code>script</code>&#x6807;&#x7B7E;&#x4E4B;&#x4E2D;&#xFF0C;&#x4F46;&#x662F;&#x8981;&#x6CE8;&#x660E;<code>type=&quot;text/babel&quot;</code>&#x3002;</p>
+<p>&#x8FD9;&#x79CD;&#x5199;&#x6CD5;&#x662F;&#x5B9E;&#x65F6;&#x5C06;ES6&#x4EE3;&#x7801;&#x8F6C;&#x4E3A;ES5&#xFF0C;&#x5BF9;&#x7F51;&#x9875;&#x6027;&#x80FD;&#x4F1A;&#x6709;&#x5F71;&#x54CD;&#x3002;&#x751F;&#x4EA7;&#x73AF;&#x5883;&#x9700;&#x8981;&#x52A0;&#x8F7D;&#x5DF2;&#x7ECF;&#x8F6C;&#x7801;&#x5B8C;&#x6210;&#x7684;&#x811A;&#x672C;&#x3002;</p>
+<p><code>Babel</code>&#x914D;&#x5408;<code>Browserify</code>&#x4E00;&#x8D77;&#x4F7F;&#x7528;&#xFF0C;&#x53EF;&#x4EE5;&#x751F;&#x6210;&#x6D4F;&#x89C8;&#x5668;&#x80FD;&#x591F;&#x76F4;&#x63A5;&#x52A0;&#x8F7D;&#x7684;&#x811A;&#x672C;&#x3002;</p>
+<pre><code class="lang-bash">$ browserify script.js -t babelify --outfile bundle.js
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x4EE3;&#x7801;&#x5C06;ES6&#x811A;&#x672C;<code>script.js</code>&#xFF0C;&#x8F6C;&#x4E3A;<code>bundle.js</code>&#x3002;&#x6D4F;&#x89C8;&#x5668;&#x76F4;&#x63A5;&#x52A0;&#x8F7D;&#x540E;&#x8005;&#x5C31;&#x53EF;&#x4EE5;&#x4E86;&#xFF0C;&#x4E0D;&#x7528;&#x518D;&#x52A0;&#x8F7D;<code>browser.js</code>&#x3002;</p>
+<p>&#x5728;<code>package.json</code>&#x8BBE;&#x7F6E;&#x4E0B;&#x9762;&#x7684;&#x4EE3;&#x7801;&#xFF0C;&#x5C31;&#x4E0D;&#x7528;&#x6BCF;&#x6B21;&#x547D;&#x4EE4;&#x884C;&#x90FD;&#x8F93;&#x5165;&#x53C2;&#x6570;&#x4E86;&#x3002;</p>
+<pre><code class="lang-javascript">{
+  <span class="hljs-comment">// ...</span>
+  <span class="hljs-string">&quot;browserify&quot;</span>: {
+    <span class="hljs-string">&quot;transform&quot;</span>: [
+      [<span class="hljs-string">&quot;babelify&quot;</span>, { <span class="hljs-string">&quot;stage&quot;</span>: [<span class="hljs-number">0</span>] }]
+    ]
+  }
+}
+</code></pre>
+<h3 id="node&#x73AF;&#x5883;">Node&#x73AF;&#x5883;</h3>
+<p>Node&#x811A;&#x672C;&#x4E4B;&#x4E2D;&#xFF0C;&#x9700;&#x8981;&#x8F6C;&#x6362;ES6&#x811A;&#x672C;&#xFF0C;&#x53EF;&#x4EE5;&#x50CF;&#x4E0B;&#x9762;&#x8FD9;&#x6837;&#x5199;&#x3002;</p>
+<p>&#x5148;&#x5B89;&#x88C5;<code>babel-core</code>&#x3002;</p>
+<pre><code class="lang-javascript">$ npm install --save-dev babel-core
+</code></pre>
+<p>&#x7136;&#x540E;&#x5728;&#x811A;&#x672C;&#x4E2D;&#xFF0C;&#x8C03;&#x7528;<code>babel-core</code>&#x7684;<code>transform</code>&#x65B9;&#x6CD5;&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-built_in">require</span>(<span class="hljs-string">&quot;babel-core&quot;</span>).transform(<span class="hljs-string">&quot;code&quot;</span>, options);
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x4EE3;&#x7801;&#x4E2D;&#xFF0C;<code>transform</code>&#x65B9;&#x6CD5;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x662F;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x8868;&#x793A;ES6&#x4EE3;&#x7801;&#x3002;</p>
+<p>Node&#x811A;&#x672C;&#x8FD8;&#x6709;&#x4E00;&#x79CD;&#x7279;&#x6B8A;&#x7684;<code>babel</code>&#x7528;&#x6CD5;&#xFF0C;&#x5373;&#x628A;<code>babel</code>&#x52A0;&#x8F7D;&#x4E3A;<code>require</code>&#x547D;&#x4EE4;&#x7684;&#x4E00;&#x4E2A;&#x94A9;&#x5B50;&#x3002;&#x5148;&#x5C06;<code>babel</code>&#x5168;&#x5C40;&#x5B89;&#x88C5;&#x3002;</p>
+<pre><code class="lang-bash">$ npm install -g babel
+</code></pre>
+<p>&#x7136;&#x540E;&#xFF0C;&#x5728;&#x4F60;&#x7684;&#x5E94;&#x7528;&#x7684;&#x5165;&#x53E3;&#x811A;&#x672C;&#xFF08;entry script&#xFF09;&#x5934;&#x90E8;&#xFF0C;&#x52A0;&#x5165;&#x4E0B;&#x9762;&#x7684;&#x8BED;&#x53E5;&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-built_in">require</span>(<span class="hljs-string">&quot;babel/register&quot;</span>);
+</code></pre>
+<p>&#x6709;&#x4E86;&#x4E0A;&#x9762;&#x8FD9;&#x884C;&#x8BED;&#x53E5;&#xFF0C;&#x540E;&#x9762;&#x6240;&#x6709;&#x901A;&#x8FC7;<code>require</code>&#x547D;&#x4EE4;&#x52A0;&#x8F7D;&#x7684;&#x540E;&#x7F00;&#x540D;&#x4E3A;<code>.es6</code>&#x3001;<code>.es</code>&#x3001;<code>.jsx</code>&#x548C;<code>.js</code>&#x7684;&#x811A;&#x672C;&#xFF0C;&#x90FD;&#x4F1A;&#x5148;&#x901A;&#x8FC7;<code>babel</code>&#x8F6C;&#x7801;&#x540E;&#x518D;&#x52A0;&#x8F7D;&#x3002;</p>
+<h2 id="traceur&#x8F6C;&#x7801;&#x5668;">Traceur&#x8F6C;&#x7801;&#x5668;</h2>
+<p>Google&#x516C;&#x53F8;&#x7684;<a href="https://github.com/google/traceur-compiler" target="_blank">Traceur</a>&#x8F6C;&#x7801;&#x5668;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x5C06;ES6&#x4EE3;&#x7801;&#x8F6C;&#x4E3A;ES5&#x4EE3;&#x7801;&#x3002;</p>
+<h3 id="&#x76F4;&#x63A5;&#x63D2;&#x5165;&#x7F51;&#x9875;">&#x76F4;&#x63A5;&#x63D2;&#x5165;&#x7F51;&#x9875;</h3>
+<p>Traceur&#x5141;&#x8BB8;&#x5C06;ES6&#x4EE3;&#x7801;&#x76F4;&#x63A5;&#x63D2;&#x5165;&#x7F51;&#x9875;&#x3002;&#x9996;&#x5148;&#xFF0C;&#x5FC5;&#x987B;&#x5728;&#x7F51;&#x9875;&#x5934;&#x90E8;&#x52A0;&#x8F7D;Traceur&#x5E93;&#x6587;&#x4EF6;&#x3002;</p>
+<pre><code class="lang-javascript">&lt;!-- &#x52A0;&#x8F7D;Traceur&#x7F16;&#x8BD1;&#x5668; --&gt;
+<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;http://google.github.io/traceur-compiler/bin/traceur.js&quot;</span>
+        <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text/javascript&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span></span>
+&lt;!-- &#x5C06;Traceur&#x7F16;&#x8BD1;&#x5668;&#x7528;&#x4E8E;&#x7F51;&#x9875; --&gt;
+<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;http://google.github.io/traceur-compiler/src/bootstrap.js&quot;</span>
+        <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text/javascript&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span></span>
+&lt;!-- &#x6253;&#x5F00;&#x5B9E;&#x9A8C;&#x9009;&#x9879;&#xFF0C;&#x5426;&#x5219;&#x6709;&#x4E9B;&#x7279;&#x6027;&#x53EF;&#x80FD;&#x7F16;&#x8BD1;&#x4E0D;&#x6210;&#x529F; --&gt;
+<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="actionscript">
+        traceur.options.experimental = <span class="hljs-literal">true</span>;
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span></span>
+</code></pre>
+<p>&#x63A5;&#x4E0B;&#x6765;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x628A;ES6&#x4EE3;&#x7801;&#x653E;&#x5165;&#x4E0A;&#x9762;&#x8FD9;&#x4E9B;&#x4EE3;&#x7801;&#x7684;&#x4E0B;&#x65B9;&#x3002;</p>
+<pre><code class="lang-javascript">&lt;script type=<span class="hljs-string">&quot;module&quot;</span>&gt;
+  <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Calc</span> </span>{
+    <span class="hljs-keyword">constructor</span>(){
+      <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;Calc constructor&apos;</span>);
+    }
+    add(a, b){
+      <span class="hljs-keyword">return</span> a + b;
+    }
+  }
+
+  <span class="hljs-keyword">var</span> c = <span class="hljs-keyword">new</span> Calc();
+  <span class="hljs-built_in">console</span>.log(c.add(<span class="hljs-number">4</span>,<span class="hljs-number">5</span>));
+<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span></span>
+</code></pre>
+<p>&#x6B63;&#x5E38;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x4E0A;&#x9762;&#x4EE3;&#x7801;&#x4F1A;&#x5728;&#x63A7;&#x5236;&#x53F0;&#x6253;&#x5370;&#x51FA;9&#x3002;</p>
+<p>&#x6CE8;&#x610F;&#xFF0C;<code>script</code>&#x6807;&#x7B7E;&#x7684;<code>type</code>&#x5C5E;&#x6027;&#x7684;&#x503C;&#x662F;<code>module</code>&#xFF0C;&#x800C;&#x4E0D;&#x662F;<code>text/javascript</code>&#x3002;&#x8FD9;&#x662F;Traceur&#x7F16;&#x8BD1;&#x5668;&#x8BC6;&#x522B;ES6&#x4EE3;&#x7801;&#x7684;&#x6807;&#x8BC6;&#xFF0C;&#x7F16;&#x8BD1;&#x5668;&#x4F1A;&#x81EA;&#x52A8;&#x5C06;&#x6240;&#x6709;<code>type=module</code>&#x7684;&#x4EE3;&#x7801;&#x7F16;&#x8BD1;&#x4E3A;ES5&#xFF0C;&#x7136;&#x540E;&#x518D;&#x4EA4;&#x7ED9;&#x6D4F;&#x89C8;&#x5668;&#x6267;&#x884C;&#x3002;</p>
+<p>&#x5982;&#x679C;ES6&#x4EE3;&#x7801;&#x662F;&#x4E00;&#x4E2A;&#x5916;&#x90E8;&#x6587;&#x4EF6;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x7528;<code>script</code>&#x6807;&#x7B7E;&#x63D2;&#x5165;&#x7F51;&#x9875;&#x3002;</p>
+<pre><code class="lang-javascript">&lt;script type=<span class="hljs-string">&quot;module&quot;</span> src=<span class="hljs-string">&quot;calc.js&quot;</span> &gt;
+<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span></span>
+</code></pre>
+<h3 id="&#x5728;&#x7EBF;&#x8F6C;&#x6362;">&#x5728;&#x7EBF;&#x8F6C;&#x6362;</h3>
+<p>Traceur&#x63D0;&#x4F9B;&#x4E00;&#x4E2A;<a href="http://google.github.io/traceur-compiler/demo/repl.html" target="_blank">&#x5728;&#x7EBF;&#x7F16;&#x8BD1;&#x5668;</a>&#xFF0C;&#x53EF;&#x4EE5;&#x5728;&#x7EBF;&#x5C06;ES6&#x4EE3;&#x7801;&#x8F6C;&#x4E3A;ES5&#x4EE3;&#x7801;&#x3002;&#x8F6C;&#x6362;&#x540E;&#x7684;&#x4EE3;&#x7801;&#xFF0C;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x4F5C;&#x4E3A;ES5&#x4EE3;&#x7801;&#x63D2;&#x5165;&#x7F51;&#x9875;&#x8FD0;&#x884C;&#x3002;</p>
+<p>&#x4E0A;&#x9762;&#x7684;&#x4F8B;&#x5B50;&#x8F6C;&#x4E3A;ES5&#x4EE3;&#x7801;&#x8FD0;&#x884C;&#xFF0C;&#x5C31;&#x662F;&#x4E0B;&#x9762;&#x8FD9;&#x4E2A;&#x6837;&#x5B50;&#x3002;</p>
+<pre><code class="lang-javascript">&lt;script src=<span class="hljs-string">&quot;http://google.github.io/traceur-compiler/bin/traceur.js&quot;</span>
+        type=<span class="hljs-string">&quot;text/javascript&quot;</span>&gt;<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span></span>
+&lt;script src=<span class="hljs-string">&quot;http://google.github.io/traceur-compiler/src/bootstrap.js&quot;</span>
+        type=<span class="hljs-string">&quot;text/javascript&quot;</span>&gt;<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span></span>
+&lt;script&gt;
+        traceur.options.experimental = <span class="hljs-literal">true</span>;
+<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span></span>
+&lt;script&gt;
+$traceurRuntime.ModuleStore.getAnonymousModule(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+<span class="hljs-meta">  &quot;use strict&quot;</span>;
+
+  <span class="hljs-keyword">var</span> Calc = <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Calc</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;Calc constructor&apos;</span>);
+  };
+
+  ($traceurRuntime.createClass)(Calc, {add: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">a, b</span>) </span>{
+    <span class="hljs-keyword">return</span> a + b;
+  }}, {});
+
+  <span class="hljs-keyword">var</span> c = <span class="hljs-keyword">new</span> Calc();
+  <span class="hljs-built_in">console</span>.log(c.add(<span class="hljs-number">4</span>, <span class="hljs-number">5</span>));
+  <span class="hljs-keyword">return</span> {};
+});
+<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span></span>
+</code></pre>
+<h3 id="&#x547D;&#x4EE4;&#x884C;&#x8F6C;&#x6362;">&#x547D;&#x4EE4;&#x884C;&#x8F6C;&#x6362;</h3>
+<p>&#x4F5C;&#x4E3A;&#x547D;&#x4EE4;&#x884C;&#x5DE5;&#x5177;&#x4F7F;&#x7528;&#x65F6;&#xFF0C;Traceur&#x662F;&#x4E00;&#x4E2A;Node.js&#x7684;&#x6A21;&#x5757;&#xFF0C;&#x9996;&#x5148;&#x9700;&#x8981;&#x7528;npm&#x5B89;&#x88C5;&#x3002;</p>
+<pre><code class="lang-bash">$ npm install -g traceur
+</code></pre>
+<p>&#x5B89;&#x88C5;&#x6210;&#x529F;&#x540E;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x5728;&#x547D;&#x4EE4;&#x884C;&#x4E0B;&#x4F7F;&#x7528;traceur&#x4E86;&#x3002;</p>
+<p>traceur&#x76F4;&#x63A5;&#x8FD0;&#x884C;es6&#x811A;&#x672C;&#x6587;&#x4EF6;&#xFF0C;&#x4F1A;&#x5728;&#x6807;&#x51C6;&#x8F93;&#x51FA;&#x663E;&#x793A;&#x8FD0;&#x884C;&#x7ED3;&#x679C;&#xFF0C;&#x4EE5;&#x524D;&#x9762;&#x7684;calc.js&#x4E3A;&#x4F8B;&#x3002;</p>
+<pre><code class="lang-bash">$ traceur calc.js
+Calc constructor
+9
+</code></pre>
+<p>&#x5982;&#x679C;&#x8981;&#x5C06;ES6&#x811A;&#x672C;&#x8F6C;&#x4E3A;ES5&#x4FDD;&#x5B58;&#xFF0C;&#x8981;&#x91C7;&#x7528;&#x4E0B;&#x9762;&#x7684;&#x5199;&#x6CD5;</p>
+<pre><code class="lang-bash">$ traceur --script calc.es6.js --out calc.es5.js
+</code></pre>
+<p>&#x4E0A;&#x9762;&#x4EE3;&#x7801;&#x7684;<code>--script</code>&#x9009;&#x9879;&#x8868;&#x793A;&#x6307;&#x5B9A;&#x8F93;&#x5165;&#x6587;&#x4EF6;&#xFF0C;<code>--out</code>&#x9009;&#x9879;&#x8868;&#x793A;&#x6307;&#x5B9A;&#x8F93;&#x51FA;&#x6587;&#x4EF6;&#x3002;</p>
+<p>&#x4E3A;&#x4E86;&#x9632;&#x6B62;&#x6709;&#x4E9B;&#x7279;&#x6027;&#x7F16;&#x8BD1;&#x4E0D;&#x6210;&#x529F;&#xFF0C;&#x6700;&#x597D;&#x52A0;&#x4E0A;<code>--experimental</code>&#x9009;&#x9879;&#x3002;</p>
+<pre><code class="lang-bash">$ traceur --script calc.es6.js --out calc.es5.js --experimental
+</code></pre>
+<p>&#x547D;&#x4EE4;&#x884C;&#x4E0B;&#x8F6C;&#x6362;&#x7684;&#x6587;&#x4EF6;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x653E;&#x5230;&#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#x8FD0;&#x884C;&#x3002;</p>
+<h3 id="nodejs&#x73AF;&#x5883;&#x7684;&#x7528;&#x6CD5;">Node.js&#x73AF;&#x5883;&#x7684;&#x7528;&#x6CD5;</h3>
+<p>Traceur&#x7684;Node.js&#x7528;&#x6CD5;&#x5982;&#x4E0B;&#xFF08;&#x5047;&#x5B9A;&#x5DF2;&#x5B89;&#x88C5;traceur&#x6A21;&#x5757;&#xFF09;&#x3002;</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> traceur = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;traceur&apos;</span>);
+<span class="hljs-keyword">var</span> fs = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;fs&apos;</span>);
+
+<span class="hljs-comment">// &#x5C06;ES6&#x811A;&#x672C;&#x8F6C;&#x4E3A;&#x5B57;&#x7B26;&#x4E32;</span>
+<span class="hljs-keyword">var</span> contents = fs.readFileSync(<span class="hljs-string">&apos;es6-file.js&apos;</span>).toString();
+
+<span class="hljs-keyword">var</span> result = traceur.compile(contents, {
+  filename: <span class="hljs-string">&apos;es6-file.js&apos;</span>,
+  sourceMap: <span class="hljs-literal">true</span>,
+  <span class="hljs-comment">// &#x5176;&#x4ED6;&#x8BBE;&#x7F6E;</span>
+  modules: <span class="hljs-string">&apos;commonjs&apos;</span>
+});
+
+<span class="hljs-keyword">if</span> (result.error)
+  <span class="hljs-keyword">throw</span> result.error;
+
+<span class="hljs-comment">// result&#x5BF9;&#x8C61;&#x7684;js&#x5C5E;&#x6027;&#x5C31;&#x662F;&#x8F6C;&#x6362;&#x540E;&#x7684;ES5&#x4EE3;&#x7801;</span>
+fs.writeFileSync(<span class="hljs-string">&apos;out.js&apos;</span>, result.js);
+<span class="hljs-comment">// sourceMap&#x5C5E;&#x6027;&#x5BF9;&#x5E94;map&#x6587;&#x4EF6;</span>
+fs.writeFileSync(<span class="hljs-string">&apos;out.js.map&apos;</span>, result.sourceMap);
+</code></pre>
+<h2 id="ecmascript-7">ECMAScript 7</h2>
+<p>2013&#x5E74;3&#x6708;&#xFF0C;ES6&#x7684;&#x8349;&#x6848;&#x5C01;&#x95ED;&#xFF0C;&#x4E0D;&#x518D;&#x63A5;&#x53D7;&#x65B0;&#x529F;&#x80FD;&#x4E86;&#x3002;&#x65B0;&#x7684;&#x529F;&#x80FD;&#x5C06;&#x88AB;&#x52A0;&#x5165;ES7&#x3002;</p>
+<p>&#x4EFB;&#x4F55;&#x4EBA;&#x90FD;&#x53EF;&#x4EE5;&#x5411;ES7&#x63D0;&#x6848;&#xFF0C;&#x4ECE;&#x63D0;&#x6848;&#x5230;&#x53D8;&#x6210;&#x6B63;&#x5F0F;&#x6807;&#x51C6;&#xFF0C;&#x9700;&#x8981;&#x7ECF;&#x5386;&#x4E94;&#x4E2A;&#x9636;&#x6BB5;&#x3002;&#x6BCF;&#x4E2A;&#x9636;&#x6BB5;&#x7684;&#x53D8;&#x52A8;&#x90FD;&#x9700;&#x8981;&#x7531;TC39&#x59D4;&#x5458;&#x4F1A;&#x6279;&#x51C6;&#x3002;</p>
+<ul>
+<li>Stage 0 - Strawman&#xFF08;&#x5C55;&#x793A;&#x9636;&#x6BB5;&#xFF09;</li>
+<li>Stage 1 - Proposal&#xFF08;&#x5F81;&#x6C42;&#x610F;&#x89C1;&#x9636;&#x6BB5;&#xFF09;</li>
+<li>Stage 2 - Draft&#xFF08;&#x8349;&#x6848;&#x9636;&#x6BB5;&#xFF09;</li>
+<li>Stage 3 - Candidate&#xFF08;&#x5019;&#x9009;&#x4EBA;&#x9636;&#x6BB5;&#xFF09;</li>
+<li>Stage 4 - Finished&#xFF08;&#x5B9A;&#x6848;&#x9636;&#x6BB5;&#xFF09;</li>
+</ul>
+<p>&#x4E00;&#x4E2A;&#x63D0;&#x6848;&#x53EA;&#x8981;&#x80FD;&#x8FDB;&#x5165;Stage 2&#xFF0C;&#x5C31;&#x5DEE;&#x4E0D;&#x591A;&#x7B49;&#x4E8E;&#x80AF;&#x5B9A;&#x4F1A;&#x5305;&#x62EC;&#x5728;ES7&#x91CC;&#x9762;&#x3002;</p>
+<p>&#x672C;&#x4E66;&#x7684;&#x5199;&#x4F5C;&#x76EE;&#x6807;&#x4E4B;&#x4E00;&#xFF0C;&#x662F;&#x8DDF;&#x8E2A;ECMAScript&#x8BED;&#x8A00;&#x7684;&#x6700;&#x65B0;&#x8FDB;&#x5C55;&#x3002;&#x5BF9;&#x4E8E;&#x90A3;&#x4E9B;&#x660E;&#x786E;&#x7684;&#x3001;&#x6216;&#x8005;&#x5F88;&#x6709;&#x5E0C;&#x671B;&#x5217;&#x5165;ES7&#x7684;&#x529F;&#x80FD;&#xFF0C;&#x5C24;&#x5176;&#x662F;&#x90A3;&#x4E9B;Babel&#x5DF2;&#x7ECF;&#x652F;&#x6301;&#x7684;&#x529F;&#x80FD;&#xFF0C;&#x90FD;&#x5C06;&#x4E88;&#x4EE5;&#x4ECB;&#x7ECD;&#x3002;</p>
+<p>&#x672C;&#x4E66;&#x4ECB;&#x7ECD;&#x7684;ES7&#x529F;&#x80FD;&#x6E05;&#x5355;&#x5982;&#x4E0B;&#x3002;</p>
+<p><strong>Stage 0</strong>&#xFF1A;</p>
+<ul>
+<li>es7.comprehensions&#xFF1A;&#x6570;&#x7EC4;&#x63A8;&#x5BFC;</li>
+<li>es7.classProperties&#xFF1A;&#x7C7B;&#x7684;&#x5C5E;&#x6027;</li>
+<li>es7.functionBind&#xFF1A;&#x51FD;&#x6570;&#x7684;&#x7ED1;&#x5B9A;&#x8FD0;&#x7B97;&#x7B26;</li>
+</ul>
+<p><strong>Stage 1</strong>&#xFF1A;</p>
+<ul>
+<li>es7.decorators&#xFF1A;&#x4FEE;&#x9970;&#x5668;</li>
+<li>es7.exportExtensions&#xFF1A;export&#x7684;&#x6269;&#x5C55;&#x5199;&#x6CD5;</li>
+<li>es7.trailingFunctionCommas&#xFF1A;&#x51FD;&#x6570;&#x53C2;&#x6570;&#x7684;&#x5C3E;&#x9017;&#x53F7;</li>
+</ul>
+<p><strong>Stage 2</strong>&#xFF1A;</p>
+<ul>
+<li>es7.exponentiationOperator&#xFF1A;&#x6307;&#x6570;&#x8FD0;&#x7B97;&#x7B26;</li>
+<li>es7.asyncFunctions&#xFF1A;ansyc&#x51FD;&#x6570;</li>
+<li>es7.objectRestSpread&#xFF1A;&#x5BF9;&#x8C61;&#x7684;Rest&#x53C2;&#x6570;&#x548C;&#x6269;&#x5C55;&#x8FD0;&#x7B97;&#x7B26;</li>
+</ul>
+<p>Babel&#x8F6C;&#x7801;&#x5668;&#x5BF9;Stage 2&#x53CA;&#x4EE5;&#x4E0A;&#x9636;&#x6BB5;&#x7684;&#x529F;&#x80FD;&#xFF0C;&#x662F;&#x9ED8;&#x8BA4;&#x652F;&#x6301;&#x7684;&#x3002;&#x5BF9;&#x4E8E;&#x90A3;&#x4E9B;&#x9ED8;&#x8BA4;&#x6CA1;&#x6709;&#x6253;&#x5F00;&#x7684;&#x529F;&#x80FD;&#xFF0C;&#x9700;&#x8981;&#x624B;&#x52A8;&#x6253;&#x5F00;&#x3002;</p>
+<pre><code class="lang-bash">$ babel --stage 0
+$ babel --optional es7.decorators
+</code></pre>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../../ecmascript6/readme.html" class="navigation navigation-prev " aria-label="Previous page: 前言"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../../ecmascript6/docs/destructuring.html" class="navigation navigation-next " aria-label="Next page: 变量的解构赋值"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+ 
+<script src="../../gitbook/app-min.js"></script>
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-disqus/plugin.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-fontsettings/fontsettings.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"disqus":{"shortName":"f2edocs","useIdentifier":false},"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+ 
+    <div class="footer">https://github.com/simonguo/f2edocs.com </div>
+    
+    <div style="display:none" id="cnzz_tracker">
+        <script src="http://s9.cnzz.com/stat.php?id=1256491313&web_id=1256491313" language="JavaScript"></script>
+    </div>
+    
+</body>
+
+
+
+</html>

@@ -1,0 +1,8 @@
+{
+    "name": "f2edocs.com",
+    "description": "f2edocs.com",
+    "scripts": {
+        "build:book": "node ./bin/book.js",
+        "build": "npm run build:book && sh ./build.sh"
+    }
+}
