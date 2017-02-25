@@ -1,1 +1,0 @@
-#CSS Image Data Types
