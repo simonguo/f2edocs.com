@@ -1,9 +1,14 @@
 {
-    "name": "f2edocs.com",
-    "description": "f2edocs.com",
-    "scripts": {
-        "build:book": "node ./bin/book.js",
-        "build": "npm run build:book && sh ./build.sh",
-        "cp":"cp src/index.html assets/ && cp -R src/stylesheets assets/"
-    }
+  "name": "f2edocs.com",
+  "description": "f2edocs.com",
+  "scripts": {
+    "build:book": "node ./bin/book.js",
+    "cp": "cp src/index.html assets/ && cp -R src/stylesheets assets/",
+    "build": "npm run build:book && sh ./build.sh && npm run cp",
+    "publish-docs": "node bin/gh-pages.js"
+
+  },
+  "devDependencies": {
+    "gh-pages": "^0.12.0"
+  }
 }
