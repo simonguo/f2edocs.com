@@ -1,0 +1,158 @@
+*, *:after, *:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body, html {
+    font-size: 100%;
+    padding: 0;
+    margin: 0;
+}
+.clearfix:before, .clearfix:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+body {
+    font-family: 'Lato', Calibri, Arial, sans-serif;
+    color: #2980b9;
+}
+a {
+    color: #f0f0f0;
+    text-decoration: none;
+    outline: none;
+}
+a:hover {
+    color: #000;
+}
+.container > header {
+    width: 90%;
+    max-width: 69em;
+    margin: 0 auto;
+    padding: 2.875em 1.875em 1.875em;
+}
+.container > header h1 {
+    font-size: 2.125em;
+    line-height: 1.3;
+    margin: 0 0 0.6em 0;
+    float: left;
+    font-weight: 400;
+}
+.container > header > span {
+    display: block;
+    position: relative;
+    z-index: 200;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+    padding: 0 0 0.6em 0.1em;
+}
+.container > header > span span:after {
+    width: 30px;
+    height: 30px;
+    left: -12px;
+    font-size: 50%;
+    top: -8px;
+    font-size: 75%;
+    position: relative;
+}
+.container > header > span span:hover:before {
+    content: attr(data-content);
+    text-transform: none;
+    text-indent: 0;
+    letter-spacing: 0;
+    font-weight: 300;
+    font-size: 110%;
+    padding: 0.8em 1em;
+    line-height: 1.2;
+    text-align: left;
+    left: auto;
+    margin-left: 4px;
+    position: absolute;
+    color: #fff;
+    background: #2980b9;
+}
+@media screen and (max-width: 55em) {
+    .container > header h1, .container > header nav {
+        float: none;
+    }
+    .container > header > span, .container > header h1 {
+        text-align: center;
+    }
+    .container > header nav {
+        margin: 0 auto;
+    }
+    .container > header > span {
+        text-indent: 30px;
+    }
+}
+.grid-gallery ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.grid-gallery figure {
+    margin: 0;
+}
+.grid-gallery figure img {
+    display: block;
+    width: 100%;
+}
+.grid-gallery figcaption h3 {
+    margin: 0;
+    padding: 0 0 0.5em;
+}
+.grid-gallery figcaption p {
+    margin: 0;
+}
+.grid-wrap {
+    max-width: 69em;
+    margin: 0 auto;
+    padding: 0 1em 1.875em;
+}
+.grid {
+    margin: 0 auto;
+}
+.grid li {
+    width: 25%;
+    float: left;
+}
+.grid figure {
+    padding: 15px;
+    -webkit-transition: opacity 0.2s;
+    transition: opacity 0.2s;
+}
+.grid li:hover figure {
+    opacity: 0.7;
+}
+.grid figcaption {
+    background: #e4e4e4;
+    padding: 25px;
+}
+@media screen and (max-width: 60em) {
+    .grid li {
+        width: 33.3%;
+    }
+}
+@media screen and (max-width: 35em) {
+    .grid li {
+        width: 50%;
+    }
+}
+@media screen and (max-width: 24em) {
+    .grid li {
+        width: 100%;
+    }
+}
+.box {
+    background: #2980b9;
+    text-align: center;
+    padding: 20px 0;
+    display: block;
+}
+.box .fa {
+    color: #fff;
+    font-size: 80px;
+}

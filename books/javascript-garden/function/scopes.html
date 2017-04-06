@@ -1,0 +1,2026 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+
+
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>作用域与命名空间 | F2E Docs</title>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <meta name="description" content="">
+    <meta name="generator" content="GitBook 1.2.27">  
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon"> 
+    <link rel="stylesheet" href="../../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-disqus/plugin.css">
+        
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+ 
+    
+    
+    <link rel="next" href="../../javascript-garden/array/general.html" />
+    
+    
+    <link rel="prev" href="../../javascript-garden/function/constructors.html" />
+    
+ 
+    
+</head>
+
+<body class="theme-default">
+    <div class="header">
+        <a aria-label="Table of Contents" class="btn-toggle-summary" href="#">
+            <i class="fa fa-align-justify"></i>
+        </a>
+        <a class="logo">F2E Docs</a>
+        <ul class="nav">
+            
+            <li  class="active" ><a href="/books/">书籍</a></li>
+            
+            <li ><a href="/interview/">面试</a></li>
+            
+            <li ><a href="/collect/">牛人与社区</a></li>
+            
+            <li ><a href="/style-guide/">规范</a></li>
+            
+            <li ><a href="/reference/">参考</a></li>
+            
+            <li ><a href="https://github.com/simonguo/f2edocs.com">Github</a></li>
+            
+        </ul>
+    </div>
+     
+    <div class="book"
+        data-level="3.6.6"
+        data-chapter-title="作用域与命名空间"
+        data-filepath="javascript-garden/function/scopes.md"
+        data-basepath="../.."
+        data-revision="Thu Apr 06 2017 23:58:20 GMT+0800 (CST)"
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        前端书籍-概要
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" >
+            
+            <span><b>1.</b> ECMAScript 6入门</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="ecmascript6/readme.html">
+            
+                
+                    <a href="../../ecmascript6/readme.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        前言
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="ecmascript6/docs/intro.html">
+            
+                
+                    <a href="../../ecmascript6/docs/intro.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        ECMAScript 6简介
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="ecmascript6/docs/destructuring.html">
+            
+                
+                    <a href="../../ecmascript6/docs/destructuring.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                        变量的解构赋值
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="ecmascript6/docs/let.html">
+            
+                
+                    <a href="../../ecmascript6/docs/let.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.</b>
+                        
+                        let和const命令
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="ecmascript6/docs/string.html">
+            
+                
+                    <a href="../../ecmascript6/docs/string.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.</b>
+                        
+                        字符串的扩展
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="ecmascript6/docs/number.html">
+            
+                
+                    <a href="../../ecmascript6/docs/number.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.6.</b>
+                        
+                        数值的扩展
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="ecmascript6/docs/regex.html">
+            
+                
+                    <a href="../../ecmascript6/docs/regex.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.7.</b>
+                        
+                        正则的扩展
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="ecmascript6/docs/array.html">
+            
+                
+                    <a href="../../ecmascript6/docs/array.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.8.</b>
+                        
+                        数组的扩展
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="ecmascript6/docs/object.html">
+            
+                
+                    <a href="../../ecmascript6/docs/object.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.9.</b>
+                        
+                        对象的扩展
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="ecmascript6/docs/function.html">
+            
+                
+                    <a href="../../ecmascript6/docs/function.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.10.</b>
+                        
+                        函数的扩展
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="ecmascript6/docs/symbol.html">
+            
+                
+                    <a href="../../ecmascript6/docs/symbol.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.11.</b>
+                        
+                        Symbol
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="ecmascript6/docs/proxy.html">
+            
+                
+                    <a href="../../ecmascript6/docs/proxy.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.12.</b>
+                        
+                        Proxy和Reflect
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="ecmascript6/docs/set-map.html">
+            
+                
+                    <a href="../../ecmascript6/docs/set-map.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.13.</b>
+                        
+                        Set和Map数据结构
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="ecmascript6/docs/iterator.html">
+            
+                
+                    <a href="../../ecmascript6/docs/iterator.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.14.</b>
+                        
+                        Iterator和for...of循环
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="ecmascript6/docs/generator.html">
+            
+                
+                    <a href="../../ecmascript6/docs/generator.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.15.</b>
+                        
+                        Generator函数
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="ecmascript6/docs/promise.html">
+            
+                
+                    <a href="../../ecmascript6/docs/promise.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.16.</b>
+                        
+                        Promise对象
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="ecmascript6/docs/async.html">
+            
+                
+                    <a href="../../ecmascript6/docs/async.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.17.</b>
+                        
+                        异步操作和Async函数
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="ecmascript6/docs/class.html">
+            
+                
+                    <a href="../../ecmascript6/docs/class.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.18.</b>
+                        
+                        Class
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="ecmascript6/docs/decorator.html">
+            
+                
+                    <a href="../../ecmascript6/docs/decorator.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.19.</b>
+                        
+                        Decorator
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="ecmascript6/docs/module.html">
+            
+                
+                    <a href="../../ecmascript6/docs/module.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.20.</b>
+                        
+                        Module
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="ecmascript6/docs/style.html">
+            
+                
+                    <a href="../../ecmascript6/docs/style.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.21.</b>
+                        
+                        编程风格
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="ecmascript6/docs/reference.html">
+            
+                
+                    <a href="../../ecmascript6/docs/reference.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.22.</b>
+                        
+                        参考链接
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" >
+            
+            <span><b>2.</b> 七天学会NodeJS</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="7-days-nodejs/01_getting_started.html">
+            
+                
+                    <a href="../../7-days-nodejs/01_getting_started.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        NodeJS基础
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="7-days-nodejs/02_code_management_and_deployment.html">
+            
+                
+                    <a href="../../7-days-nodejs/02_code_management_and_deployment.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        代码的组织和部署
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="7-days-nodejs/03_file.html">
+            
+                
+                    <a href="../../7-days-nodejs/03_file.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        文件操作
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="7-days-nodejs/04_network.html">
+            
+                
+                    <a href="../../7-days-nodejs/04_network.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                        网络操作
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="7-days-nodejs/05_process.html">
+            
+                
+                    <a href="../../7-days-nodejs/05_process.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.</b>
+                        
+                        进程管理
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="7-days-nodejs/06_async_programming.html">
+            
+                
+                    <a href="../../7-days-nodejs/06_async_programming.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.6.</b>
+                        
+                        异步编程
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="7-days-nodejs/07_example.html">
+            
+                
+                    <a href="../../7-days-nodejs/07_example.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.7.</b>
+                        
+                        大示例
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" >
+            
+            <span><b>3.</b> JavaScript 密码花园</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="javascript-garden/intro/index.html">
+            
+                
+                    <a href="../../javascript-garden/intro/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        简介
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="javascript-garden/intro/authors.html">
+            
+                
+                    <a href="../../javascript-garden/intro/authors.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        作者
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="javascript-garden/intro/contributors.html">
+            
+                
+                    <a href="../../javascript-garden/intro/contributors.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.</b>
+                        
+                        贡献者
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="javascript-garden/intro/license.html">
+            
+                
+                    <a href="../../javascript-garden/intro/license.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.</b>
+                        
+                        许可
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" >
+            
+            <span><b>3.5.</b> 对象</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.5.1" data-path="javascript-garden/object/general.html">
+            
+                
+                    <a href="../../javascript-garden/object/general.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.5.1.</b>
+                        
+                        对象使用和属性
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5.2" data-path="javascript-garden/object/prototype.html">
+            
+                
+                    <a href="../../javascript-garden/object/prototype.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.5.2.</b>
+                        
+                        原型
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5.3" data-path="javascript-garden/object/hasownproperty.html">
+            
+                
+                    <a href="../../javascript-garden/object/hasownproperty.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.5.3.</b>
+                        
+                        hasOwnProperty 函数
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5.4" data-path="javascript-garden/object/forinloop.html">
+            
+                
+                    <a href="../../javascript-garden/object/forinloop.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.5.4.</b>
+                        
+                        for in 循环
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" >
+            
+            <span><b>3.6.</b> 函数</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.6.1" data-path="javascript-garden/function/general.html">
+            
+                
+                    <a href="../../javascript-garden/function/general.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.6.1.</b>
+                        
+                        函数声明与表达式
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6.2" data-path="javascript-garden/function/this.html">
+            
+                
+                    <a href="../../javascript-garden/function/this.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.6.2.</b>
+                        
+                        this 的工作原理
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6.3" data-path="javascript-garden/function/closures.html">
+            
+                
+                    <a href="../../javascript-garden/function/closures.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.6.3.</b>
+                        
+                        闭包和引用
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6.4" data-path="javascript-garden/function/arguments.html">
+            
+                
+                    <a href="../../javascript-garden/function/arguments.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.6.4.</b>
+                        
+                        arguments 对象
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6.5" data-path="javascript-garden/function/constructors.html">
+            
+                
+                    <a href="../../javascript-garden/function/constructors.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.6.5.</b>
+                        
+                        构造函数
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="3.6.6" data-path="javascript-garden/function/scopes.html">
+            
+                
+                    <a href="../../javascript-garden/function/scopes.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.6.6.</b>
+                        
+                        作用域与命名空间
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7" >
+            
+            <span><b>3.7.</b> 数组</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.7.1" data-path="javascript-garden/array/general.html">
+            
+                
+                    <a href="../../javascript-garden/array/general.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.7.1.</b>
+                        
+                        数组遍历与属性
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7.2" data-path="javascript-garden/array/constructor.html">
+            
+                
+                    <a href="../../javascript-garden/array/constructor.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.7.2.</b>
+                        
+                        Array 构造函数
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.8" >
+            
+            <span><b>3.8.</b> 类型</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.8.1" data-path="javascript-garden/types/equality.html">
+            
+                
+                    <a href="../../javascript-garden/types/equality.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.8.1.</b>
+                        
+                        相等与比较
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.8.2" data-path="javascript-garden/types/typeof.html">
+            
+                
+                    <a href="../../javascript-garden/types/typeof.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.8.2.</b>
+                        
+                        typeof 操作符
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.8.3" data-path="javascript-garden/types/instanceof.html">
+            
+                
+                    <a href="../../javascript-garden/types/instanceof.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.8.3.</b>
+                        
+                        instanceof 操作符
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.8.4" data-path="javascript-garden/types/casting.html">
+            
+                
+                    <a href="../../javascript-garden/types/casting.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.8.4.</b>
+                        
+                        类型转换
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.9" >
+            
+            <span><b>3.9.</b> 核心</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.9.1" data-path="javascript-garden/core/eval.html">
+            
+                
+                    <a href="../../javascript-garden/core/eval.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.9.1.</b>
+                        
+                        为什么不要使用 eval
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.9.2" data-path="javascript-garden/core/undefined.html">
+            
+                
+                    <a href="../../javascript-garden/core/undefined.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.9.2.</b>
+                        
+                        undefined 和 null
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.9.3" data-path="javascript-garden/core/semicolon.html">
+            
+                
+                    <a href="../../javascript-garden/core/semicolon.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.9.3.</b>
+                        
+                        自动分号插入
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.10" >
+            
+            <span><b>3.10.</b> 其他</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.10.1" data-path="javascript-garden/other/timeouts.html">
+            
+                
+                    <a href="../../javascript-garden/other/timeouts.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.10.1.</b>
+                        
+                        setTimeout 和 setInterval
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" >
+            
+            <span><b>4.</b> JavaScript的12个怪癖</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="12-javascript-quirks/index.html">
+            
+                
+                    <a href="../../12-javascript-quirks/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        简介
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="12-javascript-quirks/cn/1-implicit-conversion-of-values.html">
+            
+                
+                    <a href="../../12-javascript-quirks/cn/1-implicit-conversion-of-values.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                        怪癖 1：隐式类型转换
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="12-javascript-quirks/cn/2-two-non-values-undefined-and-null.html">
+            
+                
+                    <a href="../../12-javascript-quirks/cn/2-two-non-values-undefined-and-null.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.</b>
+                        
+                        怪癖 2：两个「空值」：undefined 和 null
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="12-javascript-quirks/cn/3-normal-equality-vs-the-double-equals.html">
+            
+                
+                    <a href="../../12-javascript-quirks/cn/3-normal-equality-vs-the-double-equals.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.4.</b>
+                        
+                        怪癖 3：标准的等号 (==)
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="12-javascript-quirks/cn/4-unknown-variable-names-create-global-variables.html">
+            
+                
+                    <a href="../../12-javascript-quirks/cn/4-unknown-variable-names-create-global-variables.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.5.</b>
+                        
+                        怪癖 4：未知变量名创建全局变量
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="12-javascript-quirks/cn/5-parameter-handling.html">
+            
+                
+                    <a href="../../12-javascript-quirks/cn/5-parameter-handling.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.6.</b>
+                        
+                        怪癖 5：参数的处理
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7" data-path="12-javascript-quirks/cn/6-the-scope-of-variables.html">
+            
+                
+                    <a href="../../12-javascript-quirks/cn/6-the-scope-of-variables.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.7.</b>
+                        
+                        怪癖 6：变量的作用范围
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.8" data-path="12-javascript-quirks/cn/7-inadvertent-sharing-of-variables-via-closures.html">
+            
+                
+                    <a href="../../12-javascript-quirks/cn/7-inadvertent-sharing-of-variables-via-closures.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.8.</b>
+                        
+                        怪癖 7：变量闭包之后的无意识共享
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.9" data-path="12-javascript-quirks/cn/8-array-like-objects.html">
+            
+                
+                    <a href="../../12-javascript-quirks/cn/8-array-like-objects.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.9.</b>
+                        
+                        怪癖 8：“类数组对象”
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.10" >
+            
+            <span><b>4.10.</b> [怪癖 9：子类的构造函数]</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.11" >
+            
+            <span><b>4.11.</b> [怪癖 10：属性的读写]</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.12" >
+            
+            <span><b>4.12.</b> [怪癖 11：函数中的 this]</span>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.13" >
+            
+            <span><b>4.13.</b> [怪癖 12：for-in循环]</span>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5" >
+            
+            <span><b>5.</b> JavaScript 模式</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1" data-path="javascript-patterns/index.html">
+            
+                
+                    <a href="../../javascript-patterns/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.</b>
+                        
+                        目录
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="javascript-patterns/chapter1.html">
+            
+                
+                    <a href="../../javascript-patterns/chapter1.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.</b>
+                        
+                        概述
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="javascript-patterns/chapter2.html">
+            
+                
+                    <a href="../../javascript-patterns/chapter2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.</b>
+                        
+                        高质量JavaScript基本要点
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="javascript-patterns/chapter3.html">
+            
+                
+                    <a href="../../javascript-patterns/chapter3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.4.</b>
+                        
+                        直接量和构造函数
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="javascript-patterns/chapter4.html">
+            
+                
+                    <a href="../../javascript-patterns/chapter4.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.5.</b>
+                        
+                        函数
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.6" data-path="javascript-patterns/chapter5.html">
+            
+                
+                    <a href="../../javascript-patterns/chapter5.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.6.</b>
+                        
+                        对象创建模式
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.7" data-path="javascript-patterns/chapter6.html">
+            
+                
+                    <a href="../../javascript-patterns/chapter6.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.7.</b>
+                        
+                        代码复用模式
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.8" data-path="javascript-patterns/chapter7.html">
+            
+                
+                    <a href="../../javascript-patterns/chapter7.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.8.</b>
+                        
+                        设计模式
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.9" data-path="javascript-patterns/chapter8.html">
+            
+                
+                    <a href="../../javascript-patterns/chapter8.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.9.</b>
+                        
+                        DOM和浏览器中的模式
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6" >
+            
+            <span><b>6.</b> AngularJS入门教程</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1" data-path="AngularjsTutorial_cn/quick_start.html">
+            
+                
+                    <a href="../../AngularjsTutorial_cn/quick_start.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.1.</b>
+                        
+                        快速开始
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="AngularjsTutorial_cn/ready.html">
+            
+                
+                    <a href="../../AngularjsTutorial_cn/ready.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.2.</b>
+                        
+                        导言和准备
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="AngularjsTutorial_cn/00.html">
+            
+                
+                    <a href="../../AngularjsTutorial_cn/00.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.3.</b>
+                        
+                        引导程序
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="AngularjsTutorial_cn/01.html">
+            
+                
+                    <a href="../../AngularjsTutorial_cn/01.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.4.</b>
+                        
+                        静态模板
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5" data-path="AngularjsTutorial_cn/02.html">
+            
+                
+                    <a href="../../AngularjsTutorial_cn/02.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.5.</b>
+                        
+                        AngularJS模板
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.6" data-path="AngularjsTutorial_cn/03.html">
+            
+                
+                    <a href="../../AngularjsTutorial_cn/03.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.6.</b>
+                        
+                        迭代器过滤
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.7" data-path="AngularjsTutorial_cn/04.html">
+            
+                
+                    <a href="../../AngularjsTutorial_cn/04.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.7.</b>
+                        
+                        双向绑定
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.8" data-path="AngularjsTutorial_cn/05.html">
+            
+                
+                    <a href="../../AngularjsTutorial_cn/05.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.8.</b>
+                        
+                        XHR和依赖注入
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.9" data-path="AngularjsTutorial_cn/06.html">
+            
+                
+                    <a href="../../AngularjsTutorial_cn/06.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.9.</b>
+                        
+                        链接与图片模板
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.10" data-path="AngularjsTutorial_cn/07.html">
+            
+                
+                    <a href="../../AngularjsTutorial_cn/07.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.10.</b>
+                        
+                        路由与多视图
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.11" data-path="AngularjsTutorial_cn/08.html">
+            
+                
+                    <a href="../../AngularjsTutorial_cn/08.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.11.</b>
+                        
+                        更多模板
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.12" data-path="AngularjsTutorial_cn/09.html">
+            
+                
+                    <a href="../../AngularjsTutorial_cn/09.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.12.</b>
+                        
+                        过滤器
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.13" data-path="AngularjsTutorial_cn/10.html">
+            
+                
+                    <a href="../../AngularjsTutorial_cn/10.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.13.</b>
+                        
+                        事件处理器
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.14" data-path="AngularjsTutorial_cn/11.html">
+            
+                
+                    <a href="../../AngularjsTutorial_cn/11.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.14.</b>
+                        
+                        REST和定制服务
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.15" data-path="AngularjsTutorial_cn/12.html">
+            
+                
+                    <a href="../../AngularjsTutorial_cn/12.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.15.</b>
+                        
+                        完结篇
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.16" data-path="AngularjsTutorial_cn/index.html">
+            
+                
+                    <a href="../../AngularjsTutorial_cn/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.16.</b>
+                        
+                        关于
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7" >
+            
+            <span><b>7.</b> CSS3 教程</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.1" data-path="css3-tutorial/docs/Introduction.html">
+            
+                
+                    <a href="../../css3-tutorial/docs/Introduction.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.1.</b>
+                        
+                        介绍
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" data-path="css3-tutorial/docs/Animation.html">
+            
+                
+                    <a href="../../css3-tutorial/docs/Animation.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.2.</b>
+                        
+                        动画
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.3" data-path="css3-tutorial/docs/Border.html">
+            
+                
+                    <a href="../../css3-tutorial/docs/Border.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.3.</b>
+                        
+                        边框
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.4" data-path="css3-tutorial/docs/Background.html">
+            
+                
+                    <a href="../../css3-tutorial/docs/Background.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.4.</b>
+                        
+                        背景
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.5" data-path="css3-tutorial/docs/Font.html">
+            
+                
+                    <a href="../../css3-tutorial/docs/Font.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.5.</b>
+                        
+                        字体
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.6" data-path="css3-tutorial/docs/Multiple Columns.html">
+            
+                
+                    <a href="../../css3-tutorial/docs/Multiple Columns.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.6.</b>
+                        
+                        多列
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.7" data-path="css3-tutorial/docs/User Interface.html">
+            
+                
+                    <a href="../../css3-tutorial/docs/User Interface.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.7.</b>
+                        
+                        UI
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.8" data-path="css3-tutorial/docs/Transitions Effect.html">
+            
+                
+                    <a href="../../css3-tutorial/docs/Transitions Effect.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.8.</b>
+                        
+                        过渡效果
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.9" data-path="css3-tutorial/docs/Text Effect.html">
+            
+                
+                    <a href="../../css3-tutorial/docs/Text Effect.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.9.</b>
+                        
+                        文本效果
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.10" data-path="css3-tutorial/docs/2D Transform.html">
+            
+                
+                    <a href="../../css3-tutorial/docs/2D Transform.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.10.</b>
+                        
+                        2D
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.11" data-path="css3-tutorial/docs/3D Transform.html">
+            
+                
+                    <a href="../../css3-tutorial/docs/3D Transform.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.11.</b>
+                        
+                        3D
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../" >F2E Docs</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="&#x4F5C;&#x7528;&#x57DF;&#x4E0E;&#x547D;&#x540D;&#x7A7A;&#x95F4;">&#x4F5C;&#x7528;&#x57DF;&#x4E0E;&#x547D;&#x540D;&#x7A7A;&#x95F4;</h1>
+<p>&#x5C3D;&#x7BA1; JavaScript &#x652F;&#x6301;&#x4E00;&#x5BF9;&#x82B1;&#x62EC;&#x53F7;&#x521B;&#x5EFA;&#x7684;&#x4EE3;&#x7801;&#x6BB5;&#xFF0C;&#x4F46;&#x662F;&#x5E76;&#x4E0D;&#x652F;&#x6301;&#x5757;&#x7EA7;&#x4F5C;&#x7528;&#x57DF;&#xFF1B; &#x800C;&#x4EC5;&#x4EC5;&#x652F;&#x6301; <em>&#x51FD;&#x6570;&#x4F5C;&#x7528;&#x57DF;</em>&#x3002;</p>
+<pre><code>function test() { // &#x4E00;&#x4E2A;&#x4F5C;&#x7528;&#x57DF;
+    for(var i = 0; i &lt; 10; i++) { // &#x4E0D;&#x662F;&#x4E00;&#x4E2A;&#x4F5C;&#x7528;&#x57DF;
+        // count
+    }
+    console.log(i); // 10
+}
+</code></pre><blockquote>
+<p><strong>&#x6CE8;&#x610F;:</strong> &#x5982;&#x679C;&#x4E0D;&#x662F;&#x5728;&#x8D4B;&#x503C;&#x8BED;&#x53E5;&#x4E2D;&#xFF0C;&#x800C;&#x662F;&#x5728; return &#x8868;&#x8FBE;&#x5F0F;&#x6216;&#x8005;&#x51FD;&#x6570;&#x53C2;&#x6570;&#x4E2D;&#xFF0C;<code>{...}</code> &#x5C06;&#x4F1A;&#x4F5C;&#x4E3A;&#x4EE3;&#x7801;&#x6BB5;&#x89E3;&#x6790;&#xFF0C; &#x800C;&#x4E0D;&#x662F;&#x4F5C;&#x4E3A;&#x5BF9;&#x8C61;&#x7684;&#x5B57;&#x9762;&#x8BED;&#x6CD5;&#x89E3;&#x6790;&#x3002;&#x5982;&#x679C;&#x8003;&#x8651;&#x5230; <a href="#core.semicolon">&#x81EA;&#x52A8;&#x5206;&#x53F7;&#x63D2;&#x5165;</a>&#xFF0C;&#x8FD9;&#x53EF;&#x80FD;&#x4F1A;&#x5BFC;&#x81F4;&#x4E00;&#x4E9B;&#x4E0D;&#x6613;&#x5BDF;&#x89C9;&#x7684;&#x9519;&#x8BEF;&#x3002;</p>
+</blockquote>
+<p><strong><a href="http://cnblogs.com/sanshi/" target="_blank">&#x8BD1;&#x8005;&#x6CE8;</a>&#xFF1A;</strong>&#x5982;&#x679C; <code>return</code> &#x5BF9;&#x8C61;&#x7684;&#x5DE6;&#x62EC;&#x53F7;&#x548C; <code>return</code> &#x4E0D;&#x5728;&#x4E00;&#x884C;&#x4E0A;&#x5C31;&#x4F1A;&#x51FA;&#x9519;&#x3002;</p>
+<pre><code>// &#x8BD1;&#x8005;&#x6CE8;&#xFF1A;&#x4E0B;&#x9762;&#x8F93;&#x51FA; undefined
+function add(a, b) {
+    return
+        a + b;
+}
+console.log(add(1, 2));
+</code></pre><p>JavaScript &#x4E2D;&#x6CA1;&#x6709;&#x663E;&#x5F0F;&#x7684;&#x547D;&#x540D;&#x7A7A;&#x95F4;&#x5B9A;&#x4E49;&#xFF0C;&#x8FD9;&#x5C31;&#x610F;&#x5473;&#x7740;&#x6240;&#x6709;&#x5BF9;&#x8C61;&#x90FD;&#x5B9A;&#x4E49;&#x5728;&#x4E00;&#x4E2A;<em>&#x5168;&#x5C40;&#x5171;&#x4EAB;</em>&#x7684;&#x547D;&#x540D;&#x7A7A;&#x95F4;&#x4E0B;&#x9762;&#x3002;</p>
+<p>&#x6BCF;&#x6B21;&#x5F15;&#x7528;&#x4E00;&#x4E2A;&#x53D8;&#x91CF;&#xFF0C;JavaScript &#x4F1A;&#x5411;&#x4E0A;&#x904D;&#x5386;&#x6574;&#x4E2A;&#x4F5C;&#x7528;&#x57DF;&#x76F4;&#x5230;&#x627E;&#x5230;&#x8FD9;&#x4E2A;&#x53D8;&#x91CF;&#x4E3A;&#x6B62;&#x3002; &#x5982;&#x679C;&#x5230;&#x8FBE;&#x5168;&#x5C40;&#x4F5C;&#x7528;&#x57DF;&#x4F46;&#x662F;&#x8FD9;&#x4E2A;&#x53D8;&#x91CF;&#x4ECD;&#x672A;&#x627E;&#x5230;&#xFF0C;&#x5219;&#x4F1A;&#x629B;&#x51FA; <code>ReferenceError</code> &#x5F02;&#x5E38;&#x3002;</p>
+<h2 id="&#x9690;&#x5F0F;&#x7684;&#x5168;&#x5C40;&#x53D8;&#x91CF;">&#x9690;&#x5F0F;&#x7684;&#x5168;&#x5C40;&#x53D8;&#x91CF;</h2>
+<pre><code>// &#x811A;&#x672C; A
+foo = &apos;42&apos;;
+
+// &#x811A;&#x672C; B
+var foo = &apos;42&apos;
+</code></pre><p>&#x4E0A;&#x9762;&#x4E24;&#x6BB5;&#x811A;&#x672C;&#x6548;&#x679C;<strong>&#x4E0D;&#x540C;</strong>&#x3002;&#x811A;&#x672C; A &#x5728;<em>&#x5168;&#x5C40;</em>&#x4F5C;&#x7528;&#x57DF;&#x5185;&#x5B9A;&#x4E49;&#x4E86;&#x53D8;&#x91CF; <code>foo</code>&#xFF0C;&#x800C;&#x811A;&#x672C; B &#x5728;<em>&#x5F53;&#x524D;</em>&#x4F5C;&#x7528;&#x57DF;&#x5185;&#x5B9A;&#x4E49;&#x53D8;&#x91CF; <code>foo</code>&#x3002;</p>
+<p>&#x518D;&#x6B21;&#x5F3A;&#x8C03;&#xFF0C;&#x4E0A;&#x9762;&#x7684;&#x6548;&#x679C;<strong>&#x5B8C;&#x5168;&#x4E0D;&#x540C;</strong>&#xFF0C;&#x4E0D;&#x4F7F;&#x7528; <code>var</code> &#x58F0;&#x660E;&#x53D8;&#x91CF;&#x5C06;&#x4F1A;&#x5BFC;&#x81F4;&#x9690;&#x5F0F;&#x7684;&#x5168;&#x5C40;&#x53D8;&#x91CF;&#x4EA7;&#x751F;&#x3002;</p>
+<pre><code>// &#x5168;&#x5C40;&#x4F5C;&#x7528;&#x57DF;
+var foo = 42;
+function test() {
+    // &#x5C40;&#x90E8;&#x4F5C;&#x7528;&#x57DF;
+    foo = 21;
+}
+test();
+foo; // 21
+</code></pre><p>&#x5728;&#x51FD;&#x6570; <code>test</code> &#x5185;&#x4E0D;&#x4F7F;&#x7528; <code>var</code> &#x5173;&#x952E;&#x5B57;&#x58F0;&#x660E; <code>foo</code> &#x53D8;&#x91CF;&#x5C06;&#x4F1A;&#x8986;&#x76D6;&#x5916;&#x90E8;&#x7684;&#x540C;&#x540D;&#x53D8;&#x91CF;&#x3002; &#x8D77;&#x521D;&#x8FD9;&#x770B;&#x8D77;&#x6765;&#x5E76;&#x4E0D;&#x662F;&#x5927;&#x95EE;&#x9898;&#xFF0C;&#x4F46;&#x662F;&#x5F53;&#x6709;&#x6210;&#x5343;&#x4E0A;&#x4E07;&#x884C;&#x4EE3;&#x7801;&#x65F6;&#xFF0C;&#x4E0D;&#x4F7F;&#x7528; <code>var</code> &#x58F0;&#x660E;&#x53D8;&#x91CF;&#x5C06;&#x4F1A;&#x5E26;&#x6765;&#x96BE;&#x4EE5;&#x8DDF;&#x8E2A;&#x7684; BUG&#x3002;</p>
+<pre><code>// &#x5168;&#x5C40;&#x4F5C;&#x7528;&#x57DF;
+var items = [/* &#x6570;&#x7EC4; */];
+for(var i = 0; i &lt; 10; i++) {
+    subLoop();
+}
+
+function subLoop() {
+    // subLoop &#x51FD;&#x6570;&#x4F5C;&#x7528;&#x57DF;
+    for(i = 0; i &lt; 10; i++) { // &#x6CA1;&#x6709;&#x4F7F;&#x7528; var &#x58F0;&#x660E;&#x53D8;&#x91CF;
+        // &#x5E72;&#x6D3B;
+    }
+}
+</code></pre><p>&#x5916;&#x90E8;&#x5FAA;&#x73AF;&#x5728;&#x7B2C;&#x4E00;&#x6B21;&#x8C03;&#x7528; <code>subLoop</code> &#x4E4B;&#x540E;&#x5C31;&#x4F1A;&#x7EC8;&#x6B62;&#xFF0C;&#x56E0;&#x4E3A; <code>subLoop</code> &#x8986;&#x76D6;&#x4E86;&#x5168;&#x5C40;&#x53D8;&#x91CF; <code>i</code>&#x3002; &#x5728;&#x7B2C;&#x4E8C;&#x4E2A; <code>for</code> &#x5FAA;&#x73AF;&#x4E2D;&#x4F7F;&#x7528; <code>var</code> &#x58F0;&#x660E;&#x53D8;&#x91CF;&#x53EF;&#x4EE5;&#x907F;&#x514D;&#x8FD9;&#x79CD;&#x9519;&#x8BEF;&#x3002; &#x58F0;&#x660E;&#x53D8;&#x91CF;&#x65F6;<strong>&#x7EDD;&#x5BF9;&#x4E0D;&#x8981;</strong>&#x9057;&#x6F0F; <code>var</code> &#x5173;&#x952E;&#x5B57;&#xFF0C;&#x9664;&#x975E;&#x8FD9;&#x5C31;&#x662F;<em>&#x671F;&#x671B;</em>&#x7684;&#x5F71;&#x54CD;&#x5916;&#x90E8;&#x4F5C;&#x7528;&#x57DF;&#x7684;&#x884C;&#x4E3A;&#x3002;</p>
+<h2 id="&#x5C40;&#x90E8;&#x53D8;&#x91CF;">&#x5C40;&#x90E8;&#x53D8;&#x91CF;</h2>
+<p>JavaScript &#x4E2D;&#x5C40;&#x90E8;&#x53D8;&#x91CF;&#x53EA;&#x53EF;&#x80FD;&#x901A;&#x8FC7;&#x4E24;&#x79CD;&#x65B9;&#x5F0F;&#x58F0;&#x660E;&#xFF0C;&#x4E00;&#x4E2A;&#x662F;&#x4F5C;&#x4E3A;<a href="#function">&#x51FD;&#x6570;</a>&#x53C2;&#x6570;&#xFF0C;&#x53E6;&#x4E00;&#x4E2A;&#x662F;&#x901A;&#x8FC7; <code>var</code> &#x5173;&#x952E;&#x5B57;&#x58F0;&#x660E;&#x3002;</p>
+<pre><code>// &#x5168;&#x5C40;&#x53D8;&#x91CF;
+var foo = 1;
+var bar = 2;
+var i = 2;
+
+function test(i) {
+    // &#x51FD;&#x6570; test &#x5185;&#x7684;&#x5C40;&#x90E8;&#x4F5C;&#x7528;&#x57DF;
+    i = 5;
+
+    var foo = 3;
+    bar = 4;
+}
+test(10);
+</code></pre><p><code>foo</code> &#x548C; <code>i</code> &#x662F;&#x51FD;&#x6570; <code>test</code> &#x5185;&#x7684;&#x5C40;&#x90E8;&#x53D8;&#x91CF;&#xFF0C;&#x800C;&#x5BF9; <code>bar</code> &#x7684;&#x8D4B;&#x503C;&#x5C06;&#x4F1A;&#x8986;&#x76D6;&#x5168;&#x5C40;&#x4F5C;&#x7528;&#x57DF;&#x5185;&#x7684;&#x540C;&#x540D;&#x53D8;&#x91CF;&#x3002;</p>
+<h2 id="&#x53D8;&#x91CF;&#x58F0;&#x660E;&#x63D0;&#x5347;&#xFF08;hoisting&#xFF09;">&#x53D8;&#x91CF;&#x58F0;&#x660E;&#x63D0;&#x5347;&#xFF08;Hoisting&#xFF09;</h2>
+<p>JavaScript &#x4F1A;<strong>&#x63D0;&#x5347;</strong>&#x53D8;&#x91CF;&#x58F0;&#x660E;&#x3002;&#x8FD9;&#x610F;&#x5473;&#x7740; <code>var</code> &#x8868;&#x8FBE;&#x5F0F;&#x548C; <code>function</code> &#x58F0;&#x660E;&#x90FD;&#x5C06;&#x4F1A;&#x88AB;&#x63D0;&#x5347;&#x5230;&#x5F53;&#x524D;&#x4F5C;&#x7528;&#x57DF;&#x7684;&#x9876;&#x90E8;&#x3002;</p>
+<pre><code>bar();
+var bar = function() {};
+var someValue = 42;
+
+test();
+function test(data) {
+    if (false) {
+        goo = 1;
+
+    } else {
+        var goo = 2;
+    }
+    for(var i = 0; i &lt; 100; i++) {
+        var e = data[i];
+    }
+}
+</code></pre><p>&#x4E0A;&#x9762;&#x4EE3;&#x7801;&#x5728;&#x8FD0;&#x884C;&#x4E4B;&#x524D;&#x5C06;&#x4F1A;&#x88AB;&#x8F6C;&#x5316;&#x3002;JavaScript &#x5C06;&#x4F1A;&#x628A; <code>var</code> &#x8868;&#x8FBE;&#x5F0F;&#x548C; <code>function</code> &#x58F0;&#x660E;&#x63D0;&#x5347;&#x5230;&#x5F53;&#x524D;&#x4F5C;&#x7528;&#x57DF;&#x7684;&#x9876;&#x90E8;&#x3002;</p>
+<pre><code>// var &#x8868;&#x8FBE;&#x5F0F;&#x88AB;&#x79FB;&#x52A8;&#x5230;&#x8FD9;&#x91CC;
+var bar, someValue; // &#x7F3A;&#x7701;&#x503C;&#x662F; &apos;undefined&apos;
+
+// &#x51FD;&#x6570;&#x58F0;&#x660E;&#x4E5F;&#x4F1A;&#x63D0;&#x5347;
+function test(data) {
+    var goo, i, e; // &#x6CA1;&#x6709;&#x5757;&#x7EA7;&#x4F5C;&#x7528;&#x57DF;&#xFF0C;&#x8FD9;&#x4E9B;&#x53D8;&#x91CF;&#x88AB;&#x79FB;&#x52A8;&#x5230;&#x51FD;&#x6570;&#x9876;&#x90E8;
+    if (false) {
+        goo = 1;
+
+    } else {
+        goo = 2;
+    }
+    for(i = 0; i &lt; 100; i++) {
+        e = data[i];
+    }
+}
+
+bar(); // &#x51FA;&#x9519;&#xFF1A;TypeError&#xFF0C;&#x56E0;&#x4E3A; bar &#x4F9D;&#x7136;&#x662F; &apos;undefined&apos;
+someValue = 42; // &#x8D4B;&#x503C;&#x8BED;&#x53E5;&#x4E0D;&#x4F1A;&#x88AB;&#x63D0;&#x5347;&#x89C4;&#x5219;&#xFF08;hoisting&#xFF09;&#x5F71;&#x54CD;
+bar = function() {};
+
+test();
+</code></pre><p>&#x6CA1;&#x6709;&#x5757;&#x7EA7;&#x4F5C;&#x7528;&#x57DF;&#x4E0D;&#x4EC5;&#x5BFC;&#x81F4; <code>var</code> &#x8868;&#x8FBE;&#x5F0F;&#x88AB;&#x4ECE;&#x5FAA;&#x73AF;&#x5185;&#x79FB;&#x5230;&#x5916;&#x90E8;&#xFF0C;&#x800C;&#x4E14;&#x4F7F;&#x4E00;&#x4E9B; <code>if</code> &#x8868;&#x8FBE;&#x5F0F;&#x66F4;&#x96BE;&#x770B;&#x61C2;&#x3002;</p>
+<p>&#x5728;&#x539F;&#x6765;&#x4EE3;&#x7801;&#x4E2D;&#xFF0C;<code>if</code> &#x8868;&#x8FBE;&#x5F0F;&#x770B;&#x8D77;&#x6765;&#x4FEE;&#x6539;&#x4E86;<em>&#x5168;&#x5C40;&#x53D8;&#x91CF;</em> <code>goo</code>&#xFF0C;&#x5B9E;&#x9645;&#x4E0A;&#x5728;&#x63D0;&#x5347;&#x89C4;&#x5219;&#x88AB;&#x5E94;&#x7528;&#x540E;&#xFF0C;&#x5374;&#x662F;&#x5728;&#x4FEE;&#x6539;<em>&#x5C40;&#x90E8;&#x53D8;&#x91CF;</em>&#x3002;</p>
+<p>&#x5982;&#x679C;&#x6CA1;&#x6709;&#x63D0;&#x5347;&#x89C4;&#x5219;&#xFF08;hoisting&#xFF09;&#x7684;&#x77E5;&#x8BC6;&#xFF0C;&#x4E0B;&#x9762;&#x7684;&#x4EE3;&#x7801;&#x770B;&#x8D77;&#x6765;&#x4F1A;&#x629B;&#x51FA;&#x5F02;&#x5E38; <code>ReferenceError</code>&#x3002;</p>
+<pre><code>// &#x68C0;&#x67E5; SomeImportantThing &#x662F;&#x5426;&#x5DF2;&#x7ECF;&#x88AB;&#x521D;&#x59CB;&#x5316;
+if (!SomeImportantThing) {
+    var SomeImportantThing = {};
+}
+</code></pre><p>&#x5B9E;&#x9645;&#x4E0A;&#xFF0C;&#x4E0A;&#x9762;&#x7684;&#x4EE3;&#x7801;&#x6B63;&#x5E38;&#x8FD0;&#x884C;&#xFF0C;&#x56E0;&#x4E3A; <code>var</code> &#x8868;&#x8FBE;&#x5F0F;&#x4F1A;&#x88AB;&#x63D0;&#x5347;&#x5230;<em>&#x5168;&#x5C40;&#x4F5C;&#x7528;&#x57DF;</em>&#x7684;&#x9876;&#x90E8;&#x3002;</p>
+<pre><code>var SomeImportantThing;
+
+// &#x5176;&#x5B83;&#x4E00;&#x4E9B;&#x4EE3;&#x7801;&#xFF0C;&#x53EF;&#x80FD;&#x4F1A;&#x521D;&#x59CB;&#x5316; SomeImportantThing&#xFF0C;&#x4E5F;&#x53EF;&#x80FD;&#x4E0D;&#x4F1A;
+
+// &#x68C0;&#x67E5;&#x662F;&#x5426;&#x5DF2;&#x7ECF;&#x88AB;&#x521D;&#x59CB;&#x5316;
+if (!SomeImportantThing) {
+    SomeImportantThing = {};
+}
+</code></pre><p><strong><a href="http://cnblogs.com/sanshi/" target="_blank">&#x8BD1;&#x8005;&#x6CE8;</a>&#xFF1A;</strong>&#x5728; Nettuts+ &#x7F51;&#x7AD9;&#x6709;&#x4E00;&#x7BC7;&#x4ECB;&#x7ECD; hoisting &#x7684;<a href="http://net.tutsplus.com/tutorials/javascript-ajax/quick-tip-javascript-hoisting-explained/" target="_blank">&#x6587;&#x7AE0;</a>&#xFF0C;&#x5176;&#x4E2D;&#x7684;&#x4EE3;&#x7801;&#x5F88;&#x6709;&#x542F;&#x53D1;&#x6027;&#x3002;</p>
+<pre><code>// &#x8BD1;&#x8005;&#x6CE8;&#xFF1A;&#x6765;&#x81EA; Nettuts+ &#x7684;&#x4E00;&#x6BB5;&#x4EE3;&#x7801;&#xFF0C;&#x751F;&#x52A8;&#x7684;&#x9610;&#x8FF0;&#x4E86; JavaScript &#x4E2D;&#x53D8;&#x91CF;&#x58F0;&#x660E;&#x63D0;&#x5347;&#x89C4;&#x5219;
+var myvar = &apos;my value&apos;;  
+
+(function() {  
+    alert(myvar); // undefined  
+    var myvar = &apos;local value&apos;;  
+})();
+</code></pre><h2 id="&#x540D;&#x79F0;&#x89E3;&#x6790;&#x987A;&#x5E8F;">&#x540D;&#x79F0;&#x89E3;&#x6790;&#x987A;&#x5E8F;</h2>
+<p>JavaScript &#x4E2D;&#x7684;&#x6240;&#x6709;&#x4F5C;&#x7528;&#x57DF;&#xFF0C;&#x5305;&#x62EC;<em>&#x5168;&#x5C40;&#x4F5C;&#x7528;&#x57DF;</em>&#xFF0C;&#x90FD;&#x6709;&#x4E00;&#x4E2A;&#x7279;&#x522B;&#x7684;&#x540D;&#x79F0; <a href="#function.this"><code>this</code></a> &#x6307;&#x5411;&#x5F53;&#x524D;&#x5BF9;&#x8C61;&#x3002;</p>
+<p>&#x51FD;&#x6570;&#x4F5C;&#x7528;&#x57DF;&#x5185;&#x4E5F;&#x6709;&#x9ED8;&#x8BA4;&#x7684;&#x53D8;&#x91CF; <a href="#function.arguments"><code>arguments</code></a>&#xFF0C;&#x5176;&#x4E2D;&#x5305;&#x542B;&#x4E86;&#x4F20;&#x9012;&#x5230;&#x51FD;&#x6570;&#x4E2D;&#x7684;&#x53C2;&#x6570;&#x3002;</p>
+<p>&#x6BD4;&#x5982;&#xFF0C;&#x5F53;&#x8BBF;&#x95EE;&#x51FD;&#x6570;&#x5185;&#x7684; <code>foo</code> &#x53D8;&#x91CF;&#x65F6;&#xFF0C;JavaScript &#x4F1A;&#x6309;&#x7167;&#x4E0B;&#x9762;&#x987A;&#x5E8F;&#x67E5;&#x627E;&#xFF1A;</p>
+<ol>
+<li>&#x5F53;&#x524D;&#x4F5C;&#x7528;&#x57DF;&#x5185;&#x662F;&#x5426;&#x6709; <code>var foo</code> &#x7684;&#x5B9A;&#x4E49;&#x3002;</li>
+<li>&#x51FD;&#x6570;&#x5F62;&#x5F0F;&#x53C2;&#x6570;&#x662F;&#x5426;&#x6709;&#x4F7F;&#x7528; <code>foo</code> &#x540D;&#x79F0;&#x7684;&#x3002;</li>
+<li>&#x51FD;&#x6570;&#x81EA;&#x8EAB;&#x662F;&#x5426;&#x53EB;&#x505A; <code>foo</code>&#x3002;</li>
+<li>&#x56DE;&#x6EAF;&#x5230;&#x4E0A;&#x4E00;&#x7EA7;&#x4F5C;&#x7528;&#x57DF;&#xFF0C;&#x7136;&#x540E;&#x4ECE; <strong>#1</strong> &#x91CD;&#x65B0;&#x5F00;&#x59CB;&#x3002;</li>
+</ol>
+<blockquote>
+<p><strong>&#x6CE8;&#x610F;:</strong> &#x81EA;&#x5B9A;&#x4E49; <code>arguments</code> &#x53C2;&#x6570;&#x5C06;&#x4F1A;&#x963B;&#x6B62;&#x539F;&#x751F;&#x7684; <code>arguments</code> &#x5BF9;&#x8C61;&#x7684;&#x521B;&#x5EFA;&#x3002;</p>
+</blockquote>
+<h2 id="&#x547D;&#x540D;&#x7A7A;&#x95F4;">&#x547D;&#x540D;&#x7A7A;&#x95F4;</h2>
+<p>&#x53EA;&#x6709;&#x4E00;&#x4E2A;&#x5168;&#x5C40;&#x4F5C;&#x7528;&#x57DF;&#x5BFC;&#x81F4;&#x7684;&#x5E38;&#x89C1;&#x9519;&#x8BEF;&#x662F;&#x547D;&#x540D;&#x51B2;&#x7A81;&#x3002;&#x5728; JavaScript&#x4E2D;&#xFF0C;&#x8FD9;&#x53EF;&#x4EE5;&#x901A;&#x8FC7; <em>&#x533F;&#x540D;&#x5305;&#x88C5;&#x5668;</em> &#x8F7B;&#x677E;&#x89E3;&#x51B3;&#x3002;</p>
+<pre><code>(function() {
+    // &#x51FD;&#x6570;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x547D;&#x540D;&#x7A7A;&#x95F4;
+
+    window.foo = function() {
+        // &#x5BF9;&#x5916;&#x516C;&#x5F00;&#x7684;&#x51FD;&#x6570;&#xFF0C;&#x521B;&#x5EFA;&#x4E86;&#x95ED;&#x5305;
+    };
+
+})(); // &#x7ACB;&#x5373;&#x6267;&#x884C;&#x6B64;&#x533F;&#x540D;&#x51FD;&#x6570;
+</code></pre><p>&#x533F;&#x540D;&#x51FD;&#x6570;&#x88AB;&#x8BA4;&#x4E3A;&#x662F; <a href="#function">&#x8868;&#x8FBE;&#x5F0F;</a>&#xFF1B;&#x56E0;&#x6B64;&#x4E3A;&#x4E86;&#x53EF;&#x8C03;&#x7528;&#x6027;&#xFF0C;&#x5B83;&#x4EEC;&#x9996;&#x5148;&#x4F1A;&#x88AB;&#x6267;&#x884C;&#x3002;</p>
+<pre><code>( // &#x5C0F;&#x62EC;&#x53F7;&#x5185;&#x7684;&#x51FD;&#x6570;&#x9996;&#x5148;&#x88AB;&#x6267;&#x884C;
+function() {}
+) // &#x5E76;&#x4E14;&#x8FD4;&#x56DE;&#x51FD;&#x6570;&#x5BF9;&#x8C61;
+() // &#x8C03;&#x7528;&#x4E0A;&#x9762;&#x7684;&#x6267;&#x884C;&#x7ED3;&#x679C;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x51FD;&#x6570;&#x5BF9;&#x8C61;
+</code></pre><p>&#x6709;&#x4E00;&#x4E9B;&#x5176;&#x4ED6;&#x7684;&#x8C03;&#x7528;&#x51FD;&#x6570;&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x6BD4;&#x5982;&#x4E0B;&#x9762;&#x7684;&#x4E24;&#x79CD;&#x65B9;&#x5F0F;&#x8BED;&#x6CD5;&#x4E0D;&#x540C;&#xFF0C;&#x4F46;&#x662F;&#x6548;&#x679C;&#x4E00;&#x6A21;&#x4E00;&#x6837;&#x3002;</p>
+<pre><code>// &#x53E6;&#x5916;&#x4E24;&#x79CD;&#x65B9;&#x5F0F;
++function(){}();
+(function(){}());
+</code></pre><h2 id="&#x7ED3;&#x8BBA;">&#x7ED3;&#x8BBA;</h2>
+<p>&#x63A8;&#x8350;&#x4F7F;&#x7528;<em>&#x533F;&#x540D;&#x5305;&#x88C5;&#x5668;</em>&#xFF08;<strong><a href="http://cnblogs.com/sanshi/" target="_blank">&#x8BD1;&#x8005;&#x6CE8;</a>&#xFF1A;</strong>&#x4E5F;&#x5C31;&#x662F;&#x81EA;&#x6267;&#x884C;&#x7684;&#x533F;&#x540D;&#x51FD;&#x6570;&#xFF09;&#x6765;&#x521B;&#x5EFA;&#x547D;&#x540D;&#x7A7A;&#x95F4;&#x3002;&#x8FD9;&#x6837;&#x4E0D;&#x4EC5;&#x53EF;&#x4EE5;&#x9632;&#x6B62;&#x547D;&#x540D;&#x51B2;&#x7A81;&#xFF0C; &#x800C;&#x4E14;&#x6709;&#x5229;&#x4E8E;&#x7A0B;&#x5E8F;&#x7684;&#x6A21;&#x5757;&#x5316;&#x3002;</p>
+<p>&#x53E6;&#x5916;&#xFF0C;&#x4F7F;&#x7528;&#x5168;&#x5C40;&#x53D8;&#x91CF;&#x88AB;&#x8BA4;&#x4E3A;&#x662F;<strong>&#x4E0D;&#x597D;&#x7684;&#x4E60;&#x60EF;</strong>&#x3002;&#x8FD9;&#x6837;&#x7684;&#x4EE3;&#x7801;&#x5BB9;&#x6613;&#x4EA7;&#x751F;&#x9519;&#x8BEF;&#x5E76;&#x4E14;&#x7EF4;&#x62A4;&#x6210;&#x672C;&#x8F83;&#x9AD8;&#x3002;</p>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../../javascript-garden/function/constructors.html" class="navigation navigation-prev " aria-label="Previous page: 构造函数"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../../javascript-garden/array/general.html" class="navigation navigation-next " aria-label="Next page: 数组遍历与属性"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+ 
+<script src="../../gitbook/app-min.js"></script>
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-disqus/plugin.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-fontsettings/fontsettings.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"disqus":{"shortName":"f2edocs","useIdentifier":false},"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+ 
+    <div class="footer">https://github.com/simonguo/f2edocs.com </div>
+    
+    <div style="display:none" id="cnzz_tracker">
+        <script src="http://s9.cnzz.com/stat.php?id=1256491313&web_id=1256491313" language="JavaScript"></script>
+    </div>
+    
+</body>
+
+
+
+</html>
