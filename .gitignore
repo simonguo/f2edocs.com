@@ -6,4 +6,4 @@ _cache
 !_site/index.html
 node_modules
 .vscode
-docs
+assets

@@ -13,11 +13,11 @@ function getActiveNavs(name) {
 navs.forEach((nav) => {
     if (nav.name) {
         fs.writeFileSync(
-            `${__dirname}/../${nav.name}/book.json`,
+            `${__dirname}/../src/${nav.name}/book.json`,
             JSON.stringify(Object.assign({}, bookJson, {
                 navs: getActiveNavs(nav.name)
             }))
         );
-        console.log(`${nav.name}/book.json finished`);
+        console.log(`src/${nav.name}/book.json finished`);
     }
 });

@@ -3,6 +3,7 @@
     "description": "f2edocs.com",
     "scripts": {
         "build:book": "node ./bin/book.js",
-        "build": "npm run build:book && sh ./build.sh"
+        "build": "npm run build:book && sh ./build.sh",
+        "cp":"cp src/index.html assets/ && cp -R src/stylesheets assets/"
     }
 }

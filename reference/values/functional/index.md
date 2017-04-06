@@ -1,1 +1,0 @@
-#CSS Functional Notations Data Types

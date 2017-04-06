@@ -1,1 +1,0 @@
-#CSS Only IE Properties

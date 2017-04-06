@@ -1,7 +1,7 @@
 #!/bin/bash
 
-hbook build ./books ./docs/books
-hbook build ./interview ./docs/interview
-hbook build ./collect ./docs/collect
-hbook build ./style-guide ./docs/style-guide
-hbook build ./reference ./docs/reference
+hbook build ./src/books ./assets/books
+hbook build ./src/interview ./assets/interview
+hbook build ./src/collect ./assets/collect
+hbook build ./src/style-guide ./assets/style-guide
+hbook build ./src/reference ./assets/reference
